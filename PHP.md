@@ -1,0 +1,4 @@
+# 1. find string one in string two.
+```strpos($str1,$str2) !== false``` ( ```strpos``` returns the starting position index).
+# 2. merge 2 array.
+``` array_replace($a, $b) === $b + $a ``` (```array_replace``` prioritize $b, ```+ ``` operator prioritize $a).
