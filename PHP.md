@@ -8,3 +8,5 @@
 ``` fun(n) { return (n & (n - 1) === 0) ? true : false }```
 # 5. find range number missing.
 ``` func(arr) { $new_arr = range($arr[0],max($arr)); return array_diff($new_arr, $arr); } ```
+# 6. check power of n.
+``` func(n, x) { while(x % n === 0) { $x /= n;} return ($x === 1) ? true : false}```
