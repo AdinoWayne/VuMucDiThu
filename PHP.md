@@ -4,3 +4,5 @@
 ``` array_replace($a, $b) === $b + $a ``` (```array_replace``` prioritize $b, ```+ ``` operator prioritize $a).
 # 3. sort array.
 ```asort($arr, SORT_STRING|SORT_FLAG_CASE|SORT_NATURAL)``` 
+# 4. check power of two.
+``` fun(n) { return (n & (n - 1) === 0) ? true : false }```
