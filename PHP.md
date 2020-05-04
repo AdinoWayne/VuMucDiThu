@@ -6,3 +6,5 @@
 ```asort($arr, SORT_STRING|SORT_FLAG_CASE|SORT_NATURAL)``` 
 # 4. check power of two.
 ``` fun(n) { return (n & (n - 1) === 0) ? true : false }```
+# 5. find range number missing.
+``` func(arr) { $new_arr = range($arr[0],max($arr)); return array_diff($new_arr, $arr); } ```
