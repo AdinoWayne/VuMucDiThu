@@ -10,3 +10,5 @@
 ``` func(arr) { $new_arr = range($arr[0],max($arr)); return array_diff($new_arr, $arr); } ```
 # 6. check power of n.
 ``` func(n, x) { while(x % n === 0) { $x /= n;} return ($x === 1) ? true : false}```
+# 7. swap 2 variable a, b.
+``` list($a, $b) = array($b, a) ```
