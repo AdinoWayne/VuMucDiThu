@@ -13,3 +13,17 @@
 # 7. swap 2 variable a, b.
 ``` list($a, $b) = array($b, a) ``` // 
 ``` $a =  $a + $b;$b = $a - $b;$a = $a - $b; ```
+# 8. sqrt algorithm.
+```
+function my_sqrt($n)
+{
+  $x = $n;
+  $y = 1;
+  while($x > $y)
+  {
+    $x = ($x + $y)/2;
+    $y = $n/$x;
+  }
+  return $x;
+}
+```
