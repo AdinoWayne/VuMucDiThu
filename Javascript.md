@@ -12,3 +12,48 @@ a = a ^ b
 5. a = [b, b = a][0]
 6. ES6 [a, b] = [b, a]
 ```
+#### 2. Find the difference between the 2 arrays
+```
+const diffItem = (arr = [], otherArr = []) =>
+  arr.reduce((t, v) => (!otherArr.includes(v) && t.push(v), t), []);
+
+const a = [1, 2, 3, 4, 5];
+const b = [2, 3, 6];
+
+console.log(diffItem(a, b)); // > Array [1, 4, 5]
+```
+#### 3. subdivide the array
+```
+const chunkArr = (arr = [], size = 1) => {
+  return arr.length
+    ? arr.reduce((t, v) => (
+        t[t.length - 1].length === size
+          ? t.push([v])
+          : t[t.length - 1].push(v), t)
+      , [[]])
+    : [];
+}
+
+const a = [1, 2, 3, 4, 5];
+
+console.log(chunkArr(a, 2)); // > Array [[1, 2], [3, 4], [5]]
+```
+#### 3. concat the array
+```
+const flatArr = (arr = []) => 
+  arr.reduce((t, v) => t.concat(Array.isArray(v) ? flatArr(v) : v), [])
+
+const a = [0, 1, [2, 3], [4, 5, [6, 7]], [8, [9, 10, [11, 12]]]];
+
+console.log(flatArr(a));
+// > Array [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+```
+#### 3. Eliminate duplicate elements
+```
+const uniq = (arr = []) =>
+  arr.reduce((t, v) => t.includes(v) ? t : [...t, v], []);
+
+const a = [2, 1, 0, 3, 2, 1, 2];
+
+console.log(uniq(a)); // > Array [2, 1, 0, 3]
+```
