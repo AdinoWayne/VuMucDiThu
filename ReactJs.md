@@ -100,6 +100,11 @@ useEffect(() => {
     return () => { ignore = true };
   }, [productId]);
 ```
+Nếu vì lý do nào đó bạn không thể chuyển hàm vào trong effect, còn một vài cách khác:
+
+- Bạn có thể chuyển hàm ra khỏi component. Trong trường hợp đó, hàm cần đảm bảo không sử dụng bất kỳ prop và state, và không cần nằm trong dependency Trong trường hợp đó, hàm được đảm bảo không tham chiếu đến bất kỳ prop hoặc state nào, và nó cũng không cần nằm trong danh sách phụ thuộc.
+- Nếu hàm bạn gọi làm một hàm thuần tính toán và an toàn để gọi trong lúc render, bạn có thể gọi nó bên ngoài của effect, và để effect phụ thuộc vào giá trị trả về.
+- Như là cách cuối cùng, bạn có thể **thêm một hàm vào danh sách phụ thuộc của effect nhưng wrap phần khai báo của nó ** bên trong useCallback Hook. Việc này đảm bảo nó không thay đổi trong tất cả các lần render trừ khi danh sách phụ thuộc của chính nó cũng thay đổi:
 ```
 function ProductPage({ productId }) {
   // ✅ Wrap trong useCallback để tránh thay đổi trên tất cả các lần render
@@ -117,5 +122,7 @@ function ProductDetails({ fetchProduct }) {
   // ...
 }
 ```
+Lưu ý trong ví dụ trên, chúng ta cần đưa function vào trong danh sách phụ thuộc. Để đảm bảo những thay đổi trên prop productId của ProductPage tự động làm phát sinh re-fetch trong component ProductDetails
+
 
 
