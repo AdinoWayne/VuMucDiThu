@@ -123,9 +123,10 @@ function ProductDetails({ fetchProduct }) {
   // ...
 }
 ```
-Lưu ý trong ví dụ trên, chúng ta cần đưa function vào trong danh sách phụ thuộc. Để đảm bảo những thay đổi trên prop productId của ProductPage tự động làm phát sinh re-fetch trong component ProductDetails
+Lưu ý trong ví dụ trên, chúng ta cần đưa function vào trong danh sách phụ thuộc. Để đảm bảo những thay đổi trên prop productId của ProductPage tự động làm phát sinh re-fetch trong component ProductDetails  
 
-5. Sửa lỗi Either include it or remove the dependency array  react-hooks/exhaustive-deps
+5. Sửa lỗi Either include it or remove the dependency array  react-hooks/exhaustive-deps  
+
 - Sử dụng chức năng useEffectgọi lại (như trên)
 ```
 useEffect(fetchBusinesses, [])
