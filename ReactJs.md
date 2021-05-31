@@ -65,6 +65,7 @@ function ProductPage({ productId }) {
 
   useEffect(() => {
     fetchProduct();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // 🔴 Không hợp lệ vì `fetchProduct` sử dụng `productId`
   // ...
 }
