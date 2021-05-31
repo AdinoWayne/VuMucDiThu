@@ -171,3 +171,40 @@ function Counter() {
   return <h1>{count}</h1>;
 }
 ```
+
+### 7. Viết shouldComponentUpdate
+Nó không phải là một Hook vì nó không được viết như Hook. React.memo tương tự như PureComponent, nhưng nó chỉ so sánh các prop
+```
+const Button = React.memo((props) => {
+  // component của bạn
+});
+```
+
+### 8. Lưu trữ một tính toán
+Hook useMemo cho phép bạn cache những tính toán tốn kém giữa các lần render bằng cách ghi nhớ lần tính toán trước
+```
+const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
+```
+### 9. tạo object lớn một cách lazy
+- khởi tạo state có giá trị phức tạp
+```
+function Table(props) {
+  // ⚠️ createRows() được gọi ở tất cả các lần render
+  const [rows, setRows] = useState(createRows(props.count));
+  // ...
+}
+function Table(props) {
+  // ✅ createRows() chỉ được gọi 1 lần
+  const [rows, setRows] = useState(() => createRows(props.count));
+  // ...
+}
+```
+- tránh re-create giá trị khởi tạo useRef()
+```
+function Image(props) {
+  // ⚠️ IntersectionObserver được tạo trong tất cả các lần render
+  const ref = useRef(new IntersectionObserver(onIntersect));
+  // ...
+}
+
+```
