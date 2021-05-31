@@ -87,3 +87,35 @@ function ProductPage({ productId }) {
   // ...
 }
 ```
+```
+useEffect(() => {
+    let ignore = false;
+    async function fetchProduct() {
+      const response = await fetch('http://myapi/product/' + productId);
+      const json = await response.json();
+      if (!ignore) setProduct(json);
+    }
+
+    fetchProduct();
+    return () => { ignore = true };
+  }, [productId]);
+```
+```
+function ProductPage({ productId }) {
+  // ✅ Wrap trong useCallback để tránh thay đổi trên tất cả các lần render
+  const fetchProduct = useCallback(() => {
+    // ... làm gì đó với productId ...
+  }, [productId]); // ✅ Tất cả phụ thuộc của useCallback được chỉ định
+
+  return <ProductDetails fetchProduct={fetchProduct} />;
+}
+
+function ProductDetails({ fetchProduct }) {
+  useEffect(() => {
+    fetchProduct();
+  }, [fetchProduct]); // ✅ All useEffect dependencies are specified
+  // ...
+}
+```
+
+
