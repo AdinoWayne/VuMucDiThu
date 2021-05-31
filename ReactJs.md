@@ -1,4 +1,4 @@
-1. Tính chiều cao với Ref.
+### 1. Tính chiều cao với Ref.
 
 ```
 export default function App() {
@@ -24,7 +24,7 @@ function useClientRect() {
 }
 ```
 
-2. Lưu state Prev.
+### 2. Lưu state Prev.
 
 ```
 export default function Counter() {
@@ -42,7 +42,7 @@ function usePrevious(value) {
 }
 ```
 
-3. Force Update.
+### 3. Force Update.
 
 ```
 const [ignored, forceUpdate] = useReducer(x => x + 1, 0);
@@ -51,7 +51,7 @@ const [ignored, forceUpdate] = useReducer(x => x + 1, 0);
     forceUpdate();
   }
 ```
-4. Vấn đề Omit function từ các dependency.  
+### 4. Vấn đề Omit function từ các dependency.  
 không nên  
 ```
 function ProductPage({ productId }) {
@@ -125,7 +125,7 @@ function ProductDetails({ fetchProduct }) {
 ```
 Lưu ý trong ví dụ trên, chúng ta cần đưa function vào trong danh sách phụ thuộc. Để đảm bảo những thay đổi trên prop productId của ProductPage tự động làm phát sinh re-fetch trong component ProductDetails  
 
-5. Sửa lỗi Either include it or remove the dependency array  react-hooks/exhaustive-deps  
+### 5. Sửa lỗi Either include it or remove the dependency array  react-hooks/exhaustive-deps  
 
 - Sử dụng chức năng useEffectgọi lại (như trên)
 ```
