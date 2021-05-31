@@ -156,3 +156,18 @@ useEffect(() => {
 }, []) // eslint-disable-line react-hooks/exhaustive-deps
 ```
 
+### 6. sử dụng setInterval với count
+```
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setCount(c => c + 1); // ✅ Không phụ thuộc vào biến `count` bên ngoài
+    }, 1000);
+    return () => clearInterval(id);
+  }, []); // ✅ effect của chúng ta không sử dụng bất kỳ biến nào trong phạm vi component
+
+  return <h1>{count}</h1>;
+}
+```
