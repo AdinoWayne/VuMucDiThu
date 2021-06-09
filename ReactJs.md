@@ -170,6 +170,22 @@ function Counter() {
 
   return <h1>{count}</h1>;
 }
+// another way
+export default function App() {
+  const [count, setCount] = useState("1");
+  const incrementCount = useCallback(() => {
+    setCount(+count + 1);
+  }, [count]);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      incrementCount();
+    }, 1000);
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [incrementCount]);
+  return <div>{`Timer started: ${count}`}</div>;
+}
 ```
 
 ### 7. Viết shouldComponentUpdate
