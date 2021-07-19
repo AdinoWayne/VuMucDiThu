@@ -57,3 +57,11 @@ const a = [2, 1, 0, 3, 2, 1, 2];
 
 console.log(uniq(a)); // > Array [2, 1, 0, 3]
 ```
+
+#### 4. Randomly get the element of the array
+```
+var items = [12, 548 , 'a' , 2 , 5478 , 'foo' , 8852, , 'Doe' , 2145 , 119];
+
+var  randomItem = items[Math.floor(Math.random() * items.length)];
+```
+
