@@ -65,3 +65,15 @@ var items = [12, 548 , 'a' , 2 , 5478 , 'foo' , 8852, , 'Doe' , 2145 , 119];
 var  randomItem = items[Math.floor(Math.random() * items.length)];
 ```
 
+### 5. filter Array uniq by property . field  
+```
+const students = [
+  {
+    name: '... something value',
+    ...
+  },
+];
+// key is property would to uniq
+const key = 'name';
+const arrayUniqueByKey = [...new Map(students.map((item) => [item[key], item])).values()];
+```
