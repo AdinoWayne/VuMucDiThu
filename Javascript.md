@@ -76,4 +76,21 @@ const students = [
 // key is property would to uniq
 const key = 'name';
 const arrayUniqueByKey = [...new Map(students.map((item) => [item[key], item])).values()];
+
+
+const myArray = [
+  { id: '...', name: '...', ... },
+];
+
+// unique with id
+const unique = myArray.filter(
+  (value, index, self) => self.findIndex((m) => m.id === value.id) === index,
+);
+// way 2 using reduce
+const unique = myArray.reduce((accumulator, current) => {
+  if (!accumulator.some((x) => x.id === current.id)) {
+    accumulator.push(current);
+  }
+  return accumulator;
+}, []);
 ```
