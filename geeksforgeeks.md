@@ -49,3 +49,35 @@ var n = A.length;
 var m = B.length;
 generate(A, B, n, m);
 ```
+
+#2. Given an array of integers, write a function that returns true if there is a triplet (a, b, c) that satisfies a2 + b2 = c2
+
+```
+const checkPytago = (arr, a, b, c, isFirst) => {
+  if (arr.length < 3) {
+  	return;
+  }
+	if (isFirst) {
+  	arr.sort((a, b) => a - b);
+  }
+  const [x, y, z] = [arr[a], arr[b], arr[c]].map(el => Math.pow(el, 2));
+  if (x == y + z || y == x + z || z == x + y) {
+  	return true;
+  }
+  if (a == arr.length - 3 && b == arr.length - 2 && c == arr.length - 1) { 
+  	return false;
+  } else if (c < arr.length - 1) {
+  	c++;
+  } else if (b < arr.length - 2) {
+    b++;
+    c = b + 1;
+  } else if (a < arr.length - 3) {
+    a++;
+    b = a + 1;
+    c = a + 2;
+  }
+	return checkPytago(arr, a, b, c, false);
+}
+
+console.log(checkPytago([3, 1, 4, 6, 5], 0 , 1, 2, true));
+```
