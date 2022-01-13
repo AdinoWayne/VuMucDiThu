@@ -81,3 +81,36 @@ const checkPytago = (arr, a, b, c, isFirst) => {
 
 console.log(checkPytago([3, 1, 4, 6, 5], 0 , 1, 2, true));
 ```
+best way
+```
+
+function checkTriplet(arr , n) {
+  var maximum = 0;
+  for (i = 0; i < n; i++) {
+    maximum = Math.max(maximum, arr[i]);
+  }
+  var hash = Array(maximum + 1).fill(0);
+  for (i = 0; i < n; i++)
+    hash[arr[i]]++;
+  for (i = 1; i < maximum + 1; i++) {
+    if (hash[i] == 0)
+      continue;
+    for (j = 1; j < maximum + 1; j++) {
+      if ((i == j && hash[i] == 1) || hash[j] == 0)
+        continue;
+      var val = parseInt( Math.sqrt(i * i + j * j));
+      if ((val * val) != (i * i + j * j))
+        continue;
+      if (val > maximum)
+        continue;
+      if (hash[val] >= 1) {
+        return true;
+      }
+    }
+  }
+  return false;
+}
+var arr = [ 3, 2, 4, 6, 9, 8];
+var n = arr.length;
+console.log(checkTriplet(arr, n));
+```
