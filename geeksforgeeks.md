@@ -114,3 +114,18 @@ var arr = [ 3, 2, 4, 6, 9, 8];
 var n = arr.length;
 console.log(checkTriplet(arr, n));
 ```
+#3. Given a sorted array (sorted in non-decreasing order) of positive numbers, find the smallest positive integer value that cannot be represented as the sum of elements of any subset of a given set. 
+The expected time complexity is O(nlogn).
+
+```
+function findSmallest(arr , n)
+{
+  var res = 1;
+  for (i = 0; i < n && arr[i] <= res; i++)
+    res = res + arr[i];
+  return res;
+}
+var arr = [ 1, 1, 3, 7];
+var n = arr4.length;
+document.write(findSmallest(arr4, n)+"<br/>");
+```
