@@ -129,3 +129,38 @@ var arr = [ 1, 1, 3, 7];
 var n = arr4.length;
 document.write(findSmallest(arr4, n)+"<br/>");
 ```
+
+#4. Given an array of integers and a number x, find the smallest subarray with sum greater than the given value. 
+```
+function smallestSubWithSum(arr, n, x)
+{
+    // Initialize current sum and minimum length
+    let curr_sum = 0, min_len = n + 1;
+
+    // Initialize starting and ending indexes
+    let start = 0, end = 0;
+    while (end < n) {
+        // Keep adding array elements while current sum
+        // is smaller than or equal to x
+        while (curr_sum <= x && end < n)
+            curr_sum += arr[end++];
+        // If current sum becomes greater than x.
+        while (curr_sum > x && start < n) {
+            // Update minimum length if needed
+            if (end - start < min_len)
+                min_len = end - start;
+
+            // remove starting elements
+            curr_sum -= arr[start++];
+        }
+    }
+    return min_len;
+}
+
+/* Driver program to test above function */
+let arr1 = [ 1, 4, 45, 6, 10, 19 ];
+let x = 51;
+let n1 = arr1.length;
+let res1 = smallestSubWithSum(arr1, n1, x);
+console.log(res1);
+```
