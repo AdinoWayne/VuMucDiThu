@@ -164,3 +164,28 @@ let n1 = arr1.length;
 let res1 = smallestSubWithSum(arr1, n1, x);
 console.log(res1);
 ```
+#5. The cost of a stock on each day is given in an array, find the max profit that you can make by buying and selling in those days. For example, if the given array is {100, 180, 260, 310, 40, 535, 695}, the maximum profit can earned by buying on day 0, selling on day 3. Again buy on day 4 and sell on day 6. If the given array of prices is sorted in decreasing order, then profit cannot be earned at all
+
+Valley Peak Approach
+```
+function maxProfit(prices , size) {
+	// maxProfit adds up the difference between
+	// adjacent elements if they are in increasing order
+	var maxProfit = 0;
+	// The loop starts from 1
+	// as its comparing with the previous
+	for (i = 1; i < size; i++)
+	    if (prices[i] > prices[i - 1])
+		maxProfit += prices[i] - prices[i - 1];
+	return maxProfit;
+}
+
+// Driver code
+
+// stock prices on consecutive days
+var price = [ 100, 180, 260, 310, 40, 535, 695 ];
+var n = price.length;
+
+// function call
+document.write(maxProfit(price, n));
+```
