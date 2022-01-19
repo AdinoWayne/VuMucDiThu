@@ -189,3 +189,27 @@ var n = price.length;
 // function call
 document.write(maxProfit(price, n));
 ```
+#6. Search an element in a sorted and rotated array
+```
+Input : arr[] = {30, 40, 50, 10, 20}
+        key = 10   
+Output : Found at index 3
+
+function search(arr, l, h, key){
+    if (l > h)
+        return -1;
+
+    let mid = Math.floor((l + h) / 2);
+    if (arr[mid] == key)
+        return mid;
+    if (arr[l] <= arr[mid]) {
+        if (key >= arr[l] && key <= arr[mid])
+            return search(arr, l, mid - 1, key);
+        return search(arr, mid + 1, h, key);
+    }
+    if (key >= arr[mid] && key <= arr[h])
+        return search(arr, mid + 1, h, key);
+
+    return search(arr, l, mid - 1, key);
+}
+```
