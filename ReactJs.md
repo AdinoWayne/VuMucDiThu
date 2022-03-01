@@ -224,3 +224,37 @@ function Image(props) {
 }
 
 ```
+### 10. custom hook context:
+```
+import React, { createContext, useMemo } from 'react';
+import { Permissions, usePermissions } from '@hooks/permissions';
+
+export const PermissionsContext = createContext({});
+
+export const IsPermittedProvider: React.FC = ({ children }) => {
+  const permissions = usePermissions();
+  const permissionsDictionary = useMemo(() => ({
+    isEditPermitted: permissions.includes(Permissions.EDIT_SITE_PERMISSION),
+  }), [permissions]);
+  
+  return (
+    <PermissionsContext.Provider
+      value={permissionsDictionary}
+    >
+      {children}
+    </PermissionsContext.Provider>
+  );
+};
+<!--  -->
+import React, { useContext } from 'react';
+import { PermissionsContext } from '@contexts/permissions';
+
+export const useIsPermitted = () => useContext(PermissionsContext);
+<!--  -->
+import React from 'react';
+import { App } from './app';
+
+<PermissionsProvider>
+  <App />
+</PermissionsProvider> 
+```
