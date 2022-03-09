@@ -16,3 +16,5 @@ function getArea(p1: number[], p2: number[], p3: number[]) {
                    0.5 * (p3[0] - p1[0]) * (p3[1] - p1[1]) -
                    0.5 * (p2[0] - p3[0]) * (p3[1] - p2[1]));
 }
+
+// 1/2 |(xb -xa)(yc -ya) - (xc -xa)(yb -ya)| = sabc
