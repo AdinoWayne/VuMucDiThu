@@ -283,7 +283,7 @@ let BlueDiv = blueify(props => <div {...props} />)
 
 HOC can be used for many use cases:
 
-Code reuse, logic and bootstrap abstraction.
-Render hijacking.
-State abstraction and manipulation.
-Props manipulation.
+Code reuse, logic and bootstrap abstraction.  
+Render hijacking.  
+State abstraction and manipulation.  
+Props manipulation.  
