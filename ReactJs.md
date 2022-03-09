@@ -258,3 +258,32 @@ import { App } from './app';
   <App />
 </PermissionsProvider> 
 ```
+
+## 11. useful HOC
+
+HOCs are absolutely useful, but they're useful in the same way any "higher order" function is.
+
+Consider the following component:
+```
+let Button = props => <button style={{ color: props.color }} />
+```
+You could make another component called BlueButton:
+```
+let BlueButton = props => <Button color="blue" />
+```
+There's nothing wrong with that, but maybe you want any component to be able to be blue, not just a button. Instead we can make a generic HOC that "blueifies" the passed component:
+```
+let blueify = Component => props => <Component {...props} style={{ color: 'blue' }} />
+```
+Then you can make blue buttons, blue divs, blue anything!
+```
+let BlueButton = blueify(Button)
+let BlueDiv = blueify(props => <div {...props} />)
+```
+
+HOC can be used for many use cases:
+
+Code reuse, logic and bootstrap abstraction.
+Render hijacking.
+State abstraction and manipulation.
+Props manipulation.
