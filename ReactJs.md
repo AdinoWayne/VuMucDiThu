@@ -287,3 +287,48 @@ Code reuse, logic and bootstrap abstraction.
 Render hijacking.  
 State abstraction and manipulation.  
 Props manipulation.  
+
+## 12. Inheritance Inversion HOC
+
+```
+const isClassComponent = Component =>
+  Boolean(Component.prototype && Component.prototype.isReactComponent);
+
+function getNewElementTree(children, instanceProps) {
+  const { scrollY, ...rest } = instanceProps;
+  return (
+    <Animated.ScrollView
+      {...rest}
+      onScroll={Animated.event(
+        [{ nativeEvent: { contentOffset: { y: scrollY } } }],
+        {
+          useNativeDriver: true,
+        },
+      )}
+      scrollEventThrottle={1}
+    >
+      {children}
+    </Animated.ScrollView>
+  );
+}
+
+function withAnimatedScrollView(WrappedComponent) {
+  let renderTree;
+  if (isClassComponent(WrappedComponent)) {
+    return class Enhancer extends WrappedComponent {
+      render() {
+        renderTree = super.render();
+        return getNewElementTree(renderTree.props.children, this.props);
+      }
+    };
+  }
+  // If WrappedComponent is functional, we extend from React.Component instead
+  return class EnhancerFunctional extends React.Component {
+    render() {
+      // The below call is equivalent to super.render() in class based components
+      renderTree = WrappedComponent(this.props);
+      return getNewElementTree(renderTree.props.children, this.props);
+    }
+  };
+}
+```
