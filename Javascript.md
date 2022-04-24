@@ -94,3 +94,13 @@ const unique = myArray.reduce((accumulator, current) => {
   return accumulator;
 }, []);
 ```
+
+### 6. Flat array(make to simple array)
+
+```
+function flatten(arr) {
+  return arr.reduce(function (flat, toFlatten) {
+    return flat.concat(Array.isArray(toFlatten) ? flatten(toFlatten) : toFlatten);
+  }, []);
+}
+```
