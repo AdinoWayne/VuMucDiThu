@@ -16,3 +16,5 @@ Mục lục:
 > So, design patterns are not only ways to create a large and robust system, but they also provide great architectures in a friendly manner
 > In software engineering, a design pattern is a general repeatable and optimized solution to a commonly occurring problem within a given context in software design
 > It is a description or template for how to solve a problem, and the solution can be used in different instances. The following are some of the benefits of using design patterns.
+
+code: 1252
