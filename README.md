@@ -18,3 +18,5 @@ Mục lục:
 > It is a description or template for how to solve a problem, and the solution can be used in different instances. The following are some of the benefits of using design patterns.
 
 code: 1252
+
+React implements a heuristic O(n) algorithm
