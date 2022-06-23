@@ -5,6 +5,7 @@ function canPlaceFlowers(flowerbed: number[], n: number): boolean {
         if(flowerbed[i]==0 && flowerbed[i-1]!==1 && flowerbed[i+1]!==1) {
             ++r;
             flowerbed.splice(i,1,1);
+            // flowerbed[i] = 1;
         }
     }
     if (n<=r) { 
