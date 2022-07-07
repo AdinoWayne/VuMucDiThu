@@ -19,7 +19,7 @@ function longestNiceSubstring(s: string): string {
     return '';
 };
 
-const isNice = (s) => {
+const isNice = (s):boolean => {
     let lower:any = new Set();
     let upper:any = new Set();
     for (const c of s) {
@@ -34,6 +34,6 @@ const isNice = (s) => {
     return true;
 };
 
-const isLowerCaseLetter = (c) => {
+const isLowerCaseLetter = (c):boolean => {
     return c.charCodeAt() >= 97 && c.charCodeAt() <= 122;
 };
