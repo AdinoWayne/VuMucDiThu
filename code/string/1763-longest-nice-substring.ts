@@ -1,39 +1,21 @@
-const mx = Math.max;
 function longestNiceSubstring(s: string): string {
-    let n = s.length;
-    let res = [];
-    let max = 0;
-    let se:any = new Set();
-    for (let i = 0; i < n; i++) {
-        for (let j = i; j < n; j++) {
-            let sub = s.slice(i, j + 1);
-            if (isNice(sub)) {
-                se.add(sub);
-                max = mx(max, j - i + 1);
-            }
+    if (s.length <= 1) {
+        return '';
+    }
+    
+    const sArr = s.split(''); // all chars
+    const sSet = new Set(sArr); // unique chars
+    
+    for (let i=0;i<=s.length-1;i++) {
+        if (sSet.has(sArr[i].toLowerCase()) && sSet.has(sArr[i].toUpperCase())) {
+            continue;
         }
+        
+        const subS1 = longestNiceSubstring(s.slice(0, i));
+        const subS2 = longestNiceSubstring(s.slice(i+1));
+        
+        return subS1.length >= subS2.length ? subS1 : subS2;
     }
-    for (const e of se) {
-        if (e.length == max) return e;
-    }
-    return '';
-};
-
-const isNice = (s):boolean => {
-    let lower:any = new Set();
-    let upper:any = new Set();
-    for (const c of s) {
-        isLowerCaseLetter(c) ? lower.add(c) : upper.add(c);
-    }
-    for (const lo of lower) {
-        if (!upper.has(lo.toUpperCase())) return false;
-    }
-    for (const up of upper) {
-        if (!lower.has(up.toLowerCase())) return false;
-    }
-    return true;
-};
-
-const isLowerCaseLetter = (c):boolean => {
-    return c.charCodeAt() >= 97 && c.charCodeAt() <= 122;
+    
+    return s;
 };
