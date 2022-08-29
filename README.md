@@ -20,3 +20,6 @@ Mục lục:
 code: 1252, 661, 733, 999, 2309
 
 React implements a heuristic O(n) algorithm
+
+
+remove after 48 hours : https://ytliang97.github.io/2021/11/03/poker-card-shuffle-flip/
