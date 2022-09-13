@@ -1,9 +1,25 @@
-function dayOfTheWeek(d: number, m: number, y: number): string {
-  if (m < 3) { --y; m += 12; }
-  const c = Math.floor(y / 100);
-  y %= 100;
-  const w = (y + Math.floor(y / 4) + Math.floor(c / 4) - 2 * c + Math.floor((26 * (m + 1)) / 10) + d - 1) % 7;
-  return LIST[(w + 7) % 7];
+function numPrimeArrangements(n: number): number {
+    let primes = 0;
+    let all = new Array(n).fill(2);
+    for (let i = 2; i <= n; i++) {
+        if (all[i - 1] === 2) {
+            primes += 1;
+        };
+        for (let k = 2; k < n; k++) {
+            if (!all[i * k - 1]) {
+                break;
+            };
+            all[i * k - 1] = 1;
+        };
+    };
+    const numAll = all.length - primes;
+    let result = 1;
+    let modulo = 10 ** 9 + 7;
+    for (let i = 1; i <= primes; i++) {
+        result = (result * i) % modulo;
+    };
+    for (let i = 1; i <= numAll; i++) {
+        result = (result * i) % modulo;
+    };
+    return result;
 };
-
-const LIST = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
