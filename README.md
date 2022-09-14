@@ -17,9 +17,6 @@ Mục lục:
 > In software engineering, a design pattern is a general repeatable and optimized solution to a commonly occurring problem within a given context in software design
 > It is a description or template for how to solve a problem, and the solution can be used in different instances. The following are some of the benefits of using design patterns.
 
-code: 1252, 661, 733, 999, 2309, 501, 504
+code: 1252, 661, 733, 999, 2309
 
 React implements a heuristic O(n) algorithm
-
-
-remove after 48 hours : https://ytliang97.github.io/2021/11/03/poker-card-shuffle-flip/
