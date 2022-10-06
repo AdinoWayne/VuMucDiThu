@@ -20,3 +20,7 @@ Mục lục:
 code: 1252, 661, 733, 999, 2309
 
 React implements a heuristic O(n) algorithm
+
+remove tommorrow:
+https://stackoverflow.com/questions/27120757/failed-to-execute-createobjecturl-on-url
+https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded
