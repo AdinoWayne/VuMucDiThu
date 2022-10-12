@@ -25,3 +25,4 @@ remove tommorrow:
 https://stackoverflow.com/questions/27120757/failed-to-execute-createobjecturl-on-url
 https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded
 https://stackoverflow.com/questions/20784145/display-image-from-http-response-with-image-content-type
+https://mathiasbynens.be/notes/javascript-unicode
