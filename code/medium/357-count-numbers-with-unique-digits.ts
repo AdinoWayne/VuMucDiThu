@@ -7,3 +7,14 @@ function countNumbersWithUniqueDigits(n: number): number {
     }
     return dp[n];
 };
+
+// not using math
+const countNumbersWithUniqueDigits = (n: number): number => {
+  if (n == 0) return 1;
+  if (n == 1) return 10;
+  let k = 9;
+  for (let i = 0; i < n - 1; i++) {
+    k *= (9 - i);
+  }
+  return k + countNumbersWithUniqueDigits(n - 1);
+};
