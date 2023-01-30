@@ -1,3 +1,4 @@
+// using Half Adder
 function getSum(a: number, b: number): number {
       let carry;
       while((a & b) !== 0){
