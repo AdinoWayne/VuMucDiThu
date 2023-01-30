@@ -16,5 +16,8 @@ function largestDivisibleSubset(nums: number[]): number[] {
     return dp.reduce((a,x) => a.length > x.length ? a : x);
 };
 
+// A simple solution is to generate all subsets of given set. For every generated subset, check if it is divisible or not.
+// Finally print the largest divisible subset.
+
 // Time Complexity : O(n2)
 // Auxiliary Space : O(n)
