@@ -7,3 +7,12 @@ function getSum(a: number, b: number): number {
       }
       return a ^ b;
 };
+
+// way2
+
+function getSum(x: number, y: number): number {
+    if (y == 0)
+        return x;
+    else
+        return getSum(x ^ y, (x & y) << 1);
+}
