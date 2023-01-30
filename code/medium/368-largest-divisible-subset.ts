@@ -15,3 +15,6 @@ function largestDivisibleSubset(nums: number[]): number[] {
     }
     return dp.reduce((a,x) => a.length > x.length ? a : x);
 };
+
+// Time Complexity : O(n2)
+// Auxiliary Space : O(n)
