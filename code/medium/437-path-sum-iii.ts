@@ -1,0 +1,45 @@
+/**
+ * Definition for a binary tree node.
+ * class TreeNode {
+ *     val: number
+ *     left: TreeNode | null
+ *     right: TreeNode | null
+ *     constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
+ *         this.val = (val===undefined ? 0 : val)
+ *         this.left = (left===undefined ? null : left)
+ *         this.right = (right===undefined ? null : right)
+ *     }
+ * }
+ */
+
+function pathSum(root: TreeNode | null, targetSum: number): number {
+	let output = 0;
+	let map = {};
+
+	const traverse = (root, pathSum) => {
+		if (!root) return null;
+
+		pathSum += root.val; // current path sum
+
+		// Case 1: starts from root node
+		if (pathSum === targetSum) output++;
+
+		// Case 2: starts from middle of tree
+		// frequency of targetSum in the current path (up to current node)
+		if (map[pathSum - targetSum]) output += map[pathSum - targetSum];
+
+		// memoize current path sum (root to current node) and it's frequency
+		if (map[pathSum]) map[pathSum]++;
+		else map[pathSum] = 1;
+
+		if (root.left) traverse(root.left, pathSum);
+		if (root.right) traverse(root.right, pathSum);
+
+		// remove the current path sum
+		// to note that path is not available/visited
+		map[pathSum]--;
+	};
+
+	traverse(root, 0);
+	return output;
+};
