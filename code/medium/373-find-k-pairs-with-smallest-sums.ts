@@ -82,4 +82,12 @@ class MinHeap {
     }
 }
 
-// https://discuss.codecademy.com/t/what-are-some-differences-between-heapify-up-and-heapify-down/375384
+// Heapify up is used when we insert a new element to a heap.
+// When inserting a new element, we add it at the bottom of the heap tree, and move up the tree while comparing to the current parent element and swapping if needed.
+// Because we move up for heapify up, we only make one comparison per iteration, between the current element and its parent element.
+
+// Heapify down is used when we remove the top element from a heap.
+// Removal of an element is done by swapping the top element with the last element at the bottom of the tree, removing the last element,
+//     and then heapfying the new top element down to maintain the heap property.
+// Because this moves down the heap tree, it must perform two comparisons per iteration, with the left child and the right child elements, then swap with the smaller one.
+// Because of this, heapify down is usually more complex to implement than heapify up.
