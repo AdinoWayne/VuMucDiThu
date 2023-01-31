@@ -16,3 +16,8 @@ function superPow(a: number, b: number[]): number {
 		return powNum;
 	}, 1);
 };
+
+// Time Complexity : O(n) where n is the length of vector b.
+// Space Complexity : O(1)
+
+// (a*b) % mod = (a % mod * b % mod) % mod
