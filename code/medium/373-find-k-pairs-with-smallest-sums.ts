@@ -81,3 +81,5 @@ class MinHeap {
         [this.store[idx1], this.store[idx2]] = [this.store[idx2], this.store[idx1]]
     }
 }
+
+// https://discuss.codecademy.com/t/what-are-some-differences-between-heapify-up-and-heapify-down/375384
