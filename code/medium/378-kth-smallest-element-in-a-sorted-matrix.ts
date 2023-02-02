@@ -14,3 +14,6 @@ function kthSmallest(matrix: number[][], k: number): number {
     }
     return lo
 };
+
+// Time complexity is O(m * log n * n).
+// Space complexity is O(1)
