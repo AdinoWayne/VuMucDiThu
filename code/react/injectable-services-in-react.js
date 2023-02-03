@@ -102,4 +102,4 @@ export const SignInButton = ({ username, password, verifiedPass, onSignUp }) => 
   // ...
 };
 
-https://medium.com/the-guild/injectable-services-in-react-de0136b6d476
+// https://medium.com/the-guild/injectable-services-in-react-de0136b6d476
