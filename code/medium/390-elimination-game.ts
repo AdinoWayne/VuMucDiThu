@@ -12,4 +12,9 @@ function lastRemaining(n: number): number {
     return start;
 };
 
+// When will start be updated?
+
+// if we move from left
+// if we move from right and the total remaining number % 2 == 1
+
 // O(logN) 
