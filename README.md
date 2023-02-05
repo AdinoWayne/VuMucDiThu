@@ -22,9 +22,7 @@ code: 1252, 661, 733, 999, 2309
 React implements a heuristic O(n) algorithm
 
 remove tommorrow:
-https://stackoverflow.com/questions/27120757/failed-to-execute-createobjecturl-on-url
-https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded
-https://stackoverflow.com/questions/20784145/display-image-from-http-response-with-image-content-type
-https://mathiasbynens.be/notes/javascript-unicode
+https://dev.to/devsmitra/the-complete-guide-to-micro-frontend-with-reactjs-for-2022-36b2
 
 [...Array(60).keys()].map(item => item.toString().padStart(2, '0'))
+
