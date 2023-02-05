@@ -11,3 +11,5 @@ function lastRemaining(n: number): number {
     }
     return start;
 };
+
+// O(logN) 
