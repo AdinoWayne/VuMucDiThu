@@ -19,3 +19,10 @@ function decodeString(s: string): string {
   }
   return stack.join('');
 };
+
+// The time complexity of the decodeString function is O(n), where n is the length of the input string.
+// This is because the function only loops through the string once, performing a constant amount of work for each character.
+// The stack operations, such as push and pop, take O(1) time on average.
+
+// The space complexity of the decodeString function is O(n), where n is the length of the input string.
+// This is because the function uses a stack to store characters, and in the worst case, the entire input string would be stored in the stack.
