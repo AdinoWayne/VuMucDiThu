@@ -15,3 +15,9 @@ function helper(n, cache) {
 
   return (cache[n] = result);
 }
+
+// The complexity of the function integerReplacement is O(n) in time and O(n) in space, where n is the input value n.
+
+// The reason is that the function helper is using memoization to store the computed results of intermediate values in a cache object.
+// This way, if the same value n is encountered again, the result can be retrieved from the cache instead of being recomputed.
+// This reduces the number of calls to the function and saves time. However, it also uses additional space to store the cache, which is why the space complexity is O(n).
