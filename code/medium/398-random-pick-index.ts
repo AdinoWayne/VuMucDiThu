@@ -12,6 +12,7 @@ class Solution {
         var count = 0;
         for (var i = 0; i < this.len; i++) {
             if (this.nums[i] == target) {
+//                 Math.floor(Math.random() * 100000000) % (++count) random from 0 to count
                 if (Math.floor(Math.random() * (++count)) == 0) result = i;
             }
         }
