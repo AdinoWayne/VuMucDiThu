@@ -24,3 +24,9 @@ class Solution {
  * var obj = new Solution(nums)
  * var param_1 = obj.pick(target)
  */
+
+// Approach 3: Reservoir sampling
+// Time Complexity
+
+// If N represents the size of the nums array, pick method takes O(N) time
+// Space Complexity: O(1)
