@@ -22,3 +22,11 @@ function removeKdigits(num: string, k: number): string {
     
     return stack.length ? stack.join('') : '0';
 };
+
+// 1. Deleting k digits means keeping n - k digits, where n is the total number of digits.
+
+// 2. Use a stack that you keep sorted ascendingly. You remove elements from it as long as you can still make it to n - k digits,
+// and your current element is smaller than the top of the stack
+
+// Time Complexity :- O(N) as we only traversing the string for once
+// Space complexity:- O(N) as we will store maximum of n digits in our string
