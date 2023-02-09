@@ -9,6 +9,7 @@ function findNthDigit(n: number): number {
         base *= 10;
         len++;
     }
+    // n>len*range -> min n = 1 (1st) => N th of string is string[N - 1]
     // [100, 101, 102,...]
     // 100 should have offset 0, use (n-1) to make the counting index from 0-based.
     var num = base + Math.floor((n-1)/len);
