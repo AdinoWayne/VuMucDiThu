@@ -126,4 +126,14 @@ doBusinessJob();
 logDecorator();
 // start my job
 // do my job
+
+function logCreate(Class) {
+  return function(...args) {
+    console.log('Object created with args: ', args);
+    return new Class(...args);
+  }
+}
+
+@logCreate
+class Animal {}
 ```
