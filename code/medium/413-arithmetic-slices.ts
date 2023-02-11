@@ -11,3 +11,5 @@ function numberOfArithmeticSlices(A: number[]): number {
 
 	return sum;
 };
+// TC=O(n) and SC=O(n)
+// solution using DP
