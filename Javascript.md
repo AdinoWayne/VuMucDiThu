@@ -104,3 +104,26 @@ function flatten(arr) {
   }, []);
 }
 ```
+
+### 7. Decorator
+
+```
+function doBusinessJob(arg) {
+  console.log('do my job');
+}
+
+function logDecorator(job) {
+  return function() {
+    console.log('start my job');
+    const result = job.apply(this, arguments);
+    return result;
+  }
+}
+
+const logWrapper = logDecorator(doBusinessJob);
+doBusinessJob();
+// do my job
+logDecorator();
+// start my job
+// do my job
+```
