@@ -13,3 +13,6 @@ function canPartition(nums: number[]): boolean {
     }
     return dp[sum] ? true : false;
 };
+
+//  (dp[j] ? 1 : 0) cache value 
+// dp[j - nums[i-1]]; true when half sum - > currentValue === prev Sum
