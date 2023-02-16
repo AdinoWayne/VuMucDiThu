@@ -20,3 +20,6 @@ function characterReplacement(s: string, k: number): number {
 
   return right - left;
 };
+
+// (length of substring - number of times of the maximum occurring character in the substring) <= k
+// O(n)
