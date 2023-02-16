@@ -26,3 +26,24 @@ function levelOrder(root: Node | null): number[][] {
         }
     }
 };
+
+// Time Complexity: O(N)
+// Space Complexity:
+// O(log N) in average case.
+// O(N) in worst case, that there is an unbalanced tree.
+
+var levelOrder = function(root) {
+    function DFS(node) {
+        if (!node) return
+        if (node.children.length) {
+            level++
+            if (!ret[level]) ret.push([])
+            ret[level].push(...node.children.map(DFS))
+            level--
+        }
+        return node.val
+    }
+    let level = 0, ret = root ? [[root.val]] : []
+    DFS(root)
+    return ret
+};
