@@ -24,3 +24,11 @@ function minMutation(start: string, end: string, bank: string[]): number {
     
     return -1;
 };
+// The time complexity of this function is O(n^2) where n is the length of the start string.
+// The function uses a breadth-first search (BFS) algorithm to find the minimum number of mutations needed to transform the start string to the end string.
+// For each character in the start string, the function considers all possible mutations (replacing that character with one of the other three possible DNA bases) and checks if the resulting string is in the bank.
+// If so, it is added to the queue with a distance of one greater than the current item's distance.
+// This process continues until the end string is found or the queue is empty.
+// Since the length of the start string is at most 8, the maximum number of nodes that will be added to the queue is 8^8=16,777,216, which is a constant value.
+// Therefore, the time complexity of the BFS part of the algorithm is O(1).
+// However, the function still needs to check if each mutation is in the bank, which requires O(n) time per mutation, giving a total time complexity of O(n^2).
