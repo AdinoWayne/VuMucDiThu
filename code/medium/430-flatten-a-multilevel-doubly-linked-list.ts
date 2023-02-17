@@ -41,3 +41,6 @@ function flatten(head: Node | null): Node | null {
     
     return dummyHead.next;
 };
+
+// The time complexity of the flatten function is O(N), where N is the total number of nodes in the doubly-linked list.
+// This is because the function visits every node in the list once. The space complexity of the function is O(N),
