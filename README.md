@@ -26,3 +26,23 @@ https://dev.to/devsmitra/the-complete-guide-to-micro-frontend-with-reactjs-for-2
 
 [...Array(60).keys()].map(item => item.toString().padStart(2, '0'))
 
+
+```
+remove tomorrow
+<!DOCTYPE html>
+<html>
+<body>
+
+<svg height="210" width="400">
+  <path d="M 0.1 50.70217391304348L 335.6111236572266 50.70217391304348Q 335.6111236572266 50.70217391304348 335.6111236572266 50.70217391304348L 335.6111236572266 63.754347826086956Q 335.6111236572266 63.754347826086956 335.6111236572266 63.754347826086956L 335.6111236572266 63.754347826086956L 0.1 63.754347826086956L 0.1 63.754347826086956z" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+</body>
+<style>
+path {
+	clip-path: inset(5% 5% -5% 0% round 8px);
+}
+</style>
+</html>
+```
