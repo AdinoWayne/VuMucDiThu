@@ -9,3 +9,7 @@ function eraseOverlapIntervals(intervals: number[][]): number {
     }
     return remove;
 };
+
+// The time complexity of the eraseOverlapIntervals function is O(n log n), where n is the number of intervals in the input array.
+// This is because the function first sorts the intervals based on their finish times, which takes O(n log n) time,
+// and then it loops over the intervals once, which takes O(n) time. The space complexity of the function is O(1
