@@ -11,3 +11,5 @@ function minMoves(nums: number[]): number {
 
   return moves
 };
+
+// sum(array) - n * minimum
