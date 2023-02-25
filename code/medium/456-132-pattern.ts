@@ -20,3 +20,4 @@ function find132pattern(nums: number[]): boolean {
     }
     return false;
 };
+// program with O(n) time and space complexity
