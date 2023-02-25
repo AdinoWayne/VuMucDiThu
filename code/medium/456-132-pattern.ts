@@ -1,23 +1,14 @@
 function find132pattern(nums: number[]): boolean {
-    // sanity check
-    if (nums.length < 3) return false;
-
-    let N2 = []; // potential candidates, number 2
-    let N1 = [nums[0]]; // the smallest number, number 3
-
-    for (let i=1;i<nums.length;i++) { 
-        N1.push(Math.min(N1[N1.length-1], nums[i]));
-    }
-
-    for (let i=nums.length-1;i>=0;i--) { // number 3
-        if (nums[i] > N1[i]) {
-            // remove useless N2 candidates
-            while (N2.length!=0 && N2[N2.length-1] <= N1[i]) N2.pop();
-            // found a pattern
-            if (N2.length!=0 && N2[N2.length-1] < nums[i]) return true;
-            N2.push(nums[i]);
+    let stack = []
+    let s3 = -Infinity
+    const n = nums.length;
+    for (let i = n - 1; i >= 0; i--) {
+        if (nums[i] < s3) return true
+        while (stack.length > 0 && stack[stack.length - 1] < nums[i]) {
+            s3 = stack.pop()
         }
+        stack.push(nums[i])
     }
-    return false;
-};
+    return false
+}
 // program with O(n) time and space complexity
