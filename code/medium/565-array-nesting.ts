@@ -1,26 +1,14 @@
 function arrayNesting(nums: number[]): number {
-    let len = nums.length
-    let i = 0
-    let maxLength = 0
-    while (i < len) {
-        var setArr = []
-        
-        const recursionBaby = n => {
-            if(setArr.indexOf(nums[n]) == -1) {
-                setArr.push(nums[n])
-                recursionBaby(nums[n])   
-            }
+    var len = nums.length,i,max = 0,count = 0;
+    var set = new Set();
+    for(i=0;i<len;i++){
+        while(set.has(i) == false){
+            set.add(i);
+            i = nums[i];
+            count++;
         }
-
-        recursionBaby(i)
-
-        if(setArr.length > maxLength) {
-            maxLength = setArr.length
-        }
-
-        i++
+        max = max > count ? max : count;
+        count = 0;
     }
-
-
-    return maxLength
+    return max;
 };
