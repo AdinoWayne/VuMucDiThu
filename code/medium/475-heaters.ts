@@ -19,3 +19,9 @@ const findMinDistance = (house, heaters) => {
   if (left === 0) return heaters[0] - house;
   if (left === heaters.length) return house - heaters[heaters.length - 1];
 };
+
+// The time complexity of this algorithm is O(n log n), where n is the total number of houses and heaters.
+
+// The binary search algorithm takes O(log n) time to complete, and since it is called for each house, the overall time complexity is O(n log n).
+
+// Sorting the heaters array takes O(n log n) time, which is dominated by the binary search time, so the overall time complexity is still O(n log n).
