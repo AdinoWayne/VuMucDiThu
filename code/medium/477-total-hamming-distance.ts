@@ -12,3 +12,7 @@ function totalHammingDistance(A: number[]): number {
     return ones_arr //
         .reduce((sum, ones) => sum + ones * (A.length - ones), 0); // ones * zeros
 };
+// where n is the length of the input array A and k is the number of bits 
+// in the largest element of A (which in this case is 32 since each integer is represented by 32 bits)
+// Time complexity:O(n*k)
+// Space complexity: O(k)
