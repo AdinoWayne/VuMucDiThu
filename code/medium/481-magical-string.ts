@@ -11,3 +11,6 @@ function magicalString(n: number): number {
 	}
 	return stack.slice(0, n).filter(str => str === 1).length;
 };
+
+// Time complexity: O(n)
+// Space complexity: O(n)
