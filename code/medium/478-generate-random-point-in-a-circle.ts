@@ -9,13 +9,11 @@ class Solution {
     }
 
     randPoint(): number[] {
-        let x = 1;
-        let y = 1;
-        while(x*x + y*y > 1){
-            x = 2*Math.random() - 1;
-            y = 2*Math.random() - 1;
-        }
-        return [this.x_center + this.radius*x, this.y_center + this.radius*y]
+        let len = Math.sqrt(Math.random()) * this.radius;
+        let deg = Math.random() * 2 * Math.PI;
+        let x = this.x_center + len * Math.cos(deg);
+        let y = this.y_center + len * Math.sin(deg);
+        return [x, y];
     }
 }
 
