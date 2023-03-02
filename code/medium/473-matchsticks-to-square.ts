@@ -37,3 +37,5 @@ function makesquare(matchsticks: number[]): boolean {
 	
 	return dfs(0, sum / 4);
 };
+// Time complexity: O(4^N)
+// Space complexity: O(N)
