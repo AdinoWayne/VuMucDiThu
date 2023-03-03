@@ -16,3 +16,6 @@ function PredictTheWinner(nums: number[]): boolean {
     
     return dp[0][n - 1] >= 0;
 };
+// The time complexity of the PredictTheWinner function is O(n^2),
+// where n is the length of the input nums array. The space complexity is also O(n^2),
+// because the function uses a two-dimensional array dp of size n x n to store the computed values.
