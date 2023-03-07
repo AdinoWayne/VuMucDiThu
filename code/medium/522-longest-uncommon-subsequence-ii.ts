@@ -26,3 +26,5 @@ function findLUSlength(strs: string[]): number {
 	}
 	return -1;
 };
+// time complexity is O(n^2 * m) where n is the length of the input array and m is the maximum length of the strings in the array
+// space complexity is O(1) 
