@@ -23,3 +23,5 @@ function change(amount: number, coins: number[]): number {
         return res;
     }
 };
+// time complexity is O(S * n) where S is the amount and n is the number of coins
+// space complexity is O(S * n)
