@@ -17,3 +17,5 @@ function checkSubarraySum(nums: number[], k: number): boolean {
 	}
 	return false
 };
+// Time complexity is O(n)
+// Space complexity is also O(n)
