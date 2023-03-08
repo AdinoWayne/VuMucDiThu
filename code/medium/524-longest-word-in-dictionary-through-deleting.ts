@@ -26,3 +26,6 @@ function findLongestWord(s: string, d: string[]): string {
     
     return '';
 };
+
+// TC: O(n * k * log(k)) where n is the length of string s, k is the length of array d, and log(k) is the time complexity of sorting the array.
+// SC: O(1) - The space used is constant, as it does not depend on the input size.
