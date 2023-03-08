@@ -19,3 +19,7 @@ function checkSubarraySum(nums: number[], k: number): boolean {
 };
 // Time complexity is O(n)
 // Space complexity is also O(n)
+
+// (currCumSum - pastCumSum) % k = 0
+// (currCumSum % k - pastCumSum % k) % k = 0 and currCumSum % k is between [0, k - 1] and pastCumSum % k is between [0, k - 1]
+// currCumSum % k - pastCumSum % k = 0 => currCumSum % k = pastCumSum % k
