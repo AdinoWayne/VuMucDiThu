@@ -23,5 +23,3 @@ React implements a heuristic O(n) algorithm
 
 remove tommorrow:
 https://dev.to/devsmitra/the-complete-guide-to-micro-frontend-with-reactjs-for-2022-36b2
-
-https://www.geeksforgeeks.org/subset-sum-problem-dp-25/
