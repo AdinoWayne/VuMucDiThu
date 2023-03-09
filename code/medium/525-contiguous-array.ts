@@ -11,3 +11,7 @@ function findMaxLength(nums: number[]): number {
     }
     return max;
 };
+
+// Time Complexity :- BigO(N) as The entire array is traversed only once.
+
+// Space Complexity :- BigO(N) as size of the Object map will be N
