@@ -137,3 +137,32 @@ function logCreate(Class) {
 @logCreate
 class Animal {}
 ```
+
+### 7. Retry call API Vue & Vuex Clay
+
+```
+    handleFailed(func, param) {
+      const innerFunc = (func, param, retry, resolve, reject) => {
+        func(param).then((res) => {
+          resolve(res)
+        }).catch((err) => {
+          if (retry > 0 && err.message === "Network Error") {
+            setTimeout(() => {
+              innerFunc(func, param, --retry, resolve, reject);
+            }, 100);
+          } else {
+            reject(err);
+          }
+        })
+      }
+      return new Promise((resolve, reject) => {
+        innerFunc(func, param, 3, resolve, reject)
+      })
+    },
+    $q.push(
+        this.handleFailed(this.FETCH_API, {
+          interfaceId: 0,
+          options: {}
+        })
+      );
+```
