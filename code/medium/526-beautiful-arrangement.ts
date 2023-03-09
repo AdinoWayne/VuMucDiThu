@@ -1,13 +1,13 @@
 function countArrangement(n: number): number {
     let count = 0;
     const nums = [];
+    if (n < 4) return n;
     for(let i = 1; i <= n; i++) {
         nums.push(i);
     }
-    
-    function findArrangements(index) {        
+    function findArrangements(index) {    
         if (index == nums.length) {
-            count++;
+            return count++;
         }
         
         for(let i = index; i < nums.length; i++) {     
