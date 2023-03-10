@@ -24,7 +24,7 @@ class Solution {
         return high;
     }
 }
-
+// idea: random betwween sum
 /**
  * Your Solution object will be instantiated and called as such:
  * var obj = new Solution(w)
