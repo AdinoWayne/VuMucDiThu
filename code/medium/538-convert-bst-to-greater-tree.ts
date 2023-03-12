@@ -14,14 +14,11 @@
 
 function convertBST(root: TreeNode | null): TreeNode | null {
     let sum = 0;
-    
+
     const update = node => {
         if(!node) return null;
-        
-		update(node.right);
-        
+	update(node.right);
         sum = node.val += sum;
-        
         update(node.left);
     }
     
