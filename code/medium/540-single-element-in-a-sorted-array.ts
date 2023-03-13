@@ -8,3 +8,6 @@ function singleNonDuplicate(nums: number[]): number {
     }
     return bsa(0, nums.length - 1);
 };
+
+// Time complexity is O(log n)
+// Space complexity is O(1)
