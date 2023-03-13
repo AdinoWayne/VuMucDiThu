@@ -13,3 +13,6 @@ function findMinDifference(timePoints: string[]): number {
   
   return minDiff;
 };
+
+// Time complexity is O(nlogn)
+// Space complexity is O(n)
