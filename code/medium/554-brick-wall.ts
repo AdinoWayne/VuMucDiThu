@@ -11,3 +11,8 @@ function leastBricks(wall: number[][]): number {
     }
     return wall.length - max;
 };
+
+// Idea:
+// If the goal here is to find where a line will cross the fewest bricks, then we could also say that the goal is to find where the most brick edges line up.
+// We can consider the edges to occur at an index representing the current running total of the previous elements of a given row of the wall.
+// For example, if the row is defined as [1,2,2,1], then the inside edges occur at [1,1+2,1+2+2], or [1,3,5].
