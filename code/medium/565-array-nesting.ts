@@ -12,3 +12,8 @@ function arrayNesting(nums: number[]): number {
     }
     return max;
 };
+
+// Elements in the same set will form a cycle.
+
+// Time O(N)
+// Space O(N)
