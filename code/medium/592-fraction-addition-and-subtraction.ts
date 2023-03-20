@@ -18,3 +18,6 @@ function fractionAddition(expression: string): string {
 	const resultGcd = gcd(Math.abs(molecularSum), lcm);
 	return `${molecularSum / resultGcd}/${lcm / resultGcd}`;
 };
+
+// lcm Bội số chung nhỏ
+// gcd Ước số chung lớn
