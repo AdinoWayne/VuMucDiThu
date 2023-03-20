@@ -22,3 +22,9 @@ function minDistance(word1: string, word2: string): number {
   const minDeletions = word1.length + word2.length - 2 * longestSubseq;
   return minDeletions;
 };
+
+// word1[i] == word2[j] : The characters match and there's no need of deletion. Move on to next character of both words
+
+// word1[i] != word2[j] : The characters don't
+// Time Complexity : O(L1*L2)
+// Space Complexity : O(L1*L2) match. We only have two choices if we want to equalize the words. Either
