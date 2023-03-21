@@ -16,3 +16,5 @@ function validSquare(p1: number[], p2: number[], p3: number[], p4: number[]): bo
 
 	return !set.has(0) && set.size === 2;
 };
+
+// Check if the coordinates are square, we calculate the distance between the points.
