@@ -25,3 +25,7 @@ function leastInterval(tasks: string[], n: number): number {
 };
 // Time complexity is O(n)
 // Space complexity is O(k)
+
+// resultCount = (maxOccurrences - 1) * (n + 1) + (numMaxTasks)
+// As seen in case 3, we know that we need to multiply times maxOccurences.
+// We must subtract 1 because we dont need to have any empty spaces or filling after the last occurence, at the end.
