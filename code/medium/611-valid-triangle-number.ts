@@ -17,3 +17,8 @@ function triangleNumber(nums: number[]): number {
     
     return count
 };
+// where nums[i] + nums[j] > nums[k] (so that they can form a triangle).
+// If nums[i] + nums[j] is larger than nums[k], we know that there will be j - i combination.
+
+// Time complexity is O(n^2)
+// Space complexity is O(1)
