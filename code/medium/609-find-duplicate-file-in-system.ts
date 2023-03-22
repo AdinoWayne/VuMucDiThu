@@ -20,3 +20,6 @@ function findDuplicate(paths: string[]): string[][] {
 
     return Object.values(res);
 };
+
+// Time complexity is O(nm)
+// Space complexity O(n^2)
