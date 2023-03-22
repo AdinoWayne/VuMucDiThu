@@ -23,3 +23,5 @@ function leastInterval(tasks: string[], n: number): number {
   // our formula, handle the edge case
   return Math.max(tasks.length, (maxVal - 1) * (n + 1) + maxValCount);
 };
+// Time complexity is O(n)
+// Space complexity is O(k)
