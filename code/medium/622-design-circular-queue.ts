@@ -45,3 +45,5 @@ class MyCircularQueue {
         return this.size === this.length;
     }
 }
+// Time: Each operation take O(1)
+// Space: O(k)
