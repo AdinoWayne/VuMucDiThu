@@ -18,7 +18,7 @@ function addOneRow(root: TreeNode | null, v: number, d: number): TreeNode | null
     let dfs = (node, level = 1) => {
         if(!node) return;
         
-        if(level === d-1){
+        if(level === d-1){ // move depth equal level then after v
             node.left = new TreeNode(v, node.left)
             node.right = new TreeNode(v, null, node.right)
         }
