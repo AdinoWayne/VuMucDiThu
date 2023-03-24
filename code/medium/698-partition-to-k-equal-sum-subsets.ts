@@ -1,37 +1,28 @@
 function canPartitionKSubsets(nums: number[], k: number): boolean {
-  const total = nums.reduce((sum, num) => sum + num, 0);
-  // return false right away when there's no equal sum among k subsets
-  if (total % k !== 0) {
-    return false;
-  } 
+    const total = nums.reduce((acc, cur) => acc + cur, 0);
+    if(total % k != 0) return false;
+    
+    const subset = total / k;
+    const memo = new Map();
   
-  const target = total / k;
-  const visited = new Array(nums.length).fill(false);
-  
-  const canPartition = (start, numberOfSubsets, currentSum) => {
-    // base case
-    if (numberOfSubsets === 1) {
-      return true;
-    }
-    // when a subset is found, we launch another search to find the 
-    // remaining subsets from the unvisited elements. 
-    if (currentSum === target) {
-      return canPartition(0, numberOfSubsets - 1, 0);
-    }
-    for (let i = start; i < nums.length; i++) {
-      if (!visited[i]) {
-        visited[i] = true;
-        // launch a search to find other elements that will sum up to 
-        // the target with the current element.
-        if (canPartition(i + 1, numberOfSubsets, currentSum + nums[i])) {
-          return true;
+    function partition(idx, sum, count) {
+        if(count === k-1) return true;
+        
+        const key = nums.join();
+        if(memo.has(key)) return false;
+        
+        if(sum === subset) return partition(0, 0, count+1);
+        if(sum > subset) return false;
+        
+        for(let i = idx; i < nums.length; i++) {
+            if(nums[i] === null) continue;
+            const num = nums[i];
+            nums[i] = null;
+            if(partition(i+1, sum+num, count)) return true;
+            nums[i] = num;
         }
-        // reset to enable backtracking
-        visited[i] = false;
-      }
+        memo.set(key, false);
+        return false;
     }
-    return false;
-  };
-  
-  return canPartition(0, k, 0);
+    return partition(0, 0, 0);
 };
