@@ -24,3 +24,7 @@ function exclusiveTime(n: number, logs: string[]): number[] {
     });
     return sums;
 };
+// add current item timestamp - stack top timestamp + 1 to times[i].
+// [..., {0:start:3}] and item = {0:end:6} we add 6 - 3 + 1
+
+// O(n) Time O(n) Space
