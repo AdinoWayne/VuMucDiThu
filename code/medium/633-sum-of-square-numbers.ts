@@ -23,3 +23,5 @@ function judgeSquareSum(c: number): boolean {
     
     return false;
 };
+
+// Since a^2 + b^2 = c => a = sqrt(c - b^2) => a <= sqrt(c).
