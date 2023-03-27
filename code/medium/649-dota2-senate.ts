@@ -15,3 +15,4 @@ function predictPartyVictory(senate: string): string {
     }
     return q1.length> q2.length? "Radiant": "Dire"
 };
+// the operation plus n means the corresponding senate can keep "alive" to the next round.
