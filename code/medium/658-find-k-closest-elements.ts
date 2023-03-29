@@ -1,10 +1,4 @@
 function findClosestElements(arr: number[], k: number, x: number): number[] {
-    //-------- Main idea behind the binary search algorithm ----------//
-    // 1) res will be a consecutive subarray of k size
-    // 2) say if we need to pick 4 elems, now we r looking at 5 elem n1, n2, n3, n4, n5
-    // we need to compare two ends: diff(x, n1) and diff(x, n5), 
-    // the number with bigger diff on the end will be eleminated
-    //----------------------------------------------------------------//
     // lo and hi: range of all possible start of subarray with size k + 1, so we could compare both ends
     let low = 0, hi = arr.length -k;
     while(low <hi) {
@@ -18,3 +12,20 @@ function findClosestElements(arr: number[], k: number, x: number): number[] {
     }
     return arr.slice(low, low+k);
 };
+
+// Assume A[mid] ~ A[mid + k] is sliding window
+
+// case 1: x - A[mid] < A[mid + k] - x, need to move window go left
+// -------x----A[mid]-----------------A[mid + k]----------
+
+// case 2: x - A[mid] < A[mid + k] - x, need to move window go left again
+// -------A[mid]----x-----------------A[mid + k]----------
+
+// case 3: x - A[mid] > A[mid + k] - x, need to move window go right
+// -------A[mid]------------------x---A[mid + k]----------
+
+// case 4: x - A[mid] > A[mid + k] - x, need to move window go right
+// -------A[mid]---------------------A[mid + k]----x------
+
+// Time O(log(N - K)) to binary research and find result
+// Space O(K) to create the returned list.
