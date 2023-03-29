@@ -21,3 +21,5 @@ function constructMaximumBinaryTree(nums: number[]): TreeNode | null {
     head.right = constructMaximumBinaryTree(nums.slice(index + 1));
     return head;
 };
+
+// TC O(n)
