@@ -35,3 +35,7 @@ function isPossible(numbers: number[]): boolean {
 
     return true;
 };
+
+// Double hashmap
+// Time O(2 * n)
+// Space O(n)
