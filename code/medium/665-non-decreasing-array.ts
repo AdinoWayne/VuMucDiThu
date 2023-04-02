@@ -3,6 +3,7 @@ function checkPossibility(nums: number[]): boolean {
   for (let i = 1; i < nums.length; i++) {
     if (nums[i] < nums[i - 1]) {
       if (i - 2 >= 0 && nums[i] < nums[i - 2]) {
+        // case: 2,4,1,...
         nums[i] = nums[i - 1];
       }
       count++;
