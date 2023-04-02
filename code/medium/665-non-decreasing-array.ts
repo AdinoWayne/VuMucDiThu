@@ -13,3 +13,8 @@ function checkPossibility(nums: number[]): boolean {
   }
   return true;
 };
+
+// Time Complexity: O(N) where N is the length of N
+// Space Complexity: O(1) with no modification of inputs
+
+//note: The problem becomes more difficult, however, once we realize that we're allowed to modify one element, which will naturally impact its relationship with the surrounding elements.
