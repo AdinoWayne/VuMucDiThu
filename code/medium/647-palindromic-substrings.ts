@@ -14,3 +14,6 @@ function countSubstrings(s: string): number {
         }
     }
 };
+
+// TC (Time Complexity): The time complexity of this function is O(N^2)
+// The space complexity of this function is O(1)
