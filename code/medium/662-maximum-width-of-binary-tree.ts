@@ -30,3 +30,5 @@ function widthOfBinaryTree(root: TreeNode | null): number {
         callDFS(node.right, level+1, diff*2+1);
     }
 };
+// The time complexity is O(N), where N is the number of nodes
+// The space complexity is O(H), where H is the height of the binary tree.
