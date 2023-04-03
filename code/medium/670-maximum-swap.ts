@@ -18,3 +18,6 @@ function maximumSwap(num: number): number {
     }
     return +numArr.join('');
 };
+
+// The idea is straightforward, as we can simply scan the digits backward and record the position of the largest digit when it first appears.
+// Next time we scan the digits from left to right and find the first digit that is less than max to do the swap.
