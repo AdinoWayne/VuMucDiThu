@@ -11,3 +11,5 @@ function constructArray(n: number, k: number): number[] {
     }
     return a;
 };
+//  time complexity is O(nk)
+//  space complexity is O(nk)
