@@ -33,3 +33,11 @@ class MagicDictionary {
  * obj.buildDict(dictionary)
  * var param_2 = obj.search(searchWord)
  */
+
+// Time complexity: O(n * m * L),
+// n is the number of words with the same length as the searchWord in the dictionary,
+// m is the length of the searchWord,
+// L is the maximum length of words in the dictionary
+
+// Space complexity: O(n)
+// n is the number of words with the same length as the searchWord
