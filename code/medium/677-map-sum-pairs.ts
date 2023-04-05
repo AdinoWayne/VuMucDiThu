@@ -26,3 +26,5 @@ class MapSum {
  * obj.insert(key,val)
  * var param_2 = obj.sum(prefix)
  */
+// Time complexity: O(n) n is the number of keys in the map
+// Space complexity: O(n)
