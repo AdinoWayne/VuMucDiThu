@@ -25,3 +25,5 @@ function checkValidString(s: string): boolean {
   
   return lo === 0;
 };
+// The common idea is simply the same as if we would not have *: calculate the balance between ( and ) characters.
+// At the end the balance should be 0 for the valid string.
