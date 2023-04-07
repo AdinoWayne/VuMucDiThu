@@ -25,3 +25,5 @@ function longestUnivaluePath(root: TreeNode | null): number {
    if (root !== null) helper(root.val, root)
    return level
 };
+// Time complexity: O(n) where n is the number of nodes in the binary tree
+// Space complexity: O(h) where h is the height of the binary tree
