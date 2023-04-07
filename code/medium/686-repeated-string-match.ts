@@ -1,5 +1,5 @@
 function repeatedStringMatch(a: string, b: string): number {
-    let num=Math.ceil(b.length/a.length);
+    let num=Math.ceil(b.length/a.length); // rounding on
     if(a.repeat(num).includes(b)){
         return num;
     }
