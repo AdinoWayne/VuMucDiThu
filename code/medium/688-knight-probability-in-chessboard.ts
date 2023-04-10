@@ -28,3 +28,5 @@ function knightProbability(n: number, k: number, r: number, c: number): number {
         return row < 0 || col < 0 || row >= n || col >= n;
     }
 };
+// Time complexity is O(kn^2), where n is the board size and k is the number of moves
+// Space complexity is also O(kn^2)
