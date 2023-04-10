@@ -29,3 +29,6 @@ function getImportance(employees: Employee[], id: number): number {
     
     return totalImportance
 };
+
+// Time complexity is O(N)
+// Space complexity is O(N)
