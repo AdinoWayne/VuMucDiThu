@@ -11,3 +11,5 @@ function topKFrequent(words: string[], k: number): string[] {
     );
     return result.slice(0, k);
 };
+// Time complexity: O(n log n)
+// Space complexity: O(n)
