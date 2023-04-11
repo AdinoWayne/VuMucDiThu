@@ -17,3 +17,6 @@ const dfs = (grid, r, c, res, area = { count: 0 }) => {
     dfs(grid, r - 1, c, res, area)
     dfs(grid, r + 1, c, res, area)
 };
+
+// Time complexity: O(N*M)
+// Space complexity: O(1)
