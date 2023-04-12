@@ -26,3 +26,6 @@ function canPartitionKSubsets(nums: number[], k: number): boolean {
     }
     return partition(0, 0, 0);
 };
+// Backtracking + Memoization
+// Time complexity is O(k * 2^n)
+// Space complexity is O(n)
