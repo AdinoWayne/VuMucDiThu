@@ -25,3 +25,6 @@ function insertIntoBST(root: TreeNode | null, val: number): TreeNode | null {
     
     return root;
 };
+
+// Time Complexity: BigO(N), where N is height of binary search tree
+// Space Complexity: BigO(1)
