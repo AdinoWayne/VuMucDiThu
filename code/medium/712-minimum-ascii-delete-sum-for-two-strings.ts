@@ -21,3 +21,14 @@ function minimumDeleteSum(s1: string, s2: string): number {
     }
     return dp[s1.length][s2.length];
 };
+
+// 2 cases:
+
+// i.e. Answer("bka","cza") = Answer("bk","cz")
+// Rule: dp[i][j] = dp[i-1][j-1] -> if s1[i]==s2[j]
+
+// Drop s1's last character (ASCII(s1's last) + dp[i-1][j])
+// Drop s2's last character (ASCII(s2's last) + dp[i][j-1])
+
+// Time complexity: O(mn) (m and n are the lengths of the input strings s1 and s2)
+// Space complexity: O(mn) (2D array to store intermediate results)
