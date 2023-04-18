@@ -10,3 +10,6 @@ function maxProfit(prices: number[], fee: number): number {
     }
     return profit;  
 };
+
+// Time complexity: O(n)
+// Space complexity: O(1)
