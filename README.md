@@ -23,3 +23,12 @@ React implements a heuristic O(n) algorithm
 
 remove tommorrow:
 https://dev.to/devsmitra/the-complete-guide-to-micro-frontend-with-reactjs-for-2022-36b2
+
+const curDistance = 1160;
+const widthStage = 1200;
+const widthTextBlock = 100;
+const max = -50;
+const min = -100;
+/* 50 */
+/* case right: widthTextBlock - (widthStage - curDistance) */
+/* case left: -curDistance */
