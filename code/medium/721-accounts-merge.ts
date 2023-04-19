@@ -1,7 +1,7 @@
 function accountsMerge(accounts: string[][]): string[][] {
     let graph = {};
     let nameDict = {};
-    
+
     for (let acc of accounts) {
         let name = acc[0];
         nameDict[acc[1]] = name;
@@ -14,7 +14,7 @@ function accountsMerge(accounts: string[][]): string[][] {
             }
         }
     }
-    
+    // step1:
     let res = [];
     let visited = new Set();
     
@@ -41,3 +41,10 @@ function accountsMerge(accounts: string[][]): string[][] {
     
     return res;
 };
+
+// step1: nameDir = { [email]: name }, graph: { [email]: new Set() { email }}
+// dfs: get list email in graph[email] (temp = email[])
+// visited has list email checked. prevent push duplicate
+
+// Time complexity: O(nLogn)
+// Space complexity: O(n)
