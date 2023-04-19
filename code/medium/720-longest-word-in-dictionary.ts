@@ -13,3 +13,6 @@ function longestWord(words: string[]): string {
   }
   return res;
 };
+
+// Time complexity: O(nlogn)
+// Space complexity: O(n)
