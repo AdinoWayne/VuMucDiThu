@@ -21,3 +21,6 @@ function removeComments(source: string[]): string[] {
 
   return output.split('\n').filter((l) => l.length)
 };
+
+// Time complexity: O(n)
+// Space complexity: O(n)
