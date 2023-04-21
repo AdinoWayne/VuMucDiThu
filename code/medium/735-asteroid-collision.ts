@@ -41,3 +41,6 @@ function asteroidCollision(asteroids: number[]): number[] {
 	// The stack should be the answer
     return s;
 };
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
