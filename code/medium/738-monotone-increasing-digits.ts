@@ -21,3 +21,6 @@ function monotoneIncreasingDigits(N: number): number {
   // convert the integer array to a string then to a number and return
   return +n.join('')
 };
+
+// Time complexity: O(n)
+// Space complexity: O(1)
