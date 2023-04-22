@@ -20,3 +20,6 @@ function deleteAndEarn(nums: number[]): number {
     
     return dp[0]
 };
+
+// Time complexity: O(n)
+// Space complexity: O(n)
