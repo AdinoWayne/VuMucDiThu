@@ -10,3 +10,6 @@ function dailyTemperatures(temperatures: number[]): number[] {
     }
     return res;
 };
+
+// Time complexity: O(n)
+// Space complexity: O(n)
