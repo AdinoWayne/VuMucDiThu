@@ -26,3 +26,9 @@ function getNextStates(s = '0000'): string[] {
   
   return ans;
 }
+
+// Time complexity: O(b^d + n)
+// Space complexity: O(b^d + n)
+// b is the number of digits in each lock (in this case 10), 
+// d is the number of digits in the lock (in this case 4),
+// n is the number of deadends
