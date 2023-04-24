@@ -11,3 +11,6 @@ function partitionLabels(s: string): number[] {
     }
     return res;
 };
+
+// Time complexity: O(n^2)
+// Space comlexity: O(n)
