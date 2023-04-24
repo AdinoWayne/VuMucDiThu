@@ -41,3 +41,6 @@ function pyramidTransition(bottom: string, allowed: string[]): boolean {
     }
     return solve(bottom,0,'');
 };
+
+// Time complexity: O(n^m)
+// Space comlexity: O(n^m)
