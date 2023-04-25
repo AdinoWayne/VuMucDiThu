@@ -5,3 +5,10 @@ function isIdealPermutation(A: number[]): boolean {
   }
   return true;
 };
+
+// permutation
+// local inversions: nums[i] > nums[i+1]
+// global inversions: nums[i] > nums[j]
+
+// Time complexity: O(n)
+// Space complexity: O(1)
