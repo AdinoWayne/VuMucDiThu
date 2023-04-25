@@ -8,8 +8,9 @@ function maxChunksToSorted(arr: number[]): number {
             lastInterval = arr[i];
             count += 1;
         }
-        
     }
-    
     return count + 1;
 };
+
+// Time complexity: O(n)
+// Space complexity: O(1)
