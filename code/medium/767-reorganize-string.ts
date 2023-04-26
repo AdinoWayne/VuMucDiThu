@@ -25,3 +25,7 @@ function reorganizeString(S: string): string {
     }
     return res;
 };
+// e.g pq = [['a', 2], ['b', 1]] hash: {a: 2, b: 1}
+
+// Time complexity: O(nlogn)
+// Space complexity: O(n)
