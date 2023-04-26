@@ -23,7 +23,9 @@ React implements a heuristic O(n) algorithm
 
 remove tommorrow:
 https://dev.to/devsmitra/the-complete-guide-to-micro-frontend-with-reactjs-for-2022-36b2
-https://pgexercises.com/questions/joins/simplejoin.html
+
+https://pgexercises.com/questions/joins/simplejoin2.html
+
 const curDistance = 1160;
 const widthStage = 1200;
 const widthTextBlock = 100;
