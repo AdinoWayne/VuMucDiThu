@@ -38,3 +38,6 @@ function orderOfLargestPlusSign(n: number, mines: number[][]): number {
     // return maximum value be saved by all cells
     return Math.max(...t.map(v => Math.max(...v)));
 };
+
+// Time complexity: O(n^2)
+// Space complexity: O(n^2)
