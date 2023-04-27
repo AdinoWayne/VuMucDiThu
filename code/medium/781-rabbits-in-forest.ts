@@ -19,3 +19,6 @@ function numRabbits(answers: number[]): number {
     }
     return tot;
 };
+
+// Time complexity:  O(n)
+// Space complexity: O(n)
