@@ -18,3 +18,6 @@ function letterCasePermutation(S: string): string[] {
     
     return result;
 };
+
+// Time complexity: O(2^n)
+// Space complexity: O(2^n)
