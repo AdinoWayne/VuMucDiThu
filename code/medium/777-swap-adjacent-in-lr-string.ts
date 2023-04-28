@@ -13,13 +13,13 @@ function canTransform(start: string, end: string): boolean {
             continue;
         }
         
-		// Breaking (1)
+		// Breaking (1) cannot move Rs and Ls past each other.
         if (start[i] !== end[j]) return false;
         
-		// Breaking (2)
+		// Breaking (2) cannot move Rs to the left.
         if (start[i] === 'R' && i > j) return false;
 		
-		// Breaking (3)
+		// Breaking (3) cannot move Ls to the right.
         if (start[i] === 'L' && j > i) return false;
         
         i++;
