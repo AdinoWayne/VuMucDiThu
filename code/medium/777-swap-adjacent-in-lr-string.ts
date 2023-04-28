@@ -28,3 +28,6 @@ function canTransform(start: string, end: string): boolean {
     
     return true;
 };
+
+// Time complexity: O(n)
+// Space complexity: O(1)
