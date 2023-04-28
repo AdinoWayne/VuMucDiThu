@@ -24,3 +24,6 @@ function kthGrammar(row: number, col: number): number {
     }
     return last
 };
+
+// Time complexity: O(logN)
+// Space complexity: O(logN)
