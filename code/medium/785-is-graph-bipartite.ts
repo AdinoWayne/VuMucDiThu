@@ -24,5 +24,8 @@ const dfs = (graph, colors, u, color) => {
   return true;
 };
 
+// trying to use two colors to color the graph
+// If it hasn't been colored, use a color to color it. Then use the other color to color all its adjacent nodes (DFS).
+// If it has been colored, check if the current color is the same as the color that is going to be used to color i
 // Time complexity: O(e*n) e is edges, n is length array
 // Space complexity: O(n)
