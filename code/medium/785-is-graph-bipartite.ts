@@ -23,3 +23,6 @@ const dfs = (graph, colors, u, color) => {
 
   return true;
 };
+
+// Time complexity: O(e*n) e is edges, n is length array
+// Space complexity: O(n)
