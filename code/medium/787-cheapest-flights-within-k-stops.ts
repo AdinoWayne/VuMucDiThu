@@ -25,3 +25,7 @@ function findCheapestPrice(n: number, flights: number[][], src: number, dst: num
     }
     return -1;
 };
+
+// Dijkstra's Algorithm
+// Time complexity: O(Nlogn)
+// Space complexity: O(n)
