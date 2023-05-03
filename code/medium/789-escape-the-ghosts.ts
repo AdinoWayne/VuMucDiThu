@@ -11,3 +11,7 @@ function escapeGhosts(ghosts: number[][], target: number[]): boolean {
     
     return true;
 };
+// If a ghost can reach the target earlier than me, I am impossible to escape, return false.
+// If I can reach the target earlier than all ghosts, I am possible to escape return true.
+// Time complexity: O(n)
+// Space complexity: O(1)
