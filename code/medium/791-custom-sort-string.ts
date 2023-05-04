@@ -12,3 +12,5 @@ function customSortString(order: string, s: string): string {
   let arrS = s.split("");
  return arrS.sort((a, b) => map[a] - map[b]).join("");
 };
+// Time complexity: O(nlogn)
+// Space complexity: O(nlogn)
