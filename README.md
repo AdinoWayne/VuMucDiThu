@@ -34,3 +34,22 @@ const min = -100;
 /* 50 */
 /* case right: widthTextBlock - (widthStage - curDistance) */
 /* case left: -curDistance */
+
+https://www.udemy.com/course/nestjs-the-complete-developers-guide/
+
+https://www.udemy.com/course/microfrontend-course/
+
+https://www.udemy.com/course/socketio-with-websockets-the-details/
+
+https://www.udemy.com/course/graphql-with-react-course/
+
+https://www.udemy.com/course/typescript-the-complete-developers-guide/
+
+https://www.udemy.com/course/sveltejs-the-complete-guide/
+
+https://www.udemy.com/course/advanced-reactjs-redux-toolkit-tailwindcss-api-part-1/
+
+https://www.udemy.com/course/react-redux-tutorial/
+
+https://www.udemy.com/course/react-testing-library/
+
