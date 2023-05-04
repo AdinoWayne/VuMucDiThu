@@ -54,3 +54,5 @@ https://www.udemy.com/course/react-redux-tutorial/
 https://www.udemy.com/course/react-testing-library/
 
 https://www.udemy.com/course/svelte-and-sveltekit/
+
+https://www.udemy.com/course/server-side-rendering-with-react-and-redux/
