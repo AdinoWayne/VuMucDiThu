@@ -27,3 +27,6 @@ function validTicTacToe(board: string[]): boolean {
 	if ((isXWin && step !== 1) || (isOWin && step !== 0)) return false;
 	return true;
 };
+
+// Time complexity: O(1)
+// Space complexity: O(1)
