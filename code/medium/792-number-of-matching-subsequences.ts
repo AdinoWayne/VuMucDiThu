@@ -22,3 +22,6 @@ function numMatchingSubseq(S: string, words: string[]): number {
   }
   return count
 };
+
+// Time complexity: O(n2)
+// Space complexity: O(n)
