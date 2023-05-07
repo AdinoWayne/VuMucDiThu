@@ -15,3 +15,6 @@ function allPathsSourceTarget(graph: number[][]): number[][] {
     DFS(0,[]);
     return res;
 };
+
+// Time complexity: O(2^n)
+// Space complexity: O(2^n)
