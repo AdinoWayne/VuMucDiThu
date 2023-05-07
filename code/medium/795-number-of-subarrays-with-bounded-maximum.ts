@@ -14,3 +14,6 @@ function numSubarrayBoundedMax(nums: number[], left: number, right: number): num
     }
     return sum;
 };
+
+// Time complexity: O(n)
+// Space complexity: O(1)
