@@ -26,3 +26,6 @@ function isNodeSafe(graph: number[][], node: number, visited: any) {
     visited[node] = "safe";   
     return true;
 }
+
+// Time complexity: O(2n)
+// Space complexity: O(n)
