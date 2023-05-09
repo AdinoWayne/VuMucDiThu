@@ -15,3 +15,9 @@ function maxIncreaseKeepingSkyline(grid: number[][]): number {
     }
     return result;
 };
+
+<!--
+Find rowMax, colMax then get min (rowMax, colMax) - current value grid
+Time complexity: O(n^2)
+Space complexity: O(n)
+-->
