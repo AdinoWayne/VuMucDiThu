@@ -20,3 +20,13 @@ function subdomainVisits(cpdomains: string[]): string[] {
     
     return response;
 };
+
+<!-- 
+format: d1.d2.d3
+line8 let key = domain.pop(); get d3
+line12 key = domain.pop()+"."+key; loop add d1,d2 to key
+obj = { [d3]: num, [d2.d3]: num }
+
+Time complexity: O(n)
+Space complexity: O(n)
+-->
