@@ -17,3 +17,8 @@ function isWord(S,W){
   }
   return j === W.length;
 }
+
+<!--
+Time complexity: O(NM)
+Space complexity: O(1)
+-->
