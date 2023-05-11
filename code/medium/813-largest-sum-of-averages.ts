@@ -30,3 +30,8 @@ function largestSumOfAverages(A: number[], K: number): number {
 
     return dp[K - 1][N - 1];
 };
+
+<!--
+Time complexity: O(n3)
+Space complexity: O(n2)
+-->
