@@ -31,3 +31,9 @@ function pruneTree(root: TreeNode | null): TreeNode | null {
 	
 	return containsOne(root) ? root : null;
 };
+
+<!-- 
+DFS
+Time complexity: O(n)
+Space comlexity: O(n)
+-->
