@@ -12,18 +12,20 @@
 
 function numComponents(head: ListNode | null, nums: number[]): number {
     let map=new Map();
-    nums.map((item)=>{
-        map.set(item,!0);
+    nums.map((item) => {
+        map.set(item, true);
     });
-    let c=0;
-    while(head){
-        if(map.has(head.val)){
-		while(head&&map.has(head.val))
-		head=head.next;
+    let c = 0;
+    while (head) {
+        if (map.has(head.val)) {
+		while (head&&map.has(head.val)) {
+			head=head.next;
+		}
 		c++;    
         }             
-        if(head)
-        head=head.next;
+        if (head) {
+		head=head.next;
+	}
     }
     return c;  
 };
