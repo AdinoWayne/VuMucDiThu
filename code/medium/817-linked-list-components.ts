@@ -27,3 +27,8 @@ function numComponents(head: ListNode | null, nums: number[]): number {
     }
     return c;  
 };
+
+<!--
+Time complexity: O(n)
+Space complexity: O(n)
+-->
