@@ -15,3 +15,8 @@ function flipgame(fronts: number[], backs: number[]): number {
     }
     return min_num == Number.MAX_VALUE ? 0 : min_num;
 };
+
+<!--
+Time complexity: O(n)
+Space complexity: O(n)
+-->
