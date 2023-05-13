@@ -11,3 +11,7 @@ function minimumLengthEncoding(words: string[]): number {
       return acc
     }, 0)
 };
+<!--
+Time complexity: O(n2)
+Space complexity: O(n)
+-->
