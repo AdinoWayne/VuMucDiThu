@@ -20,3 +20,8 @@ function numFactoredBinaryTrees(arr: number[]): number {
 	}
 	return [...dp.values()].reduce((sum, count) => (sum + count) % MODULO);
 };
+
+<!--
+Time complexity: O(n2)
+Space complexity: O(n)
+-->
