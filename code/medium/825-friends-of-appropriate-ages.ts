@@ -19,10 +19,15 @@ function numFriendRequests(ages: number[]): number {
         let lowerBound = Math.floor((age * 0.5)) + 7 + 1; // Inclusive
         let upperBound = age; // Inclusive
 		// Calculate requests by subtracting cumulative sum up to the lower bound from the cumulative sum up to the upper bound
-		// Need "-1" to deduct a given person from the request, since we can't send requests to ourselves
+		// Need "-1" to deduct a given person from the request, since we cant send requests to ourselves
         let requests = ageCountArr[upperBound] - ageCountArr[lowerBound - 1] - 1; 
         if (requests < 0) continue;
         count += requests;
     }
     return count;
 };
+
+<!--
+Time complexity: O(n)
+Space complexity: O(n)
+-->
