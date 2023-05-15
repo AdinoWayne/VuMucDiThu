@@ -45,3 +45,8 @@ function maxProfitAssignment(difficulty: number[], profit: number[], worker: num
     }
     return total;
 };
+
+<!-- 
+Time complexity: O(nLogn)
+Space complexity: O(n)
+-->
