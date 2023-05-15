@@ -2,11 +2,11 @@ function maskPII(S: string): string {
     if (isEmail(S)) return maskEmail(S);
     return maskPhone(S);
     
-    function isEmail(str) {
+    function isEmail(str: string): boolean {
        return /^[A-Za-z]{2,}@[A-Za-z]{2,}.[A-Za-z]{2,}$/.test(str);
     }
     
-    function maskEmail(str) {
+    function maskEmail(str: string): string {
         let res = "";
         const [local, domain] = str.split("@");
         
@@ -14,7 +14,7 @@ function maskPII(S: string): string {
         return res + "@" + domain.toLowerCase(); 
     }
     
-    function maskPhone(str) {
+    function maskPhone(str: string): string {
         const onlyDigits = str.replace(/\D/g, "");
         
         const localNum = "***-***-" + onlyDigits.substring(onlyDigits.length - 4);
