@@ -21,3 +21,8 @@ function largestOverlap(img1: number[][], img2: number[][]): number {
 
 	return Math.max(...overlapMap.values(), 0);
 };
+
+<!--
+Time complexity: O(n^2 + m)
+Space complexity: O(n^2)
+-->
