@@ -25,6 +25,6 @@ function new21Game(n: number, k: number, maxPts: number): number {
         return acc;
     }, 0)
 };
-
+// dp[i] is the probability that we get points i at some moment
 // Time O(N)
 // Space O(N)
