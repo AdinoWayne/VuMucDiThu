@@ -19,3 +19,6 @@ function pushDominoes(dominoes: string): string {
 
     return arr.slice(1, n-1).join('');
 };
+
+// Time complexity: O(n)
+// Space complexity: O(n)
