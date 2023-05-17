@@ -28,3 +28,7 @@ function numMagicSquaresInside(grid: number[][]): number {
         cnt++;
   return cnt;
 };
+
+// magic square : https://oeis.org/A217568
+// Time complexity: O(n2)
+// Space complexity: O(1)
