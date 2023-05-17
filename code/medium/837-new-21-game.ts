@@ -25,3 +25,6 @@ function new21Game(n: number, k: number, maxPts: number): number {
         return acc;
     }, 0)
 };
+
+// Time O(N)
+// Space O(N)
