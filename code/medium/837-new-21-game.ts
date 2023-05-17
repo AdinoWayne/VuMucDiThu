@@ -30,5 +30,6 @@ function new21Game(n: number, k: number, maxPts: number): number {
 // if i > max, remove 0.1P(i - max - 1) from P(i). This is essentially a sliding window problem:
 // P11 = 0.1P10 + 0.1P9 + ... + 0.1P1 = 1.1P10 - 0.1P0
 // if i > k, sliding window's right stops growing, meaning always add P(i-1) instead of 1.1P(i-1) to P(i)
+// line 21 dp[k] * (n - k)
 // Time O(N)
 // Space O(N)
