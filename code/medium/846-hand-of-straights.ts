@@ -21,3 +21,6 @@ function isNStraightHand(hand: number[], groupSize: number): boolean {
     
     return true;
 };
+
+// Time complexity: O(n)
+// Space complexity: O(n)
