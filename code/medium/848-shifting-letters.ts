@@ -15,3 +15,6 @@ function shiftingLetters(s: string, shifts: number[]): string {
     }   
     return result
 };
+
+// Time complexity: O(n)
+// Space complexity: O(n)
