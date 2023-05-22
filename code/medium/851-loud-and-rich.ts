@@ -29,3 +29,6 @@ function loudAndRich(richer: number[][], quiet: number[]): number[] {
     }
     return answer;
 };
+
+// Time complexity: O(n2)
+// Space complexity: O(n)
