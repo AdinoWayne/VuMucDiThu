@@ -15,3 +15,6 @@ function maxDistToClosest(seats: number[]): number {
     }
     return Math.max(maxDistance, seats.length - 1 - lastSeated );
 };
+
+// Time complexity: O(n)
+// Space complexity: O(1)
