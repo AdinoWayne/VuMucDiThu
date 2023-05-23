@@ -17,3 +17,6 @@ function carFleet(target: number, position: number[], speed: number[]): number {
   
     return stack.length
 };
+
+// Time complexity: O(nLogn)
+// Space complexity: O(n)
