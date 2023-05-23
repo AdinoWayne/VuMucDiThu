@@ -2,8 +2,8 @@ class ExamRoom {
     n: number;
     list: number[];
     constructor(n: number) {
-    this.n = n
-    this.list = []
+        this.n = n
+        this.list = []
     }
 
     seat(): number {
@@ -57,3 +57,6 @@ class ExamRoom {
  * var param_1 = obj.seat()
  * obj.leave(p)
  */
+
+// Time complexity: O(n)
+// Space complexity: O(n)
