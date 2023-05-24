@@ -12,3 +12,6 @@ function mirrorReflection(p: number, q: number): number {
 	
 	return -1;
 };
+
+// Time complexity: O(log(max(p, q)))
+// Space complexity: O(1)
