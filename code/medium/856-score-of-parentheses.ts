@@ -12,3 +12,6 @@ function scoreOfParentheses(S: string): number {
     }
     return stack.pop();
 };
+
+// Time complexity: O(n)
+// Space complexity: O(n)
