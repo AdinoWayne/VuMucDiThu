@@ -24,3 +24,6 @@ function matrixScore(grid: number[][]): number {
         let res = flippedRows.map(item => item.join('')).map(item => parseInt(item,2)).reduce((acc,val) => acc+val);
      return res
 };
+
+// Time complexity: O(N * M)
+// Space complexity: O(N * M)
