@@ -41,6 +41,6 @@ function findAllKApart(root, k, res){
   findAllKApart(root.parent, k-1, res)
   return res
 }
-
+// note: set parent when find target node.
 // Time complexity: O(n)
 // Space complexity: O(1)
