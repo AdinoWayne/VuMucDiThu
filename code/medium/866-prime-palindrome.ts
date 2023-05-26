@@ -1,31 +1,32 @@
-function primePalindrome(n: number): number {
-    let i ;
-    if (n == 1 || n ==2) return 2;
-    if(n%2 == 0) i = n+1;
-    else         i=n;
-    while (true) {
-        if ( isPalind(i) && isPrime(i) ) {
-            return i;
-        }
-        i+=2
-        if(i > 1e7 && i < 1e8) i = 1e8 + 1;
-        if(i > 1e5 && i < 1e6) i = 1e6 + 1;
-        if(i > 1e3 && i < 1e4) i = 1e4 + 1;
-        if(i > 11 && i < 100) i = 101;
-    }
-    return -1;
-};//9989900
-
-
-
-function isPrime(num) {
-    for ( var i = 2; i < num; i++ ) {
-        if ( num % i === 0 ) {
-            return false;
-        }
-    }
-    return true;
+function primePalindrome(N: number): number {
+	if(N<=2) return 2;
+	let cur = N;
+	while(!isPal(cur)) cur++;
+	// eslint-disable-next-line no-constant-condition
+	while(true){
+		if(isPrime(cur)) return cur;
+		cur = nextPal(cur);
+	}
+};
+function isPal(n){
+	return (''+n)===(''+n).split('').reverse().join('');
 }
-function isPalind(n){
-    return  n.toString() === n.toString().split("").reverse().join("");
+function nextPal(n){
+	let s = (''+n), len = s.length, half = Math.ceil(len/2);
+	let left=s.slice(0,half);
+	let tmp = (+left+1)+'';
+	if(half===len-half){
+		return +(tmp+tmp.slice(0,half).split('').reverse().join('')); //66->77 99->101
+	}else{
+		if(tmp.length===half) return +(tmp+tmp.slice(0,len-half).split('').reverse().join(''));// 888->898
+		else return +(tmp.slice(0,half)+tmp.slice(0,half).split('').reverse().join(''));// 999->1001
+	}
 }
+function isPrime(n){
+	if(n%2===0) return false;
+	for(let i=3; i*i<=n; i+=2){
+		if(n%i===0) return false;
+	}
+	return true;
+}
+
