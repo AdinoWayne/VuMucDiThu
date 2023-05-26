@@ -30,5 +30,5 @@ function isPrime(n){
 	return true;
 }
 
-// Time complexity: O(n)
+// Time complexity: O(n2)
 // Space complexity: O(1)
