@@ -35,3 +35,6 @@ function subtreeWithAllDeepest(root: TreeNode | null): TreeNode | null {
         return Math.max(leftDepth, rightDepth);
     }
 };
+
+// Time complexity: O(n)
+// Space complexity: O(n)
