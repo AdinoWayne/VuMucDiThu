@@ -14,3 +14,6 @@ function reorderedPowerOf2(n: number): boolean {
     }
     return false;
 };
+
+// Time complexity: O(n2logN)
+// Space complexity: O(1)
