@@ -26,3 +26,6 @@ function advantageCount(A: number[], B: number[]): number[] {
     }
     return output;
 };
+
+// Time complexity: O(nlog
+// Space complexity: O(n)
