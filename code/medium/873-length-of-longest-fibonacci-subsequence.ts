@@ -15,3 +15,6 @@ function lenLongestFibSubseq(arr: number[]): number {
   }
   return max === 2 ? 0 : max;
 };
+
+// Time complexity: O(n2)
+// Space complexity: O(n2)
