@@ -26,7 +26,8 @@ function robotSim(commands: number[], obstacles: number[][]): number {
       max = Math.max(max, x*x+y*y);
     }
   }
-// Time complexity: O(n2)
-// Space complexity: O(1)
   return max;
 };
+// add obstacles to set then minus dx,dy when x,y has on set
+// Time complexity: O(n2)
+// Space complexity: O(1)
