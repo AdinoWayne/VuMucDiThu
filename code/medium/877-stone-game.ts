@@ -23,3 +23,6 @@ function stoneGame(piles: number[]): boolean {
         return res;
     }
 };
+
+// Time complexity: O(2^n)
+// space complexity: O(n^2)
