@@ -9,6 +9,6 @@ function numRescueBoats(people: number[], limit: number): number {
     }
     return count;
 };
-
+// note: Each boat carries at most two people at the same time
 // Time complexity: O(nlogn)
 // Space complexity: O(1)
