@@ -9,3 +9,6 @@ function numRescueBoats(people: number[], limit: number): number {
     }
     return count;
 };
+
+// Time complexity: O(nlogn)
+// Space complexity: O(1)
