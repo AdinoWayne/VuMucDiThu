@@ -24,3 +24,6 @@ function decodeAtIndex(S: string, K: number): string {
     }
   }
 };
+
+// Time complexity: O(n)
+// Space complexity: O(1)
