@@ -36,3 +36,6 @@ function possibleBipartition(N: number, dislikes: number[][]): boolean {
         return true;
     }
 };
+
+// Time complexity: O(n2)
+// Space complexity: O(n2)
