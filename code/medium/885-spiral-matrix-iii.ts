@@ -9,3 +9,6 @@ function spiralMatrixIII(rows: number, cols: number, rStart: number, cStart: num
     }
     return res.filter(x=>x[0]>=0&&x[0]<rows&&x[1]>=0&&x[1]<cols);
 };
+
+// TIme complexity: O(n2)
+// Space complexity: O(n2)
