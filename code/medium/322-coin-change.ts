@@ -8,3 +8,6 @@ function coinChange(coins: number[], amount: number): number {
   }
   return dp[amount] === Infinity ? -1 : dp[amount]; // If the last element is Infinity, then we cannot make the amount.
 };
+
+// Time complexity: O(n2)
+// Space complexity: O(n)
