@@ -22,3 +22,6 @@ function findAndReplacePattern(words: string[], pattern: string): string[] {
     }
     return matches
 };
+
+// Time complexity: O(n2)
+// Space complexity: o(n)
