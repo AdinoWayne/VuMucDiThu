@@ -11,3 +11,6 @@ const transform = S => {
   odd.sort();
   return `${even.join('')}${odd.join('')}`;
 };
+
+// Time complexity: O(n2LogN)
+// Space complexity: O(n2)
