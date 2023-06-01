@@ -12,3 +12,6 @@ function bulbSwitch(n: number): number {
     }
     return Math.floor(hi);
 };
+
+// Time complexity: O(logN)
+// Space complexity: O(1)
