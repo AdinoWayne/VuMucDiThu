@@ -13,5 +13,8 @@ function bulbSwitch(n: number): number {
     return Math.floor(hi);
 };
 
+// We want to find how many bulbs are on after n rounds (In the end).
+// That means we need to find out how many perfect square numbers are NO MORE than n.
+
 // Time complexity: O(logN)
 // Space complexity: O(1)
