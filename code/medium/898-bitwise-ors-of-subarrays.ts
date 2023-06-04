@@ -19,3 +19,6 @@ function subarrayBitwiseORs(arr: number[]): number {
 
 	return new Set(bits).size; // get all unique bitwise ORs
 };
+
+// Time complexity: O(n2)
+// Space complexity: O(n)
