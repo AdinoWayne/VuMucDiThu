@@ -30,3 +30,6 @@ class RLEIterator {
  * var obj = new RLEIterator(encoding)
  * var param_1 = obj.next(n)
  */
+
+// Time complexity: O(n)
+// Space complexity: O(n)
