@@ -17,3 +17,6 @@ function totalFruit(fruits: number[]): number {
     }
     return maxLen;
 };
+
+// Time complexity: O(n)
+// Space complexity: O(1)
