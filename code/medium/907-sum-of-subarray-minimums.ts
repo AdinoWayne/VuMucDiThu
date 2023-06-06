@@ -36,3 +36,6 @@ function sumSubarrayMins(arr: number[]): number {
     
     return sum % MOD;
 };
+
+// Time complexity: O(n)
+// space complexity: O(n)
