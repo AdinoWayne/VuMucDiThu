@@ -24,3 +24,6 @@ function snakesAndLadders(board: number[][]): number {
   
   return -1;
 };
+
+// Time complexity: O(n2)
+// Space complexity: O(n)
