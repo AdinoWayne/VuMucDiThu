@@ -14,3 +14,5 @@ function smallestRangeII(nums: number[], k: number): number {
     
     return res;
 };
+// Time complexity: O(Nlogn)
+// Space complexity: O(1)
