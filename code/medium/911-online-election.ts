@@ -10,13 +10,13 @@ class TopVotedCandidate {
         var winningVotes = 0;
         for (var i = 0; i < persons.length; i++) {
             if (!votesCount[persons[i]]) {
-            votesCount[persons[i]] = 0;
+                votesCount[persons[i]] = 0;
             };
             votesCount[persons[i]]++;
             
             if (votesCount[persons[i]] >= winningVotes) {
-            winningVotes = votesCount[persons[i]];
-            currentWinningPerson = persons[i];
+                winningVotes = votesCount[persons[i]];
+                currentWinningPerson = persons[i];
             }
             this.winningTimes[times[i]] = currentWinningPerson;
         }
@@ -40,3 +40,6 @@ class TopVotedCandidate {
  * var obj = new TopVotedCandidate(persons, times)
  * var param_1 = obj.q(t)
  */
+
+// Time complexity: O(n)
+// Space complexity: O(n)
