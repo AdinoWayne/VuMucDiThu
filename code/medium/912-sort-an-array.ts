@@ -21,3 +21,6 @@ const merge = (left, right) => {
     
     return [...result, ...left, ...right]
 }
+
+// Time complexity: O(NLogN)
+// Space comlexity: O(n)
