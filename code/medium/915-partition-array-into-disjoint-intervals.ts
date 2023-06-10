@@ -11,3 +11,6 @@ function partitionDisjoint(nums: number[]): number {
     }
     return count; 
 };
+
+// Time complexity: O(n)
+// Space complexity: O(1)
