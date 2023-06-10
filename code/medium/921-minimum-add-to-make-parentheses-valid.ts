@@ -8,3 +8,6 @@ function minAddToMakeValid(s: string): number {
     }
     return open + close;
 };
+
+// Time complexity: O(n)
+// Space complexity: O(1)
