@@ -59,3 +59,5 @@ class CBTInserter {
  * var param_1 = obj.insert(val)
  * var param_2 = obj.get_root()
  */
+
+// insert TC O(1) SC O(n)
