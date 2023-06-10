@@ -33,3 +33,6 @@ function wordSubsets(words1: string[], words2: string[]): string[] {
     }
     return output;
 };
+
+// Time complexity: O(n)
+// Space complexity: O(n)
