@@ -16,3 +16,6 @@ function threeSumMulti(A: number[], target: number): number {
 
     return tuples % (Math.pow(10, 9) + 7);
 };
+
+// Time complexity: O(n2)
+// Space complexity: O(n)
