@@ -15,3 +15,6 @@ function withSumAtMost(a, t) {
     }
     return cc;
 }
+
+// TC: O(n)
+// SC: O(1)
