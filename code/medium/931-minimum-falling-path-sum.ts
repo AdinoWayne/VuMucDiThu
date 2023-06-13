@@ -19,3 +19,6 @@ function minFallingPathSum(matrix: number[][]): number {
     }
     return minSum;
 };
+
+// TC O(n2)
+// SC O(n)
