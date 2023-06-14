@@ -3,8 +3,10 @@ function isValidSerialization(preorder: string): boolean {
     let i = 0;
     
     function callDFS() {
-        if(i >= arr.length) return false;        
+        if(i >= arr.length) return false;
+        // i++
         if(arr[i++] === '#') return true;
+        // el is number
         return callDFS() && callDFS();
     }
     return callDFS() && i == arr.length;
