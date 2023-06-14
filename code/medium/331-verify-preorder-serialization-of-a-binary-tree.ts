@@ -9,3 +9,6 @@ function isValidSerialization(preorder: string): boolean {
     }
     return callDFS() && i == arr.length;
 };
+
+// TC O(n)
+// SC O(n)
