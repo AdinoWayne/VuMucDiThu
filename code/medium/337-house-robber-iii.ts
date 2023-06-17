@@ -13,12 +13,18 @@
  */
 
 function rob(root: TreeNode | null): number {
-    function helper(node){
+    function helper(node: TreeNode | null): number[] {
         if(!node) return [0,0];
-        const [lr,ln] = helper(node.left);
+        let res = [];
+        const [lr, ln] = helper(node.left);
         const [rr, rn] = helper(node.right);
-        return [node.val + ln + rn, Math.max(lr+rr, ln+rn, lr+rn, ln+rr)];
+        res[0] = node.val + ln + rn;
+        res[1] = Math.max(lr, ln) + Math.max(rr, rn);
+        return res;
     }
     
     return Math.max(...helper(root));
 };
+
+// Time complexity: O(n)
+// Space complexity: O(1)
