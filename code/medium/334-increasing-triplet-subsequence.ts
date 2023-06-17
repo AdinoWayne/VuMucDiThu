@@ -1,16 +1,19 @@
 function increasingTriplet(nums: number[]): boolean {
-  let firstNumber = Infinity;
-  let secondNumber = Infinity;
+  let first = Infinity;
+  let second = Infinity;
   
-  for (let currentNumber of nums) {
-    if (currentNumber > secondNumber && currentNumber > firstNumber) {
+  for (let curr of nums) {
+    if (curr > second && curr > first) {
       return true;
     }
-    if (currentNumber > firstNumber) {
-      secondNumber = currentNumber;
+    if (curr > first) {
+      second = curr;
     } else {
-      firstNumber = currentNumber;
+      first = curr;
     }
   }
   return false;
 };
+
+// Time complexity: O(n)
+// Space complexity: O(1)
