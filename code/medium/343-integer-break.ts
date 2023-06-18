@@ -9,7 +9,7 @@ function integerBreak(n: number): number {
   } else if (diff == 1) {
     return Math.pow(3, times3 - diff) * (3 + diff)
   } else { //diff == 2
-    return Math.pow(3, times3) / (3 + diff) * 10
+    return Math.pow(3, times3) / (3 + diff) * 10 // 3 ^ time3 * 2
   }
 };
 
