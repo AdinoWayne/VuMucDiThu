@@ -52,6 +52,11 @@ class NestedIterator {
     next = (): number => this.queue.shift();
 }
 
+// TC T(n) = 2 * T(n/2) + O(n) = O(nlogn)
+// SC O(n)
+// where 2 * T( n/2) comes from recursive calls to flatten the sub-trees
+
+
 /**
  * Your ParkingSystem object will be instantiated and called as such:
  * var obj = new NestedIterator(nestedList)
