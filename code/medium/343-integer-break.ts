@@ -12,3 +12,6 @@ function integerBreak(n: number): number {
     return Math.pow(3, times3) / (3 + diff) * 10
   }
 };
+
+// TC O(1)
+// SC o(1)
