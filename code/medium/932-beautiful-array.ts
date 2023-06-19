@@ -12,3 +12,5 @@ function beautifulArray(n: number): number[] {
     	return helper(e).concat(helper(o));
     }
 };
+// TC O(NlogN)
+// SC O(N)
