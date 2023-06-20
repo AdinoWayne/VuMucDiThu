@@ -18,3 +18,6 @@ function minAreaRect(points: number[][]): number {
   }
   return min === Infinity ? 0 : min;
 };
+
+// Time Complexity: O(n2)
+// Space Complexity: O(n)
