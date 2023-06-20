@@ -17,11 +17,16 @@ function knightDialer(n: number): number {
     for ( let count = 1; count < n; count++ ) {
         const hold = dpp
         dpp = dpn
-        dpn = hold.fill( 0 )
-
+        dpn = hold.fill(0) // set el -> 0
         for ( let digit = 0; digit <= 9; digit++ )
-            moves[ digit ].forEach( move => dpn[ digit ] += dpp[ move ] % mod )
+            moves[digit].forEach((move) => {
+                dpn[digit] += dpp[move] % mod // new val =  oldVal[index]
+            })
     }
 
     return dpn.reduce( ( a, x ) => a + x, 0 ) % mod
 };
+
+// TC O(n)
+// SC O(1) because it uses a fixed-size array dpp and dpn
+
