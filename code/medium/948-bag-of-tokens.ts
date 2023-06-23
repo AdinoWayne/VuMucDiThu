@@ -17,3 +17,6 @@ function bagOfTokensScore(tokens: number[], power: number): number {
   }
   return scores;
 };
+
+// TC O(NLogN)
+// SC O(N)
