@@ -46,3 +46,6 @@ function removeStones(stones: number[][]): number {
     
     return stones.length - subsetCount;
 };
+
+// TC O(nLogn)
+// SC O(n)
