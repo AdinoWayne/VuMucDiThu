@@ -8,3 +8,6 @@ function deckRevealedIncreasing(deck: number[]): number[] {
     ans.push(ans.shift());
     return ans;
 };
+
+// TC O(n)
+// SC O(n)
