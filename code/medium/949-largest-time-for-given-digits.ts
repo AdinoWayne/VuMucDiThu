@@ -17,3 +17,5 @@ function largestTimeFromDigits(A: number[]): string {
     permute(A, '');
     return res.slice(0, 2) + (res.length ? ':' : '') + res.slice(2);
 };
+// TC O(n!)
+// SC O(n)
