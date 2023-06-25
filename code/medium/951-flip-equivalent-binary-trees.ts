@@ -22,3 +22,6 @@ function flipEquiv(root1: TreeNode | null, root2: TreeNode | null): boolean {
   
     return regular || flipped;
 };
+
+// TC O(n) This is because we visit each node exactly once 1.
+// SC O(n)
