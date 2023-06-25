@@ -25,5 +25,11 @@ function canReorderDoubled(arr: number[]): boolean {
     return true;
 };
 
+// Could we find a pair for each number in the array, so one element of the pair is twice bigger than other?
+
+// Presuming we have this array. [2, 4, 1, 8].
+// We can pair 2 with 4. And find no pair for 1, cause the array is unsorted!
+// So first of all, we should sort the array.
+
 // TC O(nlogn)
 // SC O(n)
