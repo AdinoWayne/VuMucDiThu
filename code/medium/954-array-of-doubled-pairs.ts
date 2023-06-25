@@ -24,3 +24,6 @@ function canReorderDoubled(arr: number[]): boolean {
     }
     return true;
 };
+
+// TC O(nlogn)
+// SC O(n)
