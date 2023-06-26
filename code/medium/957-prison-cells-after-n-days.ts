@@ -1,5 +1,5 @@
 function prisonAfterNDays(cells: number[], N: number): any[] {
-    let nextDay = function(cells) {
+    let nextDay = (cells: string): string => {
         let newPrison = "";
         for (let i=0;i<cells.length;i++) {
             if (cells[i-1]==cells[i+1]) newPrison+='1';
@@ -20,3 +20,6 @@ function prisonAfterNDays(cells: number[], N: number): any[] {
     }
     return prison.split('');
 };
+
+// TC O(N * k) N is the number of days and k is the length of the cells array
+// SC O(2 * k)
