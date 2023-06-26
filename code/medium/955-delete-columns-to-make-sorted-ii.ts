@@ -26,3 +26,6 @@ function minDeletionSize(strs: string[]): number {
     }
     return count;    
 };
+
+// TC O(n * k^2)
+// SC O(k)
