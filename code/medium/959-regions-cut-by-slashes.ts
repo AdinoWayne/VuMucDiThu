@@ -1,3 +1,7 @@
+// Input: grid = ["/\\","\\/"]
+// Output: 5
+// Explanation: Recall that because \ characters are escaped, "\\/" refers to \/, and "/\\" refers to /\.
+
 function regionsBySlashes(grid: string[]): number {
     var n = grid.length;
     if (n === 1) return grid[0][0] === ' ' ? 1 : 2;
