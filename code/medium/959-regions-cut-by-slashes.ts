@@ -58,3 +58,7 @@ function getKeys(i, j, n) {
 	// left and right part key of grid[i][j]
     return [val, val + 1];
 }
+
+
+// TC O(n2)
+// SC O(n2)
