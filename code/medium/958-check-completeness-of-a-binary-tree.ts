@@ -20,7 +20,7 @@ function isCompleteTree(root: TreeNode | null): boolean {
         const next = [];
         
         for(let nextNode of queue) {
-            if(!nextNode) seenNull = true;
+            if(!nextNode) seenNull = true; // check left null
             else {
                 if(seenNull) return false;
                 next.push(nextNode.left);
@@ -31,3 +31,6 @@ function isCompleteTree(root: TreeNode | null): boolean {
     }
     return true;
 };
+// BFS 
+// TC O(n)
+// SC O(n)
