@@ -66,3 +66,6 @@ function minAreaFreeRect(points: number[][]): number {
     
     return res === Number.MAX_VALUE ? 0 : res;
 };
+
+// TC O(n2)
+// SC O(n2)
