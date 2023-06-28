@@ -7,3 +7,6 @@ function maxWidthRamp(nums: number[]): number {
     });
     return result;
 };
+
+// TC O(n^2)
+// SC O(1)
