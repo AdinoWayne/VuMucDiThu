@@ -11,3 +11,6 @@ function numsSameConsecDiff(n: number, k: number): number[] {
     }
     return list
 };
+
+// Time complexity: O(2^n)
+// Space complexity: O(2^n)
