@@ -67,5 +67,6 @@ function minAreaFreeRect(points: number[][]): number {
     return res === Number.MAX_VALUE ? 0 : res;
 };
 
+// If two set of diagonals have same key then they are a rectangle
 // TC O(n2)
 // SC O(n2)
