@@ -20,3 +20,5 @@ function spellchecker(wordlist: string[], queries: string[]): string[] {
     return "";
   });
 };
+// TC O(n * k) where n is the length of wordlist and k is the length of queries
+// SC O(n + k)
