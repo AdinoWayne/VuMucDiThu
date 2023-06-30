@@ -28,3 +28,10 @@ function flipMatchVoyage(root: TreeNode | null, voyage: number[]): number[] {
   };
   return preorderTraverse(root) ? res : [-1];
 };
+
+// Global integer i indicates next index in voyage v.
+// If current node == null, it's fine, we return true
+// If current node.val != v[i], doesn't match wanted value, return false
+// If left child exist but don't have wanted value, flip it with right child.
+// TC O(n)
+// SC O(n)
