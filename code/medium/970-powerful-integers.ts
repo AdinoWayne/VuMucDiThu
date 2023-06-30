@@ -12,4 +12,4 @@ function powerfulIntegers(x: number, y: number, bound: number): number[] {
 };
 
 // TC O(n2)
-// SC O(n)
+// SC O(n2)
