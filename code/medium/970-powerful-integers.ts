@@ -10,3 +10,6 @@ function powerfulIntegers(x: number, y: number, bound: number): number[] {
     }
     return [...ans];
 };
+
+// TC O(n2)
+// SC O(n)
