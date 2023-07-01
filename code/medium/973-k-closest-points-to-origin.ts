@@ -44,3 +44,5 @@ function swap(arr, i, j) {
     arr[i] = arr[j]
     arr[j] = temp
 }
+// Time complexity: O(n) in the average case and O(n^2) in the worst case
+// Space complexity: O(1)
