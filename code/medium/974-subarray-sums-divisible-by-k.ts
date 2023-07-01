@@ -12,3 +12,6 @@ function subarraysDivByK(nums: number[], k: number): number {
     }
     return total;
 };
+
+// TC O(n)
+// SC O(n)
