@@ -50,8 +50,9 @@ class TimeMap {
 }
 
 /**
- * Your TimeMap object will be instantiated and called as such:
- * var obj = new TimeMap()
- * obj.set(key,value,timestamp)
+ * 
  * var param_2 = obj.get(key,timestamp)
+ * The time complexity of the set function is O(1) because it is a simple insertion into an array.
+ * The time complexity of the get function is O(log n) because it uses binary search to find the correct value.
+ * The space complexity of the class is O(n) because it stores all the values in an object.
  */
