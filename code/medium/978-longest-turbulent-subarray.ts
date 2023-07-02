@@ -18,3 +18,6 @@ function maxTurbulenceSize(A: number[]): number {
     
     return maxLen;
 };
+
+// TC O(n)
+// SC O(1)
