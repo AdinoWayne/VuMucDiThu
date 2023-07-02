@@ -20,3 +20,6 @@ function mincostTickets(days: number[], costs: number[]): number {
   // last element of dp will be our answer
   return dp[dp.length - 1];
 };
+
+// TC O(n)
+// SC O(n)
