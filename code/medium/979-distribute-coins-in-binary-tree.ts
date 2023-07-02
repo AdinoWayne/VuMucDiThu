@@ -29,3 +29,6 @@ function distributeCoins(root: TreeNode | null): number {
             
     }
 };
+
+// TC O(n)
+// SC O(1)
