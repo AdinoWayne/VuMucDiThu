@@ -37,3 +37,6 @@ function sumEvenAfterQueries(A: number[], queries: number[][]): number[] {
 	
     return res;
 };
+
+// TC O(n)
+// SC O(n)
