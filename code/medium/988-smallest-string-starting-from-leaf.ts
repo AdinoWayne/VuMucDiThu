@@ -31,3 +31,6 @@ function smallestFromLeaf(root: TreeNode | null): string {
     smallest(root, '');
     return prevMax || '';
 };
+
+// TC O(n)
+// SC O(n)
