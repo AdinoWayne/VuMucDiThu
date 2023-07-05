@@ -13,3 +13,6 @@ function brokenCalc(startValue: number, target: number): number {
 
     return count;
 };
+
+// Time complexity: O(log(target / startValue))
+// Space complexity: O(1).
