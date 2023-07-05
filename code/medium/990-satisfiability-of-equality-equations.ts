@@ -7,15 +7,15 @@ function equationsPossible(equations: string[]): boolean {
     
     equations.forEach(([a,s,,b]) => {
         if(s === "="){
-            find(a);
-            find(b);
+            find(a); // a -> a
+            find(b); // b -> b
             parent.set(find(a), find(b));
         }
     })
     
     for(let [a,s,,b] of equations){
         if(s === "!"){
-            if(find(a) === find(b)) return false;
+            if(find(a) === find(b)) return false; // if parent a = parent b is false
         }
     }
     
