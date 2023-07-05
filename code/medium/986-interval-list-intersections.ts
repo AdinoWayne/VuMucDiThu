@@ -14,3 +14,6 @@ function intervalIntersection(A: number[][], B: number[][]): number[][] {
     
     return res;
 };
+
+// Time complexity: O(m+n) where m and n are the number of intervals in A and B respectively.
+// Space complexity: O(m+n) because of the result array
