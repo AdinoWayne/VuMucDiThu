@@ -21,3 +21,5 @@ function equationsPossible(equations: string[]): boolean {
     
     return true;
 };
+// TC O(n)
+// SC O(n)
