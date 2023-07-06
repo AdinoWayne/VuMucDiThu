@@ -12,7 +12,7 @@ function topKFrequent(nums: number[], k: number): number[] {
     }
     
     for(let i = bucket.length-1; i >= 0; i--) {
-        if(bucket[i]) result.push(...bucket[i]);
+        if(bucket[i]) result.push(...bucket[i]); // note length bucket[i] + result < k
         if(result.length === k) break;
     }
     return result;
