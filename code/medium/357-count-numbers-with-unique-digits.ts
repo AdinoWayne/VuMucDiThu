@@ -18,3 +18,6 @@ const countNumbersWithUniqueDigits = (n: number): number => {
   }
   return k + countNumbersWithUniqueDigits(n - 1);
 };
+
+// TC O(n)
+// SC O(1)
