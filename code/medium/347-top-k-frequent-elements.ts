@@ -17,3 +17,5 @@ function topKFrequent(nums: number[], k: number): number[] {
     }
     return result;
 };
+// Time complexity is O(n) + O(n) + O(k) = O(n+k)
+// Space complexity is O(n+k).
