@@ -36,6 +36,9 @@ var recurse = (node: TreeNode | null, val: number): TreeNode | null => {
 // TC O(n)
 // SC O(n)
 
+// recursion on the right when root.val > val, because new element will be inserted at the end of the list.
+// According to the previous problem: The right child of root will be Construct([A[i+1], A[i+2], ..., A[A.length - 1]]).
+
 // the given tree was constructed from an list A (root = Construct(A)). So, List A = new ArrayList();
 // Suppose B is a copy of A with the value val appended to it. So, B = new ArrayList(A) and B.add(val);
 // The left child of root will be Construct([A[0], A[1], ..., A[i-1]]),
