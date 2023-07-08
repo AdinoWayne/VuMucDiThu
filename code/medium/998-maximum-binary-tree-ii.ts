@@ -35,3 +35,12 @@ var recurse = (node: TreeNode | null, val: number): TreeNode | null => {
 }
 // TC O(n)
 // SC O(n)
+
+// the given tree was constructed from an list A (root = Construct(A)). So, List A = new ArrayList();
+// Suppose B is a copy of A with the value val appended to it. So, B = new ArrayList(A) and B.add(val);
+// The left child of root will be Construct([A[0], A[1], ..., A[i-1]]),
+// The right child of root will be Construct([A[i+1], A[i+2], ..., A[A.length - 1]]).
+// in this case A represent B, B[B.length-1] = val, So.
+// If val is the largest, i = B.length-1, the root node's value is val, i=0 to i-1 are in the left child of root.
+// This explains why when val > root.val, root should be the left child of new node with value val.
+// Else val is not the largest, the new node with value val is always the right child of root.
