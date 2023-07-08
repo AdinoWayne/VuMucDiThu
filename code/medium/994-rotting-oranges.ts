@@ -39,3 +39,6 @@ function orangesRotting(grid: number[][]): number {
   }
   return fresh === 0 ? minute : -1;
 };
+
+// TC O(n2)
+// SC O(n)
