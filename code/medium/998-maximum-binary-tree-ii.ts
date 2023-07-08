@@ -18,19 +18,20 @@ function insertIntoMaxTree(root: TreeNode | null, val: number): TreeNode | null 
     
 }
 
-var recurse = (node, val) => {
-    if(!node){
-        let temp = new TreeNode(val)
-        return temp
-    }else{
-        if(node.val < val){
-            let temp = new TreeNode(val)
-            temp.left = node
-            return temp
-        }else{
-            node.right = recurse(node.right, val)
-            return node
+var recurse = (node: TreeNode | null, val: number): TreeNode | null => {
+    if (!node) {
+        let temp = new TreeNode(val);
+        return temp;
+    } else {
+        if (node.val < val) {
+            let temp = new TreeNode(val);
+            temp.left = node;
+            return temp;
+        } else {
+            node.right = recurse(node.right, val);
+            return node;
         }    
     }
-    
 }
+// TC O(n)
+// SC O(n)
