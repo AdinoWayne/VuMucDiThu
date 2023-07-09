@@ -8,3 +8,6 @@ function canMeasureWater(jug1Capacity: number, jug2Capacity: number, targetCapac
 
     return targetCapacity % fetchGCD(jug1Capacity, jug2Capacity) == 0;
 };
+
+// TC O(n2)
+// SC O(1)
