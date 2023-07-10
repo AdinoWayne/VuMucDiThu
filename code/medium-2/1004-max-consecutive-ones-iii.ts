@@ -16,3 +16,6 @@ function longestOnes(A: number[], K: number): number {
     
     return longest;
 };
+
+// TC O(n)
+// SC O(1)
