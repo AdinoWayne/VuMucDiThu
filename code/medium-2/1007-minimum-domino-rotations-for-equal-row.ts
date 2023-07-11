@@ -14,3 +14,5 @@ function minDominoRotations(A: number[], B: number[]): number {
   }
   return -1;
 };
+// TC O(n)
+// SC O(1)
