@@ -16,5 +16,6 @@ function clumsy(N: number): number {
     }
     return ans;
 };
+// tip: notice the operator precedence
 // TC O(n)
 // SC O(1)
