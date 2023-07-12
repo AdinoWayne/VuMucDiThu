@@ -9,5 +9,6 @@ function numPairsDivisibleBy60(time: number[]): number {
     });
     return ans;
 };
+// Calculate the time % 60 then it will be exactly same as two sum problem.
 // TC O(n)
 // SC O(1)
