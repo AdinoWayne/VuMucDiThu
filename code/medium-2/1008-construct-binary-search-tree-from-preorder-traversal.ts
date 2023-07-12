@@ -18,18 +18,16 @@ function bstFromPreorder(preorder: number[]): TreeNode | null {
     if (i === preorder.length || preorder[i] > bound) {
       return null
     }
-
     const num = preorder[i]
     const node = new TreeNode(num)
     i++
-
     node.left = process(node.val)
     node.right = process(bound)
-
     return node
   }
-
   const root = process(Number.MAX_SAFE_INTEGER)
-
   return root
 };
+
+// TC O(n)
+// SC O(n)
