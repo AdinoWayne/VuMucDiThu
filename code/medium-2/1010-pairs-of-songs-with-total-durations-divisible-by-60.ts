@@ -9,3 +9,5 @@ function numPairsDivisibleBy60(time: number[]): number {
     });
     return ans;
 };
+// TC O(n)
+// SC O(1)
