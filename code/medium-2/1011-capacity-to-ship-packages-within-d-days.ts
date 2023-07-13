@@ -25,3 +25,5 @@ function shipWithinDays(weights: number[], days: number): number {
 
   return minCapacity;
 };
+// Time complexity  is O(n * log(sum(weights)))
+// Space complexity is O(1).
