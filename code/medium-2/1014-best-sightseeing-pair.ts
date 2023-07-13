@@ -3,8 +3,8 @@ function maxScoreSightseeingPair(values: number[]): number {
 
     for(let i = 1; i < values.length; i++) {
 
-        prevMax--;
-        max = Math.max(max, prevMax + values[i]);
+        prevMax--; //values[i] + i - j
+        max = Math.max(max, prevMax + values[i]); // values[j]
         prevMax = Math.max(prevMax, values[i]);
     }
     
