@@ -6,3 +6,5 @@ function queryString(s: string, n: number): boolean {
     }
     return true;
 };
+// TC O(n)
+// SC O(1)
