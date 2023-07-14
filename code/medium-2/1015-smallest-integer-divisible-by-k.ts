@@ -18,3 +18,5 @@ function smallestRepunitDivByK(k: number): number {
     }
     return count
 };
+// TC O(n)
+// SC O(n)
