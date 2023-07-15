@@ -24,3 +24,5 @@ const computeBit = (bit, pos, prev) => {
         return { bit: bit + prev, next: 0 };
     }
 }
+// TC O(log n)
+// SC O(log n)
