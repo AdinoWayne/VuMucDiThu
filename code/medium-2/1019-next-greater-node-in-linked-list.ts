@@ -33,3 +33,6 @@ function nextLargerNodes(head: ListNode | null): number[] {
       
     return output
 };
+
+// TC O(n)
+// SC O(n)
