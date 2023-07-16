@@ -14,3 +14,5 @@ function camelMatch(queries: string[], pattern: string): boolean[] {
         return match === patternLength;
     });
 };
+// TC O(n2)
+// SC O(1)
