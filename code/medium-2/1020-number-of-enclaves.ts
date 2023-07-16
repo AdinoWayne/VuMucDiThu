@@ -25,3 +25,5 @@ function numEnclaves(grid: number[][]): number {
         helper(x, y+1);
     }
 };
+// TC O(n2)
+// SC O(n2)
