@@ -6,8 +6,8 @@ function camelMatch(queries: string[], pattern: string): boolean[] {
         for (let x of query) {
             if (pattern[match] === x) {
                 match++;
-            } else if (x === x.toUpperCase()) {
-                return false;
+            } else if (x === x.toUpperCase()) { // check upper case
+                return false; // x is upper case and no match
             }
         }
 
