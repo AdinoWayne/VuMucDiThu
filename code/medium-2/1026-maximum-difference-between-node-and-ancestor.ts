@@ -33,3 +33,6 @@ function maxAncestorDiff(root: TreeNode | null): number {
 
     return result;
 };
+// binary tree (left < val < right)
+// Time complexity of the function is O(n) where n is the number of nodes in the tree.
+// Space complexity is O(h) where h is the height of the tree
