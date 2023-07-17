@@ -21,3 +21,5 @@ function videoStitching(clips: number[][], time: number): number {
     
     return videos_used;
 };
+// TC O(n)
+// SC O(1)
