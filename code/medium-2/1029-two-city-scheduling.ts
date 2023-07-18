@@ -11,3 +11,5 @@ function twoCitySchedCost(costs: number[][]): number {
     
     return sum;
 };
+// TC n(Log n)
+// SC O(1)
