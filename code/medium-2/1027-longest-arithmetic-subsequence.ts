@@ -12,5 +12,7 @@ function longestArithSeqLength(nums: number[]): number {
     }
     return max;
 };
+// What is an Arithmetic Subsequence ?
+// During high-school we learnt this concept with another name **Arithmetic Progression (AP)*.
 // TC O(n2)
 // SC O(n)
