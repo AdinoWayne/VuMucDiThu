@@ -12,3 +12,5 @@ function longestArithSeqLength(nums: number[]): number {
     }
     return max;
 };
+// TC O(n2)
+// SC O(n)
