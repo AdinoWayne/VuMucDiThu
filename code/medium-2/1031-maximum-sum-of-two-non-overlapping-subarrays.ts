@@ -43,3 +43,5 @@ function maxSumTwoNoOverlap(A: number[], L: number, M: number): number {
     
     return result
 };
+// TC O(n)
+// SC O(1)
