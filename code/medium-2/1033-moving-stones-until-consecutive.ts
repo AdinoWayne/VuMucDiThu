@@ -15,5 +15,5 @@ function numMovesStones(a: number, b: number, c: number): number[] {
     
     return [min, max];
 };
-// TC O(1)
+// TC O(nlogn)
 // SC O(1)
