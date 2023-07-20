@@ -20,5 +20,6 @@ function maxUncrossedLines(A: number[], B: number[]): number {
     
     return dp[m][n];
 };
+// dpTable[i][j]: Represents the maximum number of uncrossed lines that can be drawn between the first i elements of array A and the first j elements of array B.
 // TC O(n2)
 // SC O(n2)
