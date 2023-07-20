@@ -35,3 +35,5 @@ function colorBorder(grid: number[][], row: number, col: number, color: number):
 	traverse(row, col);
 	return grid;
 };
+// TC O(n)
+// SC O(n)
