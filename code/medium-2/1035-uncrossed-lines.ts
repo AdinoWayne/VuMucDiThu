@@ -20,3 +20,5 @@ function maxUncrossedLines(A: number[], B: number[]): number {
     
     return dp[m][n];
 };
+// TC O(n2)
+// SC O(n2)
