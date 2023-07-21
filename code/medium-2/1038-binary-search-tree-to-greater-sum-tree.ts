@@ -25,3 +25,5 @@ function bstToGst(root: TreeNode | null): TreeNode | null {
 
     return root;
 };
+// Time Complexity: O(N)
+// Space Complexity: O(H), where H is the height of the BST (O(log N) in a balanced BST, but O(N) in the worst case for a skewed tree).
