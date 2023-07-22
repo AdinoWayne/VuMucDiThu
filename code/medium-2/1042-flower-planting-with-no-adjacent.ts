@@ -30,3 +30,5 @@ function gardenNoAdj(n: number, paths: number[][]): number[] {
     
     return gardens;
 };
+// TC O(n)
+// SC O(n)
