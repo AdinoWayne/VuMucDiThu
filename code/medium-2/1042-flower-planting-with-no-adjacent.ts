@@ -14,12 +14,12 @@ function gardenNoAdj(n: number, paths: number[][]): number[] {
         
         for (const to of tos) {
             const neighborValue = gardens[to];
-            
             if (neighborValue) {
                 neighborValues[neighborValue] = true;
             }
         }
 
+        // set gardens
         for (let val = 1; val <= 4; val++) {
             if (!neighborValues[val]) {
                 gardens[i] = val;
