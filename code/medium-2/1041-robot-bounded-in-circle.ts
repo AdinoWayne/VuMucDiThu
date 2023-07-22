@@ -19,3 +19,5 @@ function isRobotBounded(instructions: string): boolean {
 
 	return isAtOrigin || (! isHeadingNorth);
 };
+// TC O(n)
+// SC O(1)
