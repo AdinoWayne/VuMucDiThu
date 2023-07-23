@@ -19,3 +19,5 @@ function lastStoneWeightII(stones: number[]): number {
         return min;
     }
 };
+// TC O(n2)
+// SC O(n2)
