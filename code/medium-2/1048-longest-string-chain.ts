@@ -17,3 +17,5 @@ function longestStrChain(words: string[]): number {
     }
     return resultCount;
 };
+// TC O(n2)
+// SC O(n)
