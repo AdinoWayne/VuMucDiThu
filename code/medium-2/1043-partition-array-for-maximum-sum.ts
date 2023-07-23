@@ -33,3 +33,6 @@ function maxSumAfterPartitioning(arr: number[], k: number): number {
 
     return result;
 };
+
+// Time complexity is O(n2)
+// Space complexity is O(n)
