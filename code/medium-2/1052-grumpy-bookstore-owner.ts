@@ -19,3 +19,5 @@ function maxSatisfied(customers: number[], grumpy: number[], minutes: number): n
   
   return satisfied + maxGrumpySatisfied;
 };
+// TC O(n)
+// SC O(1)
