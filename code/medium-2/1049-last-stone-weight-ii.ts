@@ -19,5 +19,6 @@ function lastStoneWeightII(stones: number[]): number {
         return min;
     }
 };
+// split the stones into two piles of the same weight as possible, in other word, see how much weight we can get by adding stones in a bag that has sum/2 capacity
 // TC O(n2)
 // SC O(n2)
