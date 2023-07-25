@@ -28,3 +28,5 @@ function smallestEquivalentString(s1: string, s2: string, baseStr: string): stri
     }
     return ans;
 };
+// TC O(alpha(n)) alpha(n) is the inverse Ackermann function which grows very slowly and is less than 5 for all practical values of n
+// SC O(n)
