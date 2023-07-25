@@ -17,3 +17,5 @@ function prevPermOpt1(arr: number[]): number[] {
     }
     return arr;
 };
+// TC O(n2)
+// SC O(1)
