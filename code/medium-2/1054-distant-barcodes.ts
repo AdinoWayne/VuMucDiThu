@@ -16,3 +16,5 @@ function rearrangeBarcodes(barcodes: number[]): number[] {
 
 	return barcodes;
 };
+// TC O(nLogn)
+// SC O(n)
