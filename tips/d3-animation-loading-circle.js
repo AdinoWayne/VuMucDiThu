@@ -23,3 +23,15 @@ function animatePath() {
     .on("end", animatePath);
 }
 animatePath();
+
+
+// let valTransform = d3.zoomIdentity.translate(selectedRef.current.x + 200 - 300, selectedRef.current.x + 200 - 300).scale(1);
+// svg.transition().duration(750).attr('transform', valTransform.toString())
+// const svgNode: any = svg.node();
+// d3.select(svgNode.parentNode).call(zoom.transform, valTransform)
+// svgRef.current.call(zoom.transform, valTransform)
+// zoom.translateBy(svgRef.current, 100, 100)
+// const svgNode: any = svg.node();
+// const transform = d3.zoomTransform(svgNode);
+// transform.x = 100;
+// transform.y = 100;
