@@ -17,3 +17,5 @@ function helper(map) {
     }
     return sum
 }
+// TC O(2^n)
+// SC O(n)
