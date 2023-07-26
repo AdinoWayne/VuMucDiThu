@@ -40,3 +40,5 @@ function addNegabinary(a: number[], b: number[]): number[] {
         return r.reverse();
     }
 };
+// TC O(logn)
+// SC O(n)
