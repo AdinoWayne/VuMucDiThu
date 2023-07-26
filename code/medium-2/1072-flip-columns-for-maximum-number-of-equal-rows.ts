@@ -19,3 +19,5 @@ function maxEqualRowsAfterFlips(matrix: number[][]): number {
     }
     return max;
 };
+// TC O(mn)
+// SC O(n)
