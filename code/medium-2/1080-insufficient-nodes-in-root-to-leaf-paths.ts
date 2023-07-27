@@ -35,3 +35,5 @@ function sufficientSubset(root: TreeNode | null, limit: number): TreeNode | null
         return node.left == null ? rightSum : leftSum;
     }
 };
+// TC O(n)
+// SC O(h)
