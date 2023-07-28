@@ -19,3 +19,5 @@ function smallestSubsequence(s: string): string {
 
     return st.join("");
 };
+// TC O(n)
+// SC O(1)
