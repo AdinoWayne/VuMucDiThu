@@ -36,3 +36,5 @@ function shortestPathBinaryMatrix(grid: number[][]): number {
 
 	return -1;
 };
+// TC O(n2)
+// SC O(n2)
