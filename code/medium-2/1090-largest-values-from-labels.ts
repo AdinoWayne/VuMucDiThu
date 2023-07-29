@@ -13,3 +13,5 @@ function largestValsFromLabels(values: number[], labels: number[], numWanted: nu
     }
     return sum;
 };
+// TC O(n log n)
+// SC O(n)
