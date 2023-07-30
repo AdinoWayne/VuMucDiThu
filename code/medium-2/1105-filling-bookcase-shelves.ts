@@ -24,3 +24,5 @@ function minHeightShelves(books: number[][], shelfWidth: number): number {
     
     return minHeights[books.length];
 };
+// TC O(n2)
+// SC O(n)
