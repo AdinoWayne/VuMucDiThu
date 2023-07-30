@@ -11,3 +11,5 @@ function carPooling(trips: number[][], capacity: number): boolean {
     }
     return true
 };
+// TC O(nlogn)
+// SC O(n)
