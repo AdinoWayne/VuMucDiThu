@@ -24,3 +24,5 @@ function pathInZigZagTree(label: number): number[] {
 	}
 	return output.reverse();
 };
+// TC O(logn)
+// SC O(logn)
