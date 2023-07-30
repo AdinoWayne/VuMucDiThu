@@ -90,3 +90,5 @@ function sampleStats(count: number[]): number[] {
 
   return [minimum, maximum, mean, median, mode];
 };
+// TC O(nlogn)
+// SC O(n)
