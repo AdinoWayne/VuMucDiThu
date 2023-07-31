@@ -26,3 +26,5 @@ function corpFlightBookings(bookings: number[][], n: number): number[] {
   }
   return result;
 };
+// TC O(n)
+// SC o(n)
