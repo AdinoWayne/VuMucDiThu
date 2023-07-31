@@ -33,3 +33,5 @@ function delNodes(root: TreeNode | null, to_delete: number[]): Array<TreeNode | 
   go(root);
   return res;
 };
+// TC O(n)
+// SC o(n)
