@@ -25,3 +25,5 @@ function maxDepthAfterSplit(seq: string): number[] {
     
     return res;
 };
+// TC O(n)
+// SC O(n)
