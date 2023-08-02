@@ -34,3 +34,5 @@ function depth(node){
     const right = depth(node.right);
     return 1 + Math.max(left, right);
 }
+// Time complexity is O(n) where n is the number of nodes in the tree
+// Space complexity is O(h) h is the height of the tree
