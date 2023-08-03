@@ -15,3 +15,5 @@ function maxAbsValExpr(arr1: number[], arr2: number[]): number {
     
     return Math.max(...res);
 };
+// Time complexity: O(n)
+// Space complexity: O(n)
