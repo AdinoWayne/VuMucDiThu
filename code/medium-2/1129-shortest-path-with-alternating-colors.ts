@@ -45,3 +45,5 @@ function shortestAlternatingPaths(n: number, redEdges: number[][], blueEdges: nu
 
   return res;
 };
+// Time complexity: O(n)
+// Space complexity: O(n)
