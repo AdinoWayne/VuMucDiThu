@@ -32,3 +32,5 @@ function longestWPI(hours: number[]): number {
 
     return res; 
 };
+// Time complexity: O(n^2)
+// Space complexity: O(n)
