@@ -24,3 +24,5 @@ function alphabetBoardPath(target: string): string {
     }
     return output;
 };
+// TC O(n)
+// SC O(1)
