@@ -27,3 +27,5 @@ function largest1BorderedSquare(grid: number[][]): number {
   }
   return ans;
 };
+// The time complexity of the function is O(m * n^3) where m is the number of rows and n is the number of columns in the grid.
+// The space complexity is O(m * n) because we are using two 2D arrays to store the top and left borders
