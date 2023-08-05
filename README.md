@@ -21,8 +21,10 @@ code: 1252, 661, 733, 999, 2309
 
 React implements a heuristic O(n) algorithm
 
-link need to read:
+link need to read:  
+https://stackoverflow.com/questions/13462001/ease-in-and-ease-out-animation-formula  
 https://css-tricks.com/adding-shadows-to-svg-icons-with-css-and-svg-filters/  
+
 https://dev.to/devsmitra/the-complete-guide-to-micro-frontend-with-reactjs-for-2022-36b2
 https://blog.maximeheckel.com/posts/guide-to-cicd-for-frontend-developers/  
 https://pgexercises.com/questions/joins/tjsub.html  
