@@ -18,3 +18,5 @@ function zig(nums, style, start){
    }
    return style;
 }
+// Time complexity: O(n)
+// Space complexity: O(1)
