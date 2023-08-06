@@ -29,5 +29,11 @@ function stoneGameII(piles: number[]): number {
         return res;
     }
 };
+// dp[i, m] = maximum stones the current player can get from piles[i:] with M=m
+// sums[i]= total stones of piles[i:]
+// when current player pick stones from i to i+x-1
+// -> the other player's stones: dp[i+x, max(m, x)]
+// -> total stones of current player: sums[i] - dp[i+x, max(m, x)]
+// we want the current player gets maximum means the other player gets minimum
 // Time complexity: O(n^3)
 // Space complexity: O(n^2)
