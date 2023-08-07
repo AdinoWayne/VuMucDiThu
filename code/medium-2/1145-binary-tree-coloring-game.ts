@@ -56,3 +56,5 @@ function btreeGameWinningMove(root: TreeNode | null, n: number, x: number): bool
 	// return false if none of these conditions can be met
     return false;
 };
+// The time complexity of the algorithm is O(n) where n is the number of nodes in the tree.
+// The space complexity is O(n) because we are using a queue to store the nodes in the tree.
