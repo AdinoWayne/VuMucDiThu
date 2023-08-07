@@ -22,3 +22,5 @@ function recursion(text1, text2, index1, index2, memo) {
     memo.set(key, result);
     return result;
 }
+// The time complexity of the algorithm is O(mn) where m and n are the lengths of the two strings.
+// The space complexity is also O(mn) because we are using a memoization map to store the results of all subproblems.
