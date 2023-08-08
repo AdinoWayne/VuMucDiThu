@@ -22,3 +22,5 @@ function numRollsToTarget(n: number, f: number, target: number): number {
         return count;
     }
 };
+// Time complexity: O(n * f * target)
+// Space complexity: O(n * target).
