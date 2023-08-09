@@ -38,3 +38,5 @@ function maxLevelSum(root: TreeNode | null): number {
     
     return levels.indexOf(Math.max(...levels)) + 1;
 };
+// The time complexity of this function is O(n) where n is the number of nodes in the tree.
+// The space complexity is O(w) where w is the maximum width of the tree
