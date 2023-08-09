@@ -7,18 +7,15 @@ function maxRepOpt1(text: string): number {
         !freq[e] && (freq[e]=0);
         freq[e]++;
     }
-    
     let segments = [];
     segments.push({
         v:text[0],
         c:1
     });
-    
     let max = 1;
     for(let i=1;i<text.length;i++){
         let e = text[i];
         let last = getLast(segments);
-        
         if(last.v == e){
             last.c++;
             max = Math.max(max,last.c);
@@ -26,9 +23,6 @@ function maxRepOpt1(text: string): number {
             segments.push({v:e,c:1});
         }    
     }
-
-    
-    
     for(let i=0,len=segments.length;i<len;i++){
         let {v,c} = segments[i];
         if(freq[v] > c){ // x x a ,  a x x ,  x a x
@@ -45,6 +39,7 @@ function maxRepOpt1(text: string): number {
             }
         }
     }
-
     return max;
 };
+// TC O(n)
+// SC O(1)
