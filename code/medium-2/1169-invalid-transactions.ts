@@ -31,3 +31,5 @@ function invalidTransactions(transactions: string[]): string[] {
     
     return res;
 };
+// TC O(n2)
+// SC O(n)
