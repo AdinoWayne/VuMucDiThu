@@ -25,3 +25,5 @@ function countFrequency(str){
     })
     return freq[Object.keys(freq).sort()[0]]
 }
+// TC O(n)
+// SC O(n)
