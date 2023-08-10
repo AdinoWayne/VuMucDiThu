@@ -42,3 +42,5 @@ function removeZeroSumSublists(head: ListNode | null): ListNode | null {
     
     return dummy.next;
 };
+// TC O(n)
+// SC O(n)
