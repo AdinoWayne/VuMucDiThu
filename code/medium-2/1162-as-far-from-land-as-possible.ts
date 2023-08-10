@@ -39,3 +39,5 @@ const distance = (p0, p1) => {
     }
     return d;
 }
+// TC O(n2)
+// SC O(n)
