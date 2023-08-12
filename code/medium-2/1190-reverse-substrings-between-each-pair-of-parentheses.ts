@@ -1,13 +1,21 @@
 function reverseParentheses(s: string): string {
-    while (s.includes("(")) { // Check if s has parentheses;
-        s = s.replace(/\([^\(\)]+\)|\(\)/g, (match) => { 
-		
-			// If parentheses are detected, remove them and reverse all of the content inside 
-            return match.slice(1, -1).split("").reverse().join("");
-        })
+    const stack = [];
+    for (let char of s) {
+      if (char !== ")") {
+        stack.push(char);
+        continue;
+      }
+      let c = stack.pop();
+      let queue = [];
+      while (c !== "(") {
+        queue.push(c);
+        c = stack.pop();
+      }
+      while (queue.length) {
+        stack.push(queue.shift());
+      }
     }
-    
-    return s;
+    return stack.join("");
 };
 // TC O(n2)
 // SC O(n)
