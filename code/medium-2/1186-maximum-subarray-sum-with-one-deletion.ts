@@ -17,3 +17,5 @@ function maximumSum(arr: number[]): number {
     
     return answer
 };
+// TC O(n)
+// SC O(n)
