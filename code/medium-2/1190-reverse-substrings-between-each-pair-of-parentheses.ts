@@ -9,3 +9,5 @@ function reverseParentheses(s: string): string {
     
     return s;
 };
+// TC O(n2)
+// SC O(n)
