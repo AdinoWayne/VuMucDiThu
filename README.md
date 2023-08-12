@@ -22,6 +22,7 @@ code: 1252, 661, 733, 999, 2309
 React implements a heuristic O(n) algorithm
 
 link need to read:  
+https://www.visualcinnamon.com/2015/09/placing-text-on-arcs/  
 https://stackoverflow.com/questions/13462001/ease-in-and-ease-out-animation-formula  
 https://css-tricks.com/adding-shadows-to-svg-icons-with-css-and-svg-filters/  
 
