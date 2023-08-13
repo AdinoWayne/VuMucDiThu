@@ -68,3 +68,5 @@ function kConcatenationMaxSum(arr: number[], k: number): number {
         maxPrefix + maxSuffix // (3)
     ) % MOD;
 };
+// TC O(n)
+// SC O(1)
