@@ -41,7 +41,11 @@ const lcm = (a, b) => {
 const gcd = function (a, b) {
   if (b === 0) return a;
   return gcd(b, a % b);
-};
+// };
+// When we add the number of elements of each set in n(A) + n(B) + n(C), since A ∩ B ⊆ A, B,
+// all elements in A ∩ B are being counted twice. Similary all elements of A ∩ C and B ∩ C are being counted twice as well.
+// To remedy this, we subtract n(A ∩ B) + n(A ∩ C) + n(B ∩ C).
+// Now, n(A ∩ B ∩ C) was added three times and then subtracted three times, so it is missing. Thus, we add n(A ∩ B ∩ C).
 // F(N) = a + b + c - a ∩ c - a ∩ b - b ∩ c + a ∩ b ∩ c
 // F(N) = N/a + N/b + N/c - N/lcm(a, c) - N/lcm(a, b) - N/lcm(b, c) + N/lcm(a, b, c)
 // TC O(nlogn)
