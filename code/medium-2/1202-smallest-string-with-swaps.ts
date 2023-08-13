@@ -34,3 +34,5 @@ function smallestStringWithSwaps(s: string, pairs: number[][]): string {
     }
     return result.join('')
 };
+// TC O(nLogn)
+// SC O(n)
