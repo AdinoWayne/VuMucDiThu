@@ -42,5 +42,7 @@ const gcd = function (a, b) {
   if (b === 0) return a;
   return gcd(b, a % b);
 };
+// F(N) = a + b + c - a ∩ c - a ∩ b - b ∩ c + a ∩ b ∩ c
+// F(N) = N/a + N/b + N/c - N/lcm(a, c) - N/lcm(a, b) - N/lcm(b, c) + N/lcm(a, b, c)
 // TC O(nlogn)
 // SC O(1)
