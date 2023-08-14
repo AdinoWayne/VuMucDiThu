@@ -34,6 +34,7 @@ function smallestStringWithSwaps(s: string, pairs: number[][]): string {
     }
     return result.join('')
 };
+// Union-Find Solution
 // group = map<IdxPairs, elPairs[]> , charMap = map<s[i], [i]>
 // TC O(nLogn)
 // SC O(n)
