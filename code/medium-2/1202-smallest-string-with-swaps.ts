@@ -34,5 +34,6 @@ function smallestStringWithSwaps(s: string, pairs: number[][]): string {
     }
     return result.join('')
 };
+// group = map<IdxPairs, elPairs[]> , charMap = map<s[i], [i]>
 // TC O(nLogn)
 // SC O(n)
