@@ -9,3 +9,5 @@ function equalSubstring(s: string, t: string, maxCost: number): number {
   }
   return s.length - left - 1;
 };
+// TC O(n)
+// SC O(1)
