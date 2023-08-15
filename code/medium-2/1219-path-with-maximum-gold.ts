@@ -28,3 +28,5 @@ function maxGold(grid, row=0, col=0, count=0){
         return count;
     }
 }
+// TC O(n2)
+// SC O(1)
