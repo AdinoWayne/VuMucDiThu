@@ -23,3 +23,5 @@ function queensAttacktheKing(queens: number[][], king: number[]): number[][] {
         traverse(currentX + x, currentY + y, x, y);
     }
 };
+// TC O(n)
+// SC O(1)
