@@ -14,3 +14,5 @@ function removeSubfolders(folders: string[]): string[] {
   }
   return ret;
 };
+// TC O(nlogn)
+// SC O(n)
