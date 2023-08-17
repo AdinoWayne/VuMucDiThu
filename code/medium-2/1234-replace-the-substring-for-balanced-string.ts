@@ -45,3 +45,5 @@ var isBalanced = function(charCount, target){ //balanced if all chars <= n/4
     }
     return true;
 }
+// TC O(n2)
+// SC O(n)
