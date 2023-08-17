@@ -15,3 +15,5 @@ function findSolution(customfunction: CustomFunction, z: number): number[][] {
     }
     return ret;
 };
+// TC O(n)
+// SC O(n)
