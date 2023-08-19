@@ -10,3 +10,5 @@ var grayCodeStartingWith = function (n, start) {
     }
     return a;
 };
+// TC O(2^n)
+// SC O(2^n)
