@@ -4,7 +4,6 @@ function maxLength(arr: string[]): number {
     arr = arr.filter(isUnique);
     let mem = {};
     maxLen = dfs(arr, "", 0, maxLen, mem);
-    
     return maxLen;
 };
 
@@ -21,8 +20,6 @@ function dfs(arr, path, i, maxLen, mem) {
     for (let j = i; j < arr.length; j++) {
         maxLen = dfs(arr, path + arr[j], j + 1, maxLen, mem);
     }
-
-
     mem[path] = maxLen;
     return maxLen;
 }
@@ -33,7 +30,6 @@ function isUnique(str) {
         if (map[str[i]]) return false;
         map[str[i]] = 1;
     }
-    
     return true;
 }
 // TC O(2^n)
