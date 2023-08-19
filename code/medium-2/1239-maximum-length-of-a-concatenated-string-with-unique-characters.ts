@@ -36,3 +36,5 @@ function isUnique(str) {
     
     return true;
 }
+// TC O(2^n)
+// SC O(2^n)
