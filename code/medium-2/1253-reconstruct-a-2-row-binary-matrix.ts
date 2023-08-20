@@ -25,3 +25,5 @@ function reconstructMatrix(upper: number, lower: number, colsum: number[]): numb
     }
     return upper > 0 || lower > 0 ? [] : result;
 };
+// TC O(n)
+// SC O(n)
