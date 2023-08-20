@@ -22,3 +22,5 @@ function minRemoveToMakeValid(str: string): string {
 
   return splitted_str.join(""); // at last we will join the splitted_str
 };
+// TC O(n)
+// SC O(n)
