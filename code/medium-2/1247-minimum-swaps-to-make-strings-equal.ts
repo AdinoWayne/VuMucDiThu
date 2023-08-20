@@ -1,10 +1,8 @@
 function minimumSwap(s1: string, s2: string): number {
   let n = s1.length
-
   // count xy & yx
   let xy = 0
   let yx = 0
-
   for (let i = 0; i < n; i++) {
     if (s1[i] === s2[i]) {
       // already good / equal         xx & yy case
@@ -17,9 +15,7 @@ function minimumSwap(s1: string, s2: string): number {
       }
     }
   }
-
   let cc = 0
-
   // every 2 xy s     are     1
   if (xy) {
     if (xy % 2 === 0) {
@@ -41,7 +37,6 @@ function minimumSwap(s1: string, s2: string): number {
       yx = 1
     }
   }
-
   // remaining xy & yx s generate 2 each
   if (xy && yx) {
     if (xy === yx) {
@@ -50,11 +45,11 @@ function minimumSwap(s1: string, s2: string): number {
       yx = 0
     }
   }
-
   // still remaining - issue
   if (xy || yx) {
     return -1
   }
-
   return cc
 };
+// TC O(n)
+// SC O(1)
