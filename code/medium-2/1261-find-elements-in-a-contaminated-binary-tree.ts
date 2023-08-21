@@ -40,3 +40,5 @@ class FindElements {
  * var obj = new FindElements(root)
  * var param_1 = obj.find(target)
  */
+// TC O(n)
+// SC O(n)
