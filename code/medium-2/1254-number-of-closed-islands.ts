@@ -36,3 +36,5 @@ function closedIsland(grid: number[][]): number {
     
     return count;
 };
+// TC O(n2)
+// SC o(n2)
