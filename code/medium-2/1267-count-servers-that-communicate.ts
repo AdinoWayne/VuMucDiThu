@@ -13,3 +13,5 @@ function countServers(grid: number[][]): number {
 
     return cs.length;
 };
+// TC O(n2)
+// SC O(n)
