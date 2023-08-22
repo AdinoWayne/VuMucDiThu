@@ -20,3 +20,5 @@ function maxSumDivThree(nums: number[]): number {
     if (remainSum === 1) return sum - remainOne;
     return sum - remainTwo;
 };
+// TC O(n)
+// SC O(1)
