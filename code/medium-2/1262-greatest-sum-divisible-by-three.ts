@@ -20,5 +20,8 @@ function maxSumDivThree(nums: number[]): number {
     if (remainSum === 1) return sum - remainOne;
     return sum - remainTwo;
 };
+// Add all together, if sum%3==0, return sum.
+// if sum%3==1, remove the smallest number which has n%3==1.
+// if sum%3==2, remove the smallest number which has n%3==2.
 // TC O(n)
 // SC O(1)
