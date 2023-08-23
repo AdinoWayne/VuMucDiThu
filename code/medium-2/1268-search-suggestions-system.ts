@@ -7,3 +7,5 @@ function suggestedProducts(products: string[], searchWord: string): string[][] {
     }
     return res;
 };
+// TC O(n2)
+// SC O(n)
