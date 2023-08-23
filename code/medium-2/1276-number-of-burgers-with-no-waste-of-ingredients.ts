@@ -9,3 +9,5 @@ function numOfBurgers(tomatoSlices: number, cheeseSlices: number): number[] {
 
     return smallBurger >= 0 ? [jumboBurger, smallBurger] : [];
 };
+// TC O(1)
+// SC O(1)
