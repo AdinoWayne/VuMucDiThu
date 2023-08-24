@@ -18,3 +18,5 @@ function groupThePeople(groupSizes: number[]): number[][] {
 
     return result;
 };
+// TC O(n)
+// SC O(n)
