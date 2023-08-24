@@ -11,3 +11,5 @@ function countSquares(matrix: number[][]): number {
   }
   return count;
 };
+// TC O(n2)
+// SC O(1)
