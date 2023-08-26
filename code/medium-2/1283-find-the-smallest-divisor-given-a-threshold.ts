@@ -11,3 +11,5 @@ function smallestDivisor(nums: number[], threshold: number): number {
   }
   return left;
 };
+// TC O(nlogn)
+// SC O(1)
