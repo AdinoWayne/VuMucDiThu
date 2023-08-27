@@ -14,7 +14,7 @@ function sequentialDigits(low: number, high: number): number[] {
             }
         }
     }
-    
-    
     return ans;
 };
+// TC O(1)
+// SC O(1)
