@@ -37,3 +37,5 @@ function maxSideLength(mat: number[][], threshold: number): number {
     }
     return r;
 };
+// TC O(n^2* logn)
+// SC O(n2)
