@@ -9,3 +9,5 @@ function removeCoveredIntervals(intervals: number[][]): number {
     }
     return count
 };
+// TC O(n)
+// SC O(1)
