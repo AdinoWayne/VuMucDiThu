@@ -12,3 +12,5 @@ function findBestValue(arr: number[], target: number): number {
 
     return arr[arr.length - 1];
 };
+// TC O(nLogn)
+// SC O(1)
