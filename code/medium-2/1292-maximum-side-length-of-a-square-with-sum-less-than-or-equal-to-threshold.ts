@@ -1,6 +1,5 @@
 function maxSideLength(mat: number[][], threshold: number): number {
     const n = mat.length, m = mat[0].length;
-    
     // build sum matrix
     let sum = [];
     for(let i=0; i<=n; i++) {
@@ -12,7 +11,6 @@ function maxSideLength(mat: number[][], threshold: number): number {
             sum[i][j] = sum[i-1][j] + sum[i][j-1] - sum[i-1][j-1] + mat[i-1][j-1];
         }
     }
-    
     // function to check square sum <= threshold
     const underThreshold = function(len) {
         for(let i=len; i<=n; i++) {
@@ -24,7 +22,6 @@ function maxSideLength(mat: number[][], threshold: number): number {
         }
         return false;
     };
-    
     // binary search
     let l=0, r=Math.min(n, m);
     while(l<=r) {
