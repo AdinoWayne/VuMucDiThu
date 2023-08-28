@@ -15,3 +15,5 @@ function maxFreq(s: string, maxLetters: number, minSize: number, maxSize: number
   }
   return max;
 };
+// Time complexity of this function is O((n - k + 1)k), where n is the length of the input string and k is the minimum size of the substring 
+// Space complexity of this function is O(nk), where n is the length of the input string and k is the minimum size of the substring
