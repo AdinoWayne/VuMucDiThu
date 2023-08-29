@@ -12,5 +12,8 @@ function findBestValue(arr: number[], target: number): number {
 
     return arr[arr.length - 1];
 };
+// left part + right part = target
+// left part + v*removed  = target
+// v = (target - left part)/removed
 // TC O(nLogn)
 // SC O(1)
