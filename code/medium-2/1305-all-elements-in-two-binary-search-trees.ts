@@ -34,3 +34,5 @@ var getVal = function(node, list) { // get the values recursively
         getVal(node.right, list)
     }
 }
+// TC O(n)
+// SC O(n)
