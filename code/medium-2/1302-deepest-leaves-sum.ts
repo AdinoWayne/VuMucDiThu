@@ -31,3 +31,5 @@ function deepestLeavesSum(root: TreeNode | null): number {
     rec(root);
     return cache[cache.length - 1];  
 };
+// TC O(n)
+// SC O(n)
