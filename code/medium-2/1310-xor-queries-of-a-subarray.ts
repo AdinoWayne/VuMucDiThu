@@ -7,11 +7,11 @@ function xorQueries(arr: number[], queries: number[][]): number[] {
     for ( var i=1 ; i<arr.length; i++ ) {
          xor_arr[i] = xor_arr[i-1]^arr[i]
     }
-
     for (const [start, end] of queries) {
         res_arr.push(xor_arr[start]^xor_arr[end]^arr[start])
     	                           
     }
-
     return res_arr;
 };
+// TC O(n)
+// SC O(n)
