@@ -5,3 +5,5 @@ function canReach(arr: number[], start: number): boolean {
   arr[start] = -1;
   return (start - val >= 0 && canReach(arr, start - val)) || (start + val < arr.length && canReach(arr, start + val));
 };
+// TC O(n)
+// SC O(n)
