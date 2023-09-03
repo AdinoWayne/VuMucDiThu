@@ -30,3 +30,5 @@ function watchedVideosByFriends(watchedVideos: string[][], friends: number[][], 
 
     return videos.map(([video]) => video);
 };
+// TC O(nlogn)
+// SC O(n)
