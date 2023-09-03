@@ -23,3 +23,5 @@ function matrixBlockSum(mat: number[][], K: number): number[][] {
     // used mat as result matrix
     return mat;
 };
+// TC O(n2)
+// SC O(n2)
