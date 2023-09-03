@@ -23,5 +23,7 @@ function matrixBlockSum(mat: number[][], K: number): number[][] {
     // used mat as result matrix
     return mat;
 };
+// Similarly, Sum of an arbitrary block from (i-K, j-K) to (i+K, j+K)
+// ans(i, j) = prefix(i+K, j+K) - prefix(i+K, j-K-1) - prefix (i-K-1, j+K) + prefix(i-K-1, j-K-1);
 // TC O(n2)
 // SC O(n2)
