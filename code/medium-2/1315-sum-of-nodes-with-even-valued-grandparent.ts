@@ -19,3 +19,5 @@ function sumEvenGrandparent(root: TreeNode | null, grandpaEven = false, fatherEv
   const right = sumEvenGrandparent(root.right, fatherEven, isEven);
   return left + right + (grandpaEven ? root.val : 0);
 };
+// TC O(n)
+// SC O(n)
