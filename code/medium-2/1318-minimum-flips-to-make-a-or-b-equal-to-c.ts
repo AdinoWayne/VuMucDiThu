@@ -9,3 +9,5 @@ function minFlips(a: number, b: number, c: number): number {
   }
   return ret;
 };
+// TC O(1)
+// SC O(1)
