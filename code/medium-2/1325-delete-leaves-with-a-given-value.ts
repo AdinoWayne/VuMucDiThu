@@ -39,3 +39,5 @@ function dfs(root: TreeNode | null, target: number): boolean {
 
     return shouldDeleteSelf(root, target) ? true : false;
 }
+// TC O(n)
+// SC O(n)
