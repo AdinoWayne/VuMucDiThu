@@ -15,3 +15,5 @@ function breakPalindrome(palindrome: string): string {
     return result.join("");
   }
 };
+// TC O(n)
+// SC O(n)
