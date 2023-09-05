@@ -50,3 +50,5 @@ function makeConnected(n: number, connections: number[][]): number {
     }
   }
 };
+// TC O(n)
+// SC O(n)
