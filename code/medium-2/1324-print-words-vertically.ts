@@ -4,3 +4,5 @@ function printVertically(s: string): string[] {
     
     return [...Array(maxLength)].map((_, i) => arr.map(word => word[i] || ' ').join('').trimEnd())
 };
+// TC O(n2)
+// SC O(n2)
