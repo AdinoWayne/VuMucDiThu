@@ -31,3 +31,5 @@ function filterRestaurants(restaurants: number[][], veganFriendly: number, maxPr
     
     return filteredRestaurants.map(([id]) => id)
 };
+// TC O(nlogn)
+// SC O(n)
