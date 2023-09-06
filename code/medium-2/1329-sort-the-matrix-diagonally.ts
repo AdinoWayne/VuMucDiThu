@@ -20,3 +20,5 @@ function diagonalSort(mat: number[][]): number[][] {
     }
     return mat
 };
+// TC O(mn log n)  where m and n are the number of rows and columns in the input matrix
+// SC O(mn)  where m and n are the number of rows and columns in the input matrix
