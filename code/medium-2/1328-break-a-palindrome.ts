@@ -11,6 +11,7 @@ function breakPalindrome(palindrome: string): string {
   if (result.length === 1) {
     return "";
   } else {
+    //if all 'a'
     result[result.length - 1] = "b";
     return result.join("");
   }
