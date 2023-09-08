@@ -24,3 +24,5 @@ function findTheCity(n: number, edges: number[][], distanceThreshold: number): n
   }
   return city;
 };
+// TC O(n3)
+// SC O(n2)
