@@ -10,3 +10,5 @@ function minSetSize(arr: number[]): number {
     if (count >= arr.length / 2) return i + 1;
   }
 };
+// TC O(nlogn)
+// SC O(n)
