@@ -11,3 +11,5 @@ function numOfSubarrays(arr: number[], k: number, threshold: number): number {
     }
     return count;
 };
+// TC O(n)
+// SC O(1)
