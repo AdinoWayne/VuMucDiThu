@@ -33,3 +33,5 @@ function maxProduct(root: TreeNode | null): number {
     maxiProduct(root, sum);
     return omax % (Math.pow(10, 9) + 7);
 };
+// TC O(n)
+// SC O(n)
