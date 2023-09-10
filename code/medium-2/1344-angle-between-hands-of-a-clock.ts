@@ -4,3 +4,5 @@ function angleClock(hour: number, minutes: number): number {
     var diff = Math.abs(minutesAngle - hoursAngle);
     return Math.min(diff, 360 - diff);
 };
+// TC O(1)
+// SC O(1)
