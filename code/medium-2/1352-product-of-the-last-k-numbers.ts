@@ -28,3 +28,5 @@ class ProductOfNumbers {
  * obj.add(num)
  * var param_2 = obj.getProduct(k)
  */
+// TC O(n)
+// SC o(n)
