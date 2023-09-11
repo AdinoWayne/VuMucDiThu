@@ -36,3 +36,5 @@ class TweetCounts {
  * obj.recordTweet(tweetName,time)
  * var param_2 = obj.getTweetCountsPerFrequency(freq,tweetName,startTime,endTime)
  */
+// TC O(n)
+// SC O(n)
