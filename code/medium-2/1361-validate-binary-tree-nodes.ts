@@ -26,3 +26,5 @@ function findRoot(n, leftArr, rightArr) {
     }
     return -1;
 }
+// TC O(n)
+// SC O(n)
