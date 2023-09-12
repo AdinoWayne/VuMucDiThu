@@ -14,3 +14,5 @@ function rankTeams(votes: string[]): string {
         return a < b ? -1 : 1;
     }).join('');
 };
+// TC O(n2)
+// SC O(n)
