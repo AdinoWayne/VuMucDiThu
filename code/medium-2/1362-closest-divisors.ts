@@ -16,3 +16,5 @@ function closestDivisors(num: number): number[] {
           div--;
       }
 };
+// TC O(sqrt(n))
+// SC O(1)
