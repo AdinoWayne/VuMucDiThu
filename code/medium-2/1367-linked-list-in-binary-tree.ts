@@ -54,3 +54,5 @@ const helper = (treeNode, listNode) => {
     
     return leftResult || rightResult;
 };
+// TC O(n2)
+// SC O(n)
