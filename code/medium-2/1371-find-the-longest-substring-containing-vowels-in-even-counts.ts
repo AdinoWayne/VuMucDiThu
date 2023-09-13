@@ -9,3 +9,5 @@ function findTheLongestSubstring(s: string): number {
     }
     return res;
 };
+// TC O(1)
+// SC O(1)
