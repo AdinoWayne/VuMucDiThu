@@ -34,3 +34,5 @@ const recLongestZigZag = (root, dir) => {
     ans = Math.max(ans, left, right)
     return dir === LEFT ? right : left
 }
+// TC O(n)
+// SC O(n)
