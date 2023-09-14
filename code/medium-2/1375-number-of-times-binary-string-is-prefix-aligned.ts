@@ -12,3 +12,5 @@ function numTimesAllBlue(flips: number[]): number {
     
     return moments;
 };
+// TC O(n)
+// SC O(1)
