@@ -43,6 +43,9 @@ class CustomStack {
     }
 }
 
+// TC O(n)
+// SC O(1)
+
 /**
  * Your CustomStack object will be instantiated and called as such:
  * var obj = new CustomStack(maxSize)
