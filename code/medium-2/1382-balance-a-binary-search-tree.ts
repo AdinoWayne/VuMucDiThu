@@ -31,3 +31,5 @@ function balanceBST(root: TreeNode | null): TreeNode | null {
     }
     return constructTree(sortedArr);
 };
+// TC O(n)
+// SC O(n)
