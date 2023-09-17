@@ -11,3 +11,5 @@ function numOfMinutes(n: number, headID: number, manager: number[], informTime: 
         return informTime[id];
     }
 };
+// TC O(n)
+// SC O(n)
