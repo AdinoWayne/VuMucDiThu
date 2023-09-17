@@ -12,7 +12,6 @@ function maxNumberOfFamilies(n: number, reservedSeats: number[][]): number {
             r=1
             m=1
         }
-        
         if(j==2||j==3)l=0
 
         if(j==4||j==5){
@@ -23,10 +22,9 @@ function maxNumberOfFamilies(n: number, reservedSeats: number[][]): number {
             m=0
             r=0
         }
-
         if(j==8||j==9)r=0
-
     }
-
     return result+Math.max(m,r+l)+(n-currRow)*2
 };
+// TC O(nlogn)
+// SC O(n)
