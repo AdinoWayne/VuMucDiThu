@@ -15,3 +15,5 @@ function getKth(lo: number, hi: number, k: number): number {
     result.sort((a, b) => map[a] - map[b])
     return result[k - 1]
 };
+// TC O((hi - lo + 1) * log(hi - lo + 1))
+// SC O(hi - lo + 1) 1
