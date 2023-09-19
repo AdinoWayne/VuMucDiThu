@@ -51,3 +51,5 @@ function sumFourDivisors(nums: number[]): number {
   }  
   return solNum
 };
+// TC O(n * sqrt(m)
+// SC O(n)
