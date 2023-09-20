@@ -27,3 +27,5 @@ function numTeams(rating: number[]): number {
 
     return result;
 };
+// TC O(n2)
+// SC O(n)
