@@ -26,7 +26,8 @@ class UndergroundSystem {
         return this.avg.get([startStation, endStation].join())[0];
     }
 }
-
+// TC O(1)
+// SC O(n2)
 /**
  * Your UndergroundSystem object will be instantiated and called as such:
  * var obj = new UndergroundSystem()
