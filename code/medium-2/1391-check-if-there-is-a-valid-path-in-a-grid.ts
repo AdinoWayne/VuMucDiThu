@@ -71,3 +71,5 @@ const types = {
     5: { up: 'left', left: 'up' },
     6: { right: 'up', up: 'right' }
 }
+// TC O(n * m)
+// SC O(1)
