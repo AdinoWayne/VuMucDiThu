@@ -19,3 +19,5 @@ function canConstruct(s: string, k: number): boolean {
     }
     return count<=k;
 };
+// TC O(n)
+// SC O(n)
