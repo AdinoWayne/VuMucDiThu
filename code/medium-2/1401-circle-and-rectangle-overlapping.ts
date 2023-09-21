@@ -6,3 +6,5 @@ function checkOverlap(radius: number, xCenter: number, yCenter: number, x1: numb
 
     return xDistance ** 2 + yDistance ** 2 <= radius ** 2
 };
+// TC O(1)
+// SC O(1)
