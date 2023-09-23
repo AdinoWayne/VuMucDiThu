@@ -8,3 +8,5 @@ function numSteps(s: string): number {
     
     return i;
 };
+// TC O(logn)
+// SC O(1)
