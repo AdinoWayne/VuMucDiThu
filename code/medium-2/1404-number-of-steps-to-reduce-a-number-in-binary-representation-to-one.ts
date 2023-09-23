@@ -8,5 +8,9 @@ function numSteps(s: string): number {
     
     return i;
 };
+// Since the Number primitive on Javascript only supports numbers below 2^53 - 1
+// it's neccesary to use the BigInt notation when dealing with numbers.
+// Example:
+// 123 --> 123n.
 // TC O(logn)
 // SC O(1)
