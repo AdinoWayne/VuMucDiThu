@@ -29,3 +29,5 @@ function longestDiverseString(a: number, b: number, c: number): string {
 
 	return result.join('');
 };
+// TC O(1)
+// SC O(n)
