@@ -27,3 +27,5 @@ var calcFib = function(fib, k) {
         i++; 
 	} 
 };
+// TC O(n)
+// SC O(n)
