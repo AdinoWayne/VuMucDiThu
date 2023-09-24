@@ -12,3 +12,5 @@ function getHappyString(n: number, k: number): string {
     return permute('') || '';
 };
 
+// TC O(3^n)
+// SC O(n)
