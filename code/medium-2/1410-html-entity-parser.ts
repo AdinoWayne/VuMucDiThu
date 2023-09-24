@@ -53,3 +53,5 @@ function entityParser(text: string): string {
     
     return res;
 };
+// TC O(n)
+// SC O(1)
