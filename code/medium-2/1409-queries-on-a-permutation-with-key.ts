@@ -9,3 +9,5 @@ function processQueries(queries: number[], m: number): number[] {
     }
     return final
 };
+// TC O(n2)
+// SC O(2n)
