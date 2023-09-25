@@ -33,3 +33,5 @@ function minNumberOfFrogs(croakOfFrogs: string): number {
     }
     return max_c
 };
+// TC O(n)
+// SC O(1)
