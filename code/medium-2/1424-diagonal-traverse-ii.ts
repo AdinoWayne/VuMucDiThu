@@ -24,3 +24,5 @@ function findDiagonalOrder(A: number[][], ans = []): number[] {
     // result
     return ans
 };
+// TC O(n2)
+// SC O(2n)
