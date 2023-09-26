@@ -24,3 +24,5 @@ function maxScore(cardPoints: number[], k: number): number {
     
     return maxSum
 };
+// TC O(n)
+// SC O(1)
