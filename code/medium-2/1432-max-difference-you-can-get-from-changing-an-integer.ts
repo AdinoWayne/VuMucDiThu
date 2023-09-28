@@ -32,3 +32,5 @@ function maxDiff(num: number): number {
     
     return Number(max) - Number(min);
 };
+// TC O(n)
+// SC O(1)
