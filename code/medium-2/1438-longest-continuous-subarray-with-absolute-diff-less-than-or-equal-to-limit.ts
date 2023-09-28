@@ -22,3 +22,5 @@ function longestSubarray(nums: number[], limit: number): number {
   }
   return max;
 };
+// TC O(n)
+// SC O(n)
