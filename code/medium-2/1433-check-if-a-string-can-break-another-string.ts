@@ -19,3 +19,5 @@ function checkIfCanBreak(s1: string, s2: string): boolean {
     
     return true;
 };
+// TC O(nlogn)
+// SC O(n)
