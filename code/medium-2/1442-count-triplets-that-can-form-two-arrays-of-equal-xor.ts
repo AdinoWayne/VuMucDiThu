@@ -12,6 +12,7 @@ function countTriplets(arr: number[]): number {
     return count
 };
 // explaination
+// For all pairs of i and k, where arr[i] ^ arr[i + 1] ^ ... ^ arr[k] = 0, then any j (i < j <= k) will be good to set as the answer
 // a==b
 // xor b to the both side
 // a^b=b^b
