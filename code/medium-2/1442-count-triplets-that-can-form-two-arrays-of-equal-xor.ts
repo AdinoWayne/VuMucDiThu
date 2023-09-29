@@ -11,5 +11,13 @@ function countTriplets(arr: number[]): number {
     }
     return count
 };
+// explaination
+// a==b
+// xor b to the both side
+// a^b=b^b
+// a^b=0
+// xor(a[i...k])=0
+// the size of this subarray is j - i + 1
+// think how many possible ways to cut it into two non-empty parts ---> it is j - i
 // TC O(n2)
 // SC O(1)
