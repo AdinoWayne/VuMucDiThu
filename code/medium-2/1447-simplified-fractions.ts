@@ -16,3 +16,5 @@ function simplifiedFractions(n: number): string[] {
 	decimalSet.clear() //Used to improve space complexity
     return result
 };
+// TC O(n2)
+// SC O(n2)
