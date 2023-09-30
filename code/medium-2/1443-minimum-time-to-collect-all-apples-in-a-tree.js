@@ -20,3 +20,5 @@ function minTime(n: number, edges: number[][], hasApple: boolean[]): number {
     }
     return answer;
 };
+// TC O(n)
+// SC O(n)
