@@ -1,24 +1,19 @@
 function minTime(n: number, edges: number[][], hasApple: boolean[]): number {
-    const parentMap = new Map();
-    let answer = 0;
-    for (let i = 0; i < edges.length; i++) {
-        parentMap.set(edges[i][1], edges[i][0]);
+    const adjlist = Array.from(Array(n), () => new Array());
+    for(const edge of edges){
+        adjlist[edge[0]].push(edge[1]);
+        adjlist[edge[1]].push(edge[0]);
     }
-    for (let i = 0; i < hasApple.length; i++) {
-        if (hasApple[i]) {
-            let pointer = i;
-            while (pointer !== 0) {
-                const parent = parentMap.get(pointer);
-                answer += 2;
-                if (hasApple[parent]) {
-                    break;
-                }
-                hasApple[parent] = true;
-                pointer = parent;
-            }
+    const dfs = (i, p)=>{
+        let pathlen = 0;
+        for(const j of adjlist[i]){
+            if(j == p) continue;
+            pathlen += dfs(j, i);
         }
+        if(i == 0) return pathlen;
+        return pathlen > 0 || hasApple[i]? pathlen+2 : 0;
     }
-    return answer;
+    return dfs(0,-1);
 };
 // TC O(n)
 // SC O(n)
