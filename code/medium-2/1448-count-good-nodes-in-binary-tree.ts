@@ -24,3 +24,5 @@ function goodNodes(root: TreeNode | null): number {
     trav(root, root.val);
     return good;
 };
+// TC O(n)
+// SC O(n)
