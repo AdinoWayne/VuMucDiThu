@@ -6,7 +6,7 @@ function peopleIndexes(favoriteCompanies: string[][]): number[] {
                 return false
             }
         }
-        return true
+        return true // all el of set has otherset
     }
     let isSubSet = (ind,set)=> {
         for (let[key,otherSet] of map.entries()){
