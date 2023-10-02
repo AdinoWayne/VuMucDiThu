@@ -25,3 +25,5 @@ function maxVowels(s: string, k: number): number {
     }
     return maxCount;
 };
+// TC O(n)
+// SC O(1)
