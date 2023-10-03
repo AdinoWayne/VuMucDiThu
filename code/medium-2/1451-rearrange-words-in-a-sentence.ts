@@ -18,3 +18,5 @@ function arrangeWords(text: string): string {
     ans[0] = ans[0].charAt(0).toUpperCase() + ans[0].substr(1);
     return ans.join(' ');
 };
+// TC O(nLogn)
+// SC O(n)
