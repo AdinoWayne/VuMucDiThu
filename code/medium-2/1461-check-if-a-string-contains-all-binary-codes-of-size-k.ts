@@ -9,3 +9,5 @@ function hasAllCodes(s: string, k: number): boolean {
     
     return set.size == target;
 };
+// TC O(n2)
+// SC O(2^n)
