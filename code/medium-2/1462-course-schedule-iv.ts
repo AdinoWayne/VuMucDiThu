@@ -20,3 +20,5 @@ function checkIfPrerequisite(n: number, prerequisites: number[][], queries: numb
   }
   return an
 };
+// TC O(n3)
+// SC O(n2)
