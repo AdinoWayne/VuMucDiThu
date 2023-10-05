@@ -20,5 +20,13 @@ function checkIfPrerequisite(n: number, prerequisites: number[][], queries: numb
   }
   return an
 };
+// if
+//   prev is connected to mid
+//     and
+//   mid is connected to next
+//         prev -> mid -> next
+// then
+//   connect prev to next
+//         prev -> next
 // TC O(n3)
 // SC O(n2)
