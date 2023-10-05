@@ -50,3 +50,5 @@ function minReorder(n: number, connections: number[][]): number {
 
     return count
 };
+// TC O(n + m) where n is the number of cities, and m is the number of connections
+// SC O(n + m)
