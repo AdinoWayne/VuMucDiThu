@@ -31,3 +31,5 @@ function getStrongest(arr: number[], k: number): number[] {
     
     return res;
 };
+// TC O(nLogn)
+// SC O(n)
