@@ -18,3 +18,5 @@ function minSumOfLengths(arr: number[], target: number): number {
   }
   return ans == Number.MAX_VALUE ? -1 : ans;
 };
+// TC O(n)
+// SC O(n)
