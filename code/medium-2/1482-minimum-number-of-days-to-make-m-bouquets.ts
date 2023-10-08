@@ -30,3 +30,5 @@ function minDays(bloomDay: number[], m: number, k: number): number {
     }
     return l;
 };
+// TC O(nlogn)
+// SC O(1)
