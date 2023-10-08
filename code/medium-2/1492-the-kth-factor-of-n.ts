@@ -7,3 +7,5 @@ function kthFactor(n: number, k: number): number {
     }
     return -1
 };
+// TC O(n)
+// SC O(1)
