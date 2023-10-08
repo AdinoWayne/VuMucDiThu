@@ -54,3 +54,5 @@ const binary_search = (array, target) => {
     
     return [-1, -1];
 }
+// TC O(n2)
+// SC O(n)
