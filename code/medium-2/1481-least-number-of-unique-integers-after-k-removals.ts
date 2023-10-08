@@ -13,3 +13,5 @@ function findLeastNumOfUniqueInts(arr: number[], k: number): number {
     }
     return res;
 };
+// TC O(nlogn)
+// SC O(n)
