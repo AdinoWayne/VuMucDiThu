@@ -35,3 +35,5 @@ function canArrange(arr: number[], k: number): boolean {
    
     return map.size === 0;
 };
+// TC O(n)
+// SC O(n)
