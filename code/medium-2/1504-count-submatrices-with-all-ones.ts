@@ -38,3 +38,5 @@ function numSubmat(mat: number[][]): number {
     } 
     return ans;
 };
+// TC O(n2)
+// SC O(n2)
