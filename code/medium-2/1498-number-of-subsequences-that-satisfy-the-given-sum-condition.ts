@@ -24,3 +24,5 @@ function numSubseq(nums: number[], target: number): number {
 
     return ans % MOD;
 };
+// TC O(nlogn + n)
+// SC O(n)
