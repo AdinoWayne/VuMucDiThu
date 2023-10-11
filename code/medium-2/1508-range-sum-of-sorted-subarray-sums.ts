@@ -15,3 +15,5 @@ function rangeSum(nums: number[], n: number, left: number, right: number): numbe
 const sum = (arr) => {
     return arr.reduce((acc, cur) => acc + cur);
 };
+// TC O(n^2 log n)
+// SC O(n2)
