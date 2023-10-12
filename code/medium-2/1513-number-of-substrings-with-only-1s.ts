@@ -13,3 +13,5 @@ function numSub(s: string): number {
     
     return result % 1000000007;
 };
+// TC O(n)
+// SC O(1)
