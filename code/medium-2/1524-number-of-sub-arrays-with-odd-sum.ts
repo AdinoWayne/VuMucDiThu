@@ -8,3 +8,5 @@ function numOfSubarrays(arr: number[]): number {
     }
     return (odds*evens+odds)%mod
 };
+// TC O(n)
+// SC O(1)
