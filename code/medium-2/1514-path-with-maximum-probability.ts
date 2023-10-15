@@ -20,3 +20,5 @@ function maxProbability(n: number, edges: number[][], succProb: number[], start_
     
     return p[end_node];
 };
+// TC O(nLogn)
+// SC O(2n)
