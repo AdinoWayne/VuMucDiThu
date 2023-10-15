@@ -26,3 +26,5 @@ function numSplits(s: string): number {
 
     return res;
 };
+// TC O(n)
+// SC O(1)
