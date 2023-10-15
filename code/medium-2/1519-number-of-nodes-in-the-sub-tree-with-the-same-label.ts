@@ -40,3 +40,5 @@ const createAdjacencyList = (n, edges) => {
     }
     return adjList;
 }
+// TC O(n)
+// SC O(n)
