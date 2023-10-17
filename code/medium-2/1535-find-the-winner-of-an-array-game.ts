@@ -12,3 +12,5 @@ function getWinner(arr: number[], k: number): number {
     
     return winner;
 };
+// TC O(n)
+// SC O(1)
