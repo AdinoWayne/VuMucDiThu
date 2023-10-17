@@ -9,3 +9,5 @@ function minFlips(target: string): number {
     }
     return result;
 };
+// TC O(n)
+// SC O(1)
