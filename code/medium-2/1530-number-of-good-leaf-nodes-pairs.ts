@@ -22,3 +22,5 @@ function countPairs(root: TreeNode | null, distance: number): number {
     }
     return dfs(root).length?result:0
 };
+// TC O(n2)
+// SC O(n)
