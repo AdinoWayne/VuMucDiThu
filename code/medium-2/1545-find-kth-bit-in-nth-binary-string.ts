@@ -22,3 +22,5 @@ function findKthBit(n: number, k: number): string {
 
    return (count%2 == 0) ? '0' : '1';
 };
+// TC O(n)
+// SC O(1)
