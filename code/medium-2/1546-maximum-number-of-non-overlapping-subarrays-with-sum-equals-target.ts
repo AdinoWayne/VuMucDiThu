@@ -13,3 +13,5 @@ function maxNonOverlapping(nums: number[], target: number): number {
     }
     return result;
 };
+// TC O(n)
+// SC O(n)
