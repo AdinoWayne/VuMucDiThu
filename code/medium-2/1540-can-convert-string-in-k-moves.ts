@@ -11,3 +11,5 @@ function canConvertString(s: string, t: string, k: number): boolean {
     }
     return true;
 };
+// TC O(n)
+// SC O(1)
