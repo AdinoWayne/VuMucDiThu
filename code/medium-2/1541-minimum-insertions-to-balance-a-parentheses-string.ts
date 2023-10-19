@@ -19,3 +19,5 @@ function minInsertions(s: string): number {
     }
     return leftNeeded + rightNeeded;
 };
+// TC O(n)
+// SC O(1)
