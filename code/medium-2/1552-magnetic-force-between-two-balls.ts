@@ -31,3 +31,5 @@ var is_possible = function(position, mid, m){
     }
     return false
 }
+// TC O(nLogn)
+// SC O(logn)
