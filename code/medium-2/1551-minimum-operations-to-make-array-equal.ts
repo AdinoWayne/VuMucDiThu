@@ -15,3 +15,5 @@ function minOperations(n: number): number {
 	// Also you can combine above two cases.
 	// return (n * n - n % 2) / 4;
 };
+// TC O(1)
+// SC O(1)
