@@ -5,3 +5,5 @@ function findSmallestSetOfVertices(n: number, edges: number[][]): number[] {
     degree.forEach((deg, i) => !deg && output.push(i));
     return output;
 };
+// TC O(2n)
+// SC O(n)
