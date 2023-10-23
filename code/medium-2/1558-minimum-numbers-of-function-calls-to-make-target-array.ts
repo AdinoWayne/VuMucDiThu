@@ -16,3 +16,5 @@ function minOperations(a: number[]): number {
     }
     return Math.max(0, res - 1);
 };
+// TC O(nLogn)
+// SC O(n)
