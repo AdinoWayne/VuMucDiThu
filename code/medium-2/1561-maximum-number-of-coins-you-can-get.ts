@@ -5,3 +5,5 @@ function maxCoins(piles: number[]): number {
         ans += piles[j];
     return ans;
 };
+// TC O(nlogn)
+// SC O(1)
