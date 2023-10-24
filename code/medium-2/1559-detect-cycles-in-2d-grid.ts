@@ -19,3 +19,5 @@ function containsCycle(grid: string[][]): boolean {
         }
     return false;
 };
+// TC O(n2)
+// SC O(n2)
