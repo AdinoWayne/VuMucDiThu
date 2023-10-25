@@ -12,3 +12,5 @@ function getMaxLen(nums: number[]): number {
   }
   return max;
 };
+// TC O(n)
+// SC O(1)
