@@ -4,10 +4,7 @@ function numWays(s: string): number {
     if(numberOfOnes%3) return 0;
 
     const n = s.length, mod = 10**9 + 7;
-    	
-	// we have the options to cut at n-1 places but we need to choose 2
-	// E.g. "0|0|0|0|0|0" for length 6 we can cut at 5 places of which we choose 2
-	// Thus, n-1 comination 2 | C(n-1, 2)
+
     if(!numberOfOnes) return ((n-1)*(n-2)/2) % mod;
     
     const onesPerGroup = numberOfOnes/3;
@@ -20,3 +17,5 @@ function numWays(s: string): number {
     }
     return (firstCut * secondCut) % mod;
 };
+// TC O(n)
+// SC O(n)
