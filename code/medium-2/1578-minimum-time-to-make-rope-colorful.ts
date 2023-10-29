@@ -10,3 +10,5 @@ function minCost(colors: string, neededTime: number[]): number {
   }
   return res;
 };
+// TC O(n)
+// SC O(1)
