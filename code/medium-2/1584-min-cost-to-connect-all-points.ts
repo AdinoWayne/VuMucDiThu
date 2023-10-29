@@ -52,3 +52,5 @@ function minCostConnectPoints(points: number[][]): number {
     }
     return minCost;
 };
+// TC O(n2Logn)
+// SC O(n2)
