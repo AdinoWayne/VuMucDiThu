@@ -18,3 +18,5 @@ function maxSumRangeQuery(nums: number[], requests: number[][]): number {
         return (result + num * frequency[index]) % MODULO;
     }, 0);
 };
+// TC O(nLogn)
+// SC O(n)
