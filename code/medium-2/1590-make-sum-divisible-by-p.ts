@@ -23,3 +23,5 @@ function mod(a,b){
     let c = a%b
     return c<0 ? c+b : c
 }
+// TC O(n)
+// SC O(n)
