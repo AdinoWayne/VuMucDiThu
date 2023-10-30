@@ -23,5 +23,8 @@ function mod(a,b){
     let c = a%b
     return c<0 ? c+b : c
 }
+// (total - (sum[i] - sum[j]))%p = 0
+// total%p - sum[i]%p + sum[j] %p = 0
+// sum[j]%p = sum[i]%p -total %p
 // TC O(n)
 // SC O(n)
