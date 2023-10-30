@@ -22,3 +22,5 @@ function maxUniqueSplit(s: string): number {
     let result = helper(setSF, 0)
     return result
 };
+// TC O(n2)
+// SC O(n)
