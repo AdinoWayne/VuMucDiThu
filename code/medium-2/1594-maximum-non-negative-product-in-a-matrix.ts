@@ -25,3 +25,5 @@ function maxProductPath(grid: number[][]): number {
     
     return mat[R-1][C-1][0] >= 0 ? mat[R-1][C-1][0] % (10**9+7) : -1;
 };
+// TC O(n2)
+// SC O(n2)
