@@ -14,3 +14,5 @@ function restoreMatrix(rowSum: number[], colSum: number[]): number[][] {
   }
   return matrix;
 };
+// TC O(n2)
+// SC O(n2)
