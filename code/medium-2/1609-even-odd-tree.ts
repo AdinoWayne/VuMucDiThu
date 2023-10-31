@@ -36,3 +36,5 @@ function isEvenOddTree(root: TreeNode | null): boolean {
     
     return true 
 };
+// TC O(n)
+// SC O(n)
