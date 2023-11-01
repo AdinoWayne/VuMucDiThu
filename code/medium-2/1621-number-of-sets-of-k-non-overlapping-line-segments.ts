@@ -8,3 +8,5 @@ var combinations=(n,k)=>{
             dp[i][k]=(dp[i-1][k-1]+dp[i-1][k]) %(1e9+7)     
     return dp[n][k]
 }
+// TC O(n2)
+// SC O(n2)
