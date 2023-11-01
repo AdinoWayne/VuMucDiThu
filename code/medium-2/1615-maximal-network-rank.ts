@@ -17,3 +17,5 @@ function maximalNetworkRank(n: number, roads: number[][]): number {
     }
     return maxi;
 };
+// TC O(n2)
+// SC O(n2)
