@@ -23,3 +23,5 @@ function bestTeamScore(scores: number[], ages: number[]): number {
     }
     return Math.max(...res)
 };
+// Time Complexity: O(n log n)
+// Space Complexity: O(n)
