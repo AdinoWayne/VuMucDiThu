@@ -9,3 +9,5 @@ function checkArithmeticSubarrays(nums: number[], l: number[], r: number[]): boo
     
     return l.map((_,i) => chechArithmetic(nums.slice(l[i], r[i]+1).sort((a,b) => a-b)) )
 };
+// Time Complexity: O(l.length * n log n)
+// Space Complexity: O(n)
