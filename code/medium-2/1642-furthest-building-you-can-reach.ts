@@ -20,19 +20,18 @@ function furthestBuilding(heights: number[], bricks: number, ladders: number): n
                    dp[j] = dp[j-1] - diff;
                else
                    dp[j] = Math.max(dp[j-1]-diff, pre);
-               
+              
                if (dp[j] < 0)
                    break;
-               
+              
                pre = temp;
-               
            }
            res = Math.max(j, res);
        }
        if (res+(ladders-i) >= heights.length-1)
            return heights.length-1;
    }
-   
-   
    return res;
 };
+Time Complexity: O(n2)
+Space Complexity: O(n)
