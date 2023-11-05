@@ -34,3 +34,14 @@ function minimumEffortPath(H: number[][]): number {
     }
     return path
 };
+// 1. Time complexity
+// Heapifying a node: O(log(mn))
+// Extracting the minimum node from the heap: O(log(mn))
+// Main loop: O(mn)
+
+// 2. Space complexity
+// vis array: O(mn)
+// dist array: O(mn)
+// Priority queue: O(mn)
+
+// Overall, the time complexity of the function is O(mn log(mn)) and the space complexity is O(mn)
