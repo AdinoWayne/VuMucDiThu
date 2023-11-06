@@ -11,3 +11,5 @@ function minimumDeletions(s: string): number {
 
   return s.length - Math.max(lena, lenb);
 };
+Time Complexity: O(n)
+Space Complexity: O(1)
