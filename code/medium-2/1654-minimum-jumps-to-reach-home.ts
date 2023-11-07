@@ -25,3 +25,5 @@ function minimumJumps(forbidden: number[], a: number, b: number, x: number): num
   }
   return -1;
 };
+// Time Complexity: O(N)
+// Space Complexity: O(N)
