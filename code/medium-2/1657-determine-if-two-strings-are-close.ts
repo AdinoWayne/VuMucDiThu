@@ -18,3 +18,5 @@ function closeStrings(word1: string, word2: string): boolean {
 
     return arr.length == 0
 };
+// Time Complexity: O(N)
+// Space Complexity: O(1) 
