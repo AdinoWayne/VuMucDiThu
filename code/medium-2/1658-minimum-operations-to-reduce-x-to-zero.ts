@@ -10,3 +10,5 @@ function minOperations(nums: number[], x: number): number {
     }
     return best > 0 ? len - best : -1
 };
+// Time Complexity: O(n)
+// Space Complexity: O(1)
