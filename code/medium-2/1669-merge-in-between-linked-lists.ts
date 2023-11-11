@@ -30,3 +30,5 @@ function mergeInBetween(list1: ListNode | null, a: number, b: number, list2: Lis
     
     return list1;
 };
+// Time Complexity: O(n)
+// Space Complexity: O(1)
