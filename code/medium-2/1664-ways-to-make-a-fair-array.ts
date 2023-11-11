@@ -30,3 +30,5 @@ function waysToMakeFair(nums: number[]): number {
     
     return count;
 };
+// Time Complexity: O(n)
+// Space Complexity: O(1)
