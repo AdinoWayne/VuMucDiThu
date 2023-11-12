@@ -14,3 +14,5 @@ function mostCompetitive(nums: number[], k: number): number[] {
     }
     return stack;
 };
+// Time Complexity: O(n)
+// Space Complexity: O(k)
