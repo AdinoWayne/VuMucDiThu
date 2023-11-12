@@ -20,3 +20,5 @@ function minMoves(nums: number[], limit: number): number {
     }
     return result;
 };
+// Time Complexity: O(n)
+// Space Complexity: O(n)
