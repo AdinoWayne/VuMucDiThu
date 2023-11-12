@@ -9,3 +9,5 @@ function maxOperations(nums: number[], k: number): number {
     } 
     return count;
 };
+// Time Complexity: O(n)
+// Space Complexity: O(n)
