@@ -9,3 +9,5 @@ function concatenatedBinary(n: number): number {
     }
     return num;
 };
+// Time Complexity: O(n*log(n))
+// Space Complexity: O(1)
