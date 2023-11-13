@@ -19,3 +19,5 @@ function stoneGameVI(aliceValues: number[], bobValues: number[]): number {
   
   return scores[0] > scores[1] ? 1 : (scores[0] < scores[1] ? -1 : 0);
 };
+// Time Complexity: O(N log N)
+// Space Complexity: O(N)
