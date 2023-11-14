@@ -7,3 +7,5 @@ function minPartitions(n: string): number {
 
     return ans
 };
+// TC O(n)
+// SC O(1)
