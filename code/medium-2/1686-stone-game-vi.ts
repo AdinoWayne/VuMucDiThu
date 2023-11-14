@@ -19,5 +19,8 @@ function stoneGameVI(aliceValues: number[], bobValues: number[]): number {
   
   return scores[0] > scores[1] ? 1 : (scores[0] < scores[1] ? -1 : 0);
 };
+// For N stones:
+// F = ∑Si - (b1 + b2 + ... + bN) , where i in the numbers of stones that are picked by Alice. 
+// strategy for Alice whould be to pick each time a stone with maximum sum of values for Alice and Bob
 // Time Complexity: O(N log N)
 // Space Complexity: O(N)
