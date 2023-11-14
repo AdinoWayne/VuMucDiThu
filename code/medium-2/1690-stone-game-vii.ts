@@ -31,3 +31,5 @@ const calculateDiff = (start, end, prefixSums, dp) => {
 const getSum = (start, end, prefixSums) => {
     return prefixSums[end + 1] - prefixSums[start];
 }
+// TC O(n2)
+// SC O(n2)
