@@ -7,3 +7,5 @@ function maximumUniqueSubarray(N: number[]): number {
     }
     return max
 };
+// Time Complexity: O(n)
+// Space Complexity: O(n)
