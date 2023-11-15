@@ -15,3 +15,5 @@ function maxResult(nums: number[], k: number): number {
     }
     return nums[0];
 };
+// Time Complexity: O(n)
+// Space Complexity: O(n)
