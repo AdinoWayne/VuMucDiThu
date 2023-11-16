@@ -40,3 +40,5 @@ var dfs = function(grid, r, c) {
     //  dfs left
     return dfs(grid, r + 1, c - 1);
 }
+// TC O(nm)
+// SC O(nm)
