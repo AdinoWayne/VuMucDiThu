@@ -9,3 +9,5 @@ function averageWaitingTime(customers: number[][]): number {
 
   return sum / customers.length;
 };
+// TC O(n)
+// SC O(1)
