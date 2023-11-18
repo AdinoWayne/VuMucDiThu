@@ -7,3 +7,5 @@ function countPairs(deliciousness: number[]): number {
             else if (m.has(i - k)) ans += m.get(i - k) * v   // Otherwise, add product with matching number freq.
     return ans % 1000000007
 };
+// TC O(n log(max(d))) where n is the length of the input array deliciousness and max(d) is the maximum value in the input array
+// SC O(n)
