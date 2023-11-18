@@ -15,3 +15,5 @@ function waysToSplit(N: number[]): number {
     }
     return ans % 1000000007
 };
+// TC O(n)
+// SC O(n)
