@@ -10,3 +10,5 @@ function maximumGain(s: string, X: number, Y: number): number {
     }
     return ans
 };
+// TC O(n2)
+// SC O(n)
