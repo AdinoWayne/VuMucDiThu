@@ -27,3 +27,5 @@ function swapNodes(head: ListNode | null, k: number): ListNode | null {
     node.val = temp;
     return head;
 };
+// TC O(n)
+// SC O(n)
