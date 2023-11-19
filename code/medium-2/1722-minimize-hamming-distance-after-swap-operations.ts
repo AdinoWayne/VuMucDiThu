@@ -30,3 +30,5 @@ function minimumHammingDistance(source: number[], target: number[], allowedSwaps
     }
     return result;
 };
+// TC O(nLogn)
+// SC O(n)
