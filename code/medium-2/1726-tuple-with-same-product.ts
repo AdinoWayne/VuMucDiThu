@@ -14,3 +14,5 @@ function tupleSameProduct(nums: number[]): number {
     }
     return tupleCount;
 };
+// TC O(n2)
+// SC O(n2)
