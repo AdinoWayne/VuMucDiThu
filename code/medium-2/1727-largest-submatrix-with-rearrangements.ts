@@ -10,3 +10,5 @@ function largestSubmatrix(M: number[][]): number {
     }
     return ans
 };
+// TC O(nm log m)
+// SC O(m log m)
