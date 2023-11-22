@@ -12,13 +12,10 @@ function restoreArray(adjacentPairs: number[][]): number[] {
             adjacentMatrix.get(pair[1]).push(pair[0]);
         }
     }
-    // finding the start/end which is of 1 degree
     let start;
     for (const [key, value] of adjacentMatrix.entries()) {
         if (adjacentMatrix.get(key).length === 1) start = key;
     }
-	
-    // traverse dfs to find the pattern
     function dfs(seen, matrix, inception) {
         let vals = matrix.get(inception);
         if (!visit.has(inception)) {
@@ -31,7 +28,6 @@ function restoreArray(adjacentPairs: number[][]): number[] {
             }
         }
     }
-    
     let ans = [];
     let visit = new Set();
     ans.push(start);
@@ -39,3 +35,5 @@ function restoreArray(adjacentPairs: number[][]): number[] {
     dfs(ans, adjacentMatrix, start);
     return ans;
 };
+// TC O(n)
+// SC O(n)
