@@ -5,3 +5,5 @@ function decode(encoded: number[]): number[] {
     for (let i = 0; i < len; i++) perm[i+1] = perm[i] ^ encoded[i]
     return perm
 };
+// TC O(nLogn)
+// SC O(n)
