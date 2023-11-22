@@ -10,3 +10,5 @@ function kthLargestValue(M: number[][], k: number): number {
         }
     return ans.sort()[x*y-k]
 };
+// TC O(nLogn)
+// SC O(n)
