@@ -6,6 +6,7 @@ function decode(encoded: number[]): number[] {
     return perm
 };
 // /problems/decode-xored-permutation/solutions/1035374/javascript-python-simple-5-line-solution-w-explanation-beats-100/
+// perm[0] = totalXor XOR encoded[1] XOR encoded[3] ... encoded[n-2]
 // Thus we can simplify the equation for the XOR of all numbers from 1 to N for all odd values of N to (N + 1 >> 1) % 2.
 // Also, since XOR is its own inverse function, we can work the encoding equation backwards:
 // if:  E[i] = perm[i] ^ perm[i+1]           // By the encoding definition
