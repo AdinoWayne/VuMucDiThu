@@ -9,3 +9,5 @@ function maxAbsoluteSum(nums: number[]): number {
     }
     return Math.max(maxi,-mini)
 };
+// TC O(n)
+// SC O(1)
