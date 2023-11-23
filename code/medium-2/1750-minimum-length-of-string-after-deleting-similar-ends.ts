@@ -15,3 +15,5 @@ function minimumLength(s: string): number {
     
     return right - left + 1;
 };
+// TC O(n)
+// SC O(1)
