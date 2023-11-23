@@ -6,3 +6,5 @@ function maximumScore(x: number, y: number, z: number): number {
   }
   return Math.trunc((x + y + z) / 2)
 };
+// TC O(1)
+// SC O(1)
