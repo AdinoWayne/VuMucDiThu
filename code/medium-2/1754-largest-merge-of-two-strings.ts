@@ -17,3 +17,5 @@ function largestMerge(word1: string, word2: string): string {
     ans += word2.slice(w2);
     return ans;
 };
+// TC O(n)
+// SC O(n)
