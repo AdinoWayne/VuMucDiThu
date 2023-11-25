@@ -13,3 +13,5 @@ function countHomogenous(s: string): number {
     
     return res;
 };
+// TC O(n)
+// SC O(1)
