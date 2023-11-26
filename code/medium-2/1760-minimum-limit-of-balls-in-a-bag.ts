@@ -35,5 +35,6 @@ function minimumSize(nums: number[], maxOperations: number): number {
     
     return left;
 };
+// The number of operation we need is (a - 1) / mid
 // TC O(n Log m)
 // SC O(1)
