@@ -16,3 +16,5 @@ function canChoose(groups: number[][], nums: number[]): boolean {
         return true;
     }
 };
+// TC O(n2)
+// SC O(1)
