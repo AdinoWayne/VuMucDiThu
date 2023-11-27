@@ -28,3 +28,5 @@ function minOperations(nums1: number[], nums2: number[]): number {
 
   return ans;
 };
+// TC O(n log n)
+// SC O(n)
