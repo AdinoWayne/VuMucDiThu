@@ -1,5 +1,5 @@
 function minOperations(boxes: string): number[] {
-      const result = Array(boxes.length).fill(0);
+  const result = Array(boxes.length).fill(0);
   let notEmpty = 0;
   let runningSum = 0;
   
@@ -19,3 +19,5 @@ function minOperations(boxes: string): number[] {
   
   return result;
 };
+// TC O(n)
+// SC O(n)
