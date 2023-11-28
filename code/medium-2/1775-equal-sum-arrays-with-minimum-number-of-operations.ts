@@ -28,5 +28,10 @@ function minOperations(nums1: number[], nums2: number[]): number {
 
   return ans;
 };
+// In order to make the two sum's equal,
+// we need either to increase to 6 the numbers in the smaller sum array or decrease to 1 the numbers in the bigger sum array;
+
+// Since we want to complete the task with minimum operations,
+// it is optimal to choose the greater between the increase and decrease. Hence this is a greedy algorithm.
 // TC O(n log n)
 // SC O(n)
