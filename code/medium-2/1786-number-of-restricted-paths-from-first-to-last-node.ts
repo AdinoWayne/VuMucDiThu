@@ -1,13 +1,9 @@
 function countRestrictedPaths(n: number, edges: number[][]): number {
-
     const adjList = new Array(n + 1).fill(null).map(() => new Array(0));
     for (const [node1, node2, weight] of edges) {
         adjList[node1].push([node2, weight]);
         adjList[node2].push([node1, weight]);
     }
-    
-    // using djikstras algorithm
-    // find the shortest path from n to each node
     const nodeToShortestPathDistance = {}
     const heap = new Heap();
     heap.push([n, 0])
@@ -26,11 +22,6 @@ function countRestrictedPaths(n: number, edges: number[][]): number {
             heap.push([neighbor, edgeWeight + culmativeWeight]);
         }
     }
-    
-
-    // do a DFS caching the number of paths for each node
-    // so that we don't need to redo the number of paths again
-    // when we visit that node through another path
     const nodeToNumPaths = {};
     const dfs = (node) => {
         if (node === n) return 1;
@@ -53,15 +44,12 @@ class Heap {
     constructor() {
         this.store = [];
     }
-    
     peak() {
         return this.store[0];
     }
-    
     size() {
         return this.store.length;
     }
-    
     pop() {
         if (this.store.length < 2) {
             return this.store.pop();
@@ -71,12 +59,10 @@ class Heap {
         this.heapifyDown(0);
         return result;
     }
-    
     push(val) {
         this.store.push(val);
         this.heapifyUp(this.store.length - 1);
     }
-    
     heapifyUp(child) {
         while (child) {
             const parent = Math.floor((child - 1) / 2);
@@ -88,7 +74,6 @@ class Heap {
             }
         }
     }
-    
     heapifyDown(parent) {
         while (true) {
             let [child, child2] = [1,2].map((x) => parent * 2 + x).filter((x) => x < this.size());
@@ -103,8 +88,9 @@ class Heap {
             }
         }
     }
-    
     shouldSwap(child, parent) {
         return child && this.store[child][1] < this.store[parent][1];
     }
 }
+// TC O(n log n)
+// SC O(n)
