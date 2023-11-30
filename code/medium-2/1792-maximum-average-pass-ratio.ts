@@ -95,3 +95,5 @@ class MaxHeap {
         return c > p;
     }
 }
+// TC O(nLogn)
+// SC O(n)
