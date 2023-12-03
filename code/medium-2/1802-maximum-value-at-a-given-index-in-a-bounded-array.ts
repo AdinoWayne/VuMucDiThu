@@ -18,3 +18,5 @@ function maxValue(n: number, index: number, maxSum: number): number {
     }
     return max
 };
+// TC O(log(maxSum))
+// SC O(1)
