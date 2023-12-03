@@ -6,3 +6,5 @@ function getMaximumConsecutive(coins: number[]): number {
     }
     return res + 1;
 };
+// TC O(n log n) + O(n) = O(n log n)
+// SC O(1)
