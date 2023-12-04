@@ -14,3 +14,5 @@ function findingUsersActiveMinutes(logs: number[][], k: number): number[] {
     
     return count;
 };
+// TC O(n)
+// SC O(n)
