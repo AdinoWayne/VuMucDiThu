@@ -31,3 +31,5 @@ function reverse(num) {
     
     return n;
 }
+// TC O(n)
+// SC O(n)
