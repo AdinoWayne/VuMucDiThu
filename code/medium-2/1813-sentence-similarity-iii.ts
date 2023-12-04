@@ -20,3 +20,5 @@ const ok = (short, long) => {
     }
     return short.length == 0;
 };
+// TC O(n)
+// SC O(n)
