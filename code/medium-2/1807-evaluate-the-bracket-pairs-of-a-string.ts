@@ -19,3 +19,5 @@ function evaluate(s: string, knowledge: string[][]): string {
     }
     return stack.join('');
 };
+// TC O(n)
+// SC O(n)
