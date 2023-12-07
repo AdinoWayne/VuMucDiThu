@@ -20,3 +20,5 @@ function minSideJumps(obstacles: number[]): number {
   }
   return jumps
 };
+// TC O(n2) 
+// SC O(1)
