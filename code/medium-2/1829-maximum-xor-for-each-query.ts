@@ -6,3 +6,5 @@ function getMaximumXor(nums: number[], maximumBit: number): number[] {
     }
     return nums.reverse()
 };
+// TC O(n)
+// SC O(1)
