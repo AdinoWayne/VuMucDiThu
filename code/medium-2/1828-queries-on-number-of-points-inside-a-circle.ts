@@ -9,3 +9,5 @@ function countPoints(points: number[][], queries: number[][]): number[] {
     }
     return result;
 };
+// TC O(n2)
+// SC O(1)
