@@ -12,3 +12,5 @@ function maxIceCream(costs: number[], coins: number): number {
   }
   return count; 
 };
+// TC O(nLogn)
+// SC O(1)
