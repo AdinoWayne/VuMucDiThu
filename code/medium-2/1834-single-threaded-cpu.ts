@@ -7,7 +7,7 @@ function getOrder(tasks: number[][]): number[] {
             return a[2]-b[2];
         }
         return a[0]-b[0];
-    }); // sort by queue time
+    });
     var q = [];
     var time=tasks[0][0];
     var ans = [];
@@ -18,15 +18,13 @@ function getOrder(tasks: number[][]): number[] {
         {
             time = tasks[enqIndex][0];
         }
-        // enqueue
         var curSize = q.length;
         while(enqIndex<tasks.length && tasks[enqIndex][0]<=time)
         {
             q.push(tasks[enqIndex]);
             enqIndex++;
         }
-		// sort when needed
-        if(curSize < q.length) // hack way to fix TLE to mock PQ
+        if(curSize < q.length)
         {
             if(q.length>0)
             {
@@ -39,10 +37,11 @@ function getOrder(tasks: number[][]): number[] {
                 });
             }
         }
-        // execute first task
         var t = q.shift();
         ans.push(t[2]);
         time += t[1];
     }
     return ans;
 };
+// TC O(nLogn)
+// SC O(n)
