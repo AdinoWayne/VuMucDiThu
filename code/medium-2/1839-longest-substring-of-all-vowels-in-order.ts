@@ -20,3 +20,5 @@ function longestBeautifulSubstring(s: string): number {
     }
     return res;
 };
+// TC O(n)
+// SC O(1)
