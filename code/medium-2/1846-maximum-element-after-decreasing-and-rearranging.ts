@@ -6,3 +6,5 @@ function maximumElementAfterDecrementingAndRearranging(arr: number[]): number {
     }
     return max;
 };
+// TC O(nLogn)
+// SC O(1)
