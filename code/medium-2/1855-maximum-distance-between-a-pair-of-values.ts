@@ -18,3 +18,5 @@ function maxDistance(nums1: number[], nums2: number[]): number {
     
     return ans;
 };
+// TC O(n)
+// SC O(1)
