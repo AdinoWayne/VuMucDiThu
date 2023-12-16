@@ -35,3 +35,5 @@ function maxSumMinProduct(nums: number[]): number {
     }
     return Number(max % BigInt(1000000007));
 };
+// TC O(n)
+// SC O(n)
