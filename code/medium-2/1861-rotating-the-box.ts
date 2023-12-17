@@ -23,3 +23,5 @@ function rotateTheBox(box: string[][]): string[][] {
     
     return ans;
 };
+// TC O(n2)
+// SC O(n2)
