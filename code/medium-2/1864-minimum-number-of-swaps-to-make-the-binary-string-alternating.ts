@@ -25,3 +25,5 @@ function minSwaps(s: string): number {
 
     return Math.min(count("1"), count("0"));
 };
+// TC O(n)
+// SC O(1)
