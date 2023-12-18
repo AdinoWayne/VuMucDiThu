@@ -23,3 +23,5 @@ function minSpeedOnTime(dist: number[], hour: number): number {
     }
     return result;
 };
+// TC O(nLogn) 
+// SC O(1)
