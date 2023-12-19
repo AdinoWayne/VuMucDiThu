@@ -22,3 +22,5 @@ function minPairSum(nums: number[]): number {
 
     return max;
 };
+// TC O(n)
+// SC O(n)
