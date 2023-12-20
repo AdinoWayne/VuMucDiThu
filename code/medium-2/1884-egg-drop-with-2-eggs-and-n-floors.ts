@@ -8,3 +8,5 @@ function twoEggDrop(n: number): number {
     }
     return res;
 };
+// TC O(n)
+// SC O(n)
