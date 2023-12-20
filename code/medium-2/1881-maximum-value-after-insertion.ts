@@ -11,3 +11,5 @@ function maxValue(n: string, x: number): string {
     }
     return n.slice(0, i) + x + n.slice(i)
 };
+// TC O(n)
+// SC O(1)
