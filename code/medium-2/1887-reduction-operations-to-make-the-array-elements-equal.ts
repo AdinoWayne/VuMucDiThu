@@ -6,3 +6,5 @@ function reductionOperations(nums: number[]): number {
             count += nums.length - i
     return count
 };
+// TC O(nLogn)
+// SC O(1)
