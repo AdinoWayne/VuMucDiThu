@@ -20,3 +20,5 @@ function chalkReplacer(chalk: number[], k: number): number {
     }
     return left
 };
+// TC O(n)
+// SC O(n)
