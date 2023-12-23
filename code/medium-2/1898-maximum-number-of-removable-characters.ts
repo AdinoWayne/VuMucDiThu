@@ -28,3 +28,5 @@ function maximumRemovals(s: string, p: string, removable: number[]): number {
     }
     return l
 };
+// TC O(nLogn)
+// SC O(n)
