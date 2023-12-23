@@ -23,3 +23,5 @@ function mergeTriplets(triplets: number[][], target: number[]): boolean {
    
     return found1 && found2 && found3;
 };
+// TC O(n)
+// SC O(1)
