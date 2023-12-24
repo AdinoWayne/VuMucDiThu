@@ -9,3 +9,5 @@ function maxAlternatingSum(nums: number[]): number {
 
     return Math.max(oddSum, evenSum);
 };
+// TC O(n) 
+// SC O(1)
