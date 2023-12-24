@@ -13,18 +13,13 @@ function findPeakGrid(mat: number[][]): number[] {
         }
         return maxIdx
     };
-    
-    
     // Helper pointers for Binary Search
     let left = 0;
     let right = mat.length - 1;
-
     while(left < right) {
         const midRowIdx = Math.floor((left + right) / 2);
-        
         // Find index with highest value in the mid row
         let colIdx = maxValueIdx(mat[midRowIdx]);
-        
         // If value in the next row is higher - current value is not a pick - check right subgroup
         if(mat[midRowIdx][colIdx] < mat[midRowIdx + 1][colIdx]) {
             left = midRowIdx + 1;
@@ -33,7 +28,6 @@ function findPeakGrid(mat: number[][]): number[] {
             right = midRowIdx;
         }
     }
-    
     // After completing binary search last value will be pointing to a peak item.    
 	// Complexity:
 	// Time: Binary Search to find row * Linear search to find max value in a row
