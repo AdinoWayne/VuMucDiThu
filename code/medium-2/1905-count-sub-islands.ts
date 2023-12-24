@@ -30,3 +30,5 @@ function countSubIslands(grid1: number[][], grid2: number[][]): number {
     
     return ans;
 };
+// TC O(n2)
+// SC O(n2)
