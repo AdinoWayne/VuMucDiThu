@@ -21,3 +21,5 @@ let hashMap={},ans=0,binaryRepresentation=0,t,pos,number,oneBitToggled;
     }
     return ans;
 };
+// TC O(n * 2 ^ m)
+// SC O(2 ^ m)
