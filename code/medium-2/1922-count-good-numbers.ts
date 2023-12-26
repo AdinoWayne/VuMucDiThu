@@ -22,3 +22,5 @@ function countGoodNumbers(n: number): number {
     ans %= mod; 
     return Number(ans);
 };
+// TC O(Logn)
+// SC O(1)
