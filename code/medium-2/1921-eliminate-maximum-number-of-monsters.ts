@@ -6,3 +6,5 @@ function eliminateMaximum(dist: number[], speed: number[]): number {
     }
     return arr.length;  
 };
+// TC O(nLogn)
+// SC O(n)
