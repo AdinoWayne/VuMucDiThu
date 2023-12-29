@@ -21,3 +21,5 @@ function countPalindromicSubsequence(s: string): number {
     }
     return res;
 };
+// TC O(n2)
+// SC O(n)
