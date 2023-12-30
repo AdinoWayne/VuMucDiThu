@@ -22,3 +22,5 @@ function maxPoints(points: number[][]): number {
     }
     return Math.max(...prev)
 };
+// TC O(nm)
+// SC O(n)
