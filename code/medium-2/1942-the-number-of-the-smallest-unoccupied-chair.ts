@@ -1,36 +1,37 @@
 function smallestChair(times: number[][], targetFriend: number): number {
-    const [targetArrival] = times[targetFriend]; // we need only arrival time
+    const [targetArrival] = times[targetFriend];
     const arrivalQueue = times;
     const leavingQueue = [...times];
-    arrivalQueue.sort((a, b) => a[0] - b[0]); // sort by arrival time
-    leavingQueue.sort((a, b) => (a[1] - b[1]) || (a[0] - b[0])); // sort by leaving time and if they are equal by arrival
-    const chairsByLeaveTime = new Map(); // key - arrival time, value - chair index
+    arrivalQueue.sort((a, b) => a[0] - b[0]);
+    leavingQueue.sort((a, b) => (a[1] - b[1]) || (a[0] - b[0]));
+    const chairsByLeaveTime = new Map();
     let chairsCount = 0;
-    let arriving = 0, leaving = 0; // two pointers for keeping track of available chairs
-    
+    let arriving = 0, leaving = 0;
     while (arriving < arrivalQueue.length) {
         let chairIdx;
         const arrival = arrivalQueue[arriving][0];
         const leave = leavingQueue[leaving][1];
 		if (arrival < leave) {
-            chairIdx = chairsCount++; // if no one is leaving, take a new chair
+            chairIdx = chairsCount++; 
         } else {
             let freeChairIdx = leaving;
-            chairIdx = chairsByLeaveTime.get(leavingQueue[freeChairIdx++][0]); // when arriaval time is less then or equal to the next leaving friend we can take her chair
-            while (arrival >= leavingQueue[freeChairIdx][1]) { // to avoid situation when a few friends left already and the next chair in leaving queue is not the smallest
+            chairIdx = chairsByLeaveTime.get(leavingQueue[freeChairIdx++][0]);
+            while (arrival >= leavingQueue[freeChairIdx][1]) {
                 const nextChair = chairsByLeaveTime.get(leavingQueue[freeChairIdx][0]);
                 if (chairIdx > nextChair) {
-                    [leavingQueue[leaving], leavingQueue[freeChairIdx]] = [leavingQueue[freeChairIdx], leavingQueue[leaving]]; // swap the front of the queue with the smallest chair owner
+                    [leavingQueue[leaving], leavingQueue[freeChairIdx]] = [leavingQueue[freeChairIdx], leavingQueue[leaving]];
                     chairIdx = nextChair;
                 }
                 ++freeChairIdx;
             }
             ++leaving;
         }
-        if (targetArrival === arrival) { // we found the target, no need to continue
+        if (targetArrival === arrival) {
             return chairIdx;
         }
-        chairsByLeaveTime.set(arrival, chairIdx); // as far as arrival time is distinct, we can use it as a key
+        chairsByLeaveTime.set(arrival, chairIdx);
         arriving++;
     }
 };
+// TC O(nLogn)
+// SC O(n)
