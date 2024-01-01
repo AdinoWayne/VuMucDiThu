@@ -22,3 +22,5 @@ function splitPainting(segments: number[][]): number[][] {
         
     }).filter(([a,b,c])=>c>0);
 };
+// TC O(nLogn)
+// SC O(n)
