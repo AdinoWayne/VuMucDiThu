@@ -14,3 +14,5 @@ function numberOfWeeks(milestones: number[]): number {
     }
     return (arrSum - difference)+1;
 };
+// TC O(n)
+// SC O(1)
