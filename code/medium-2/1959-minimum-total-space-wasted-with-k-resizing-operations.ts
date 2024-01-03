@@ -1,3 +1,4 @@
+// IGNORE
 function minSpaceWastedKResizing(nums: number[], k: number): number {
     let l = nums.length
   let dp = new Array(l + 1).fill(0)
