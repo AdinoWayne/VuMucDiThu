@@ -6,3 +6,5 @@ function minStoneSum(piles: number[], k: number): number {
             k-- > 0 ? c[Math.ceil(i/2)]++ : s += i
     return s
 };
+// Time complexity: O(n)
+// Space complexity: O(1)
