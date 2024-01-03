@@ -29,3 +29,5 @@ function minSpaceWastedKResizing(nums: number[], k: number): number {
   }
   return dp[l]
 };
+// TC O(n^2 * k) where n is the length of the input array nums and k is the number of allowed resizing operations
+// SC O(n)
