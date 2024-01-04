@@ -1,10 +1,14 @@
 function minSwaps(s: string): number {
-    let stk = []
-    for(let c of s){
-        if(stk && c == ']') stk.pop()
-        else if(c == '[') stk.push(c)
+    let l = 0, r = s.length - 1, ans = 0, open = 0;
+    while(l < r) {
+        s[l] == '[' ? open++ : open--;
+        if(open < 0) {
+            while(s[r] != '[' && r > l) r--;
+            ans++, open += 2;
+        }
+        l++;
     }
-    return (stk.length) / 2
+    return ans;
 };
 // TC O(n)
 // SC O(n)
