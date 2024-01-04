@@ -10,3 +10,5 @@ function rearrangeArray(nums: number[]): number[] {
   if(left == right) result.push(nums[left]); // In case array length is odd we only need to insert the middle element once.  
   return result;
 };
+// TC O(nLogn)
+// SC O(n)
