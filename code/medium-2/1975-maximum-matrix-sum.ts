@@ -12,13 +12,14 @@ function maxMatrixSum(matrix: number[][]): number {
     for (let i = 0; i < n; ++i) {
         for (let j = 0; j < n; ++j) {
             if (matrix[i][j] < 0) ++negs;
-            
             totAbsSum += Math.abs(matrix[i][j]);
             minAbsNum = Math.min(minAbsNum, Math.abs(matrix[i][j]));
         }
     }
     
     if (negs % 2 === 1) totAbsSum -= (2 * minAbsNum);
-    
-	return totAbsSum;
+
+    return totAbsSum;
 };
+// TC O(mn)
+// SC O(1)
