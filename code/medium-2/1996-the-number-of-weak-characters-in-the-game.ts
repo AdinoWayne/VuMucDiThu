@@ -7,3 +7,5 @@ function numberOfWeakCharacters(properties: number[][]): number {
     }
     return count
 };
+// TC O(nLogn)
+// SC O(1)
