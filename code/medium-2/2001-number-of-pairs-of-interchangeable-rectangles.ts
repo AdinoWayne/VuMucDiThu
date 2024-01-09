@@ -14,4 +14,4 @@ function interchangeableRectangles(rectangles: number[][]): number {
     return res
 };
 // TC O(n)
-// SC O(1)
+// SC O(n)
