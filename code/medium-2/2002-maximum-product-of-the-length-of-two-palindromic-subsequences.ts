@@ -25,3 +25,5 @@ function maxProduct(s: string): number {
     }
     return res
 };
+// TC O(n2)
+// SC O(n)
