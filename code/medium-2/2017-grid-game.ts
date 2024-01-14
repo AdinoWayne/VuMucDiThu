@@ -9,3 +9,5 @@ function gridGame(grid: number[][]): number {
     }
     return res;
 };
+// TC O(n)
+// SC O(1)
