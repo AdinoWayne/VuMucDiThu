@@ -14,3 +14,5 @@ function numOfPairs(nums: string[], target: string): number {
     }
     return count;
 };
+// TC O(n^2)
+// SC O(1)
