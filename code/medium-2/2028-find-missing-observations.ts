@@ -6,3 +6,5 @@ function missingRolls(rolls: number[], mean: number, n: number): number[] {
         .fill(Math.ceil(diff / n), 0, diff % n)
         .fill(Math.floor(diff / n), diff % n);
 };
+// TC O(n)
+// SC O(n)
