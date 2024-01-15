@@ -14,3 +14,5 @@ function maxConsecutiveAnswers(answerKey: string, k: number): number {
     }
     return max;
 };
+// TC O(n)
+// SC O(1)
