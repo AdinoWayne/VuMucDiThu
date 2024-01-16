@@ -1,9 +1,7 @@
 function winnerOfGame(colors: string): boolean {
     let aliceMoves = 0;
     let aCount = 0;
-    
     for (let i = 0; i < colors.length; i ++) {
-		// IF WE HAVE THE CORRECT COLOR THEN WE INCREMENT THE COUNT
         if (colors[i] === 'A') {
             aCount ++;
         }
@@ -14,16 +12,12 @@ function winnerOfGame(colors: string): boolean {
             aCount = 0;
         }
     }
-    
-	// COUNT HOW MANY MOVES BOB GETS
     let bobMoves = 0;
     let bCount = 0;
-    
     for (let i = 0; i < colors.length; i ++) {
         if (colors[i] === 'B') {
             bCount ++;
         }
-        
         if (colors[i] === 'A' || i === colors.length  - 1) {
             if (bCount >= 3) {
                 bobMoves += (bCount - 2);
@@ -31,6 +25,7 @@ function winnerOfGame(colors: string): boolean {
             bCount = 0;
         }
     }
-    
     return aliceMoves > bobMoves;
 };
+// TC O(n)
+// SC O(1)
