@@ -23,3 +23,5 @@ function countMaxOrSubsets(nums: number[]): number {
     backtrack(nums, 0, []);
     return result;
 };
+// TC O(3^n)
+// SC O(n)
