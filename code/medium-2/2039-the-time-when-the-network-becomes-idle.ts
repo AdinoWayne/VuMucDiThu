@@ -39,3 +39,5 @@ function networkBecomesIdle(edges: number[][], patience: number[]): number {
     
     return ans;
 };
+// TC O(2n)
+// SC O(n)
