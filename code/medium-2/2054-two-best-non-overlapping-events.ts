@@ -17,3 +17,5 @@ function maxTwoEvents(events: number[][]): number {
     }
     return res;
 };
+// TC O(nLogn)
+// SC O(n)
