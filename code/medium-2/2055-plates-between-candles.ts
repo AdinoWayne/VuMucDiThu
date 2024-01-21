@@ -26,3 +26,5 @@ function platesBetweenCandles(s: string, queries: number[][]): number[] {
     
     return result;
 };
+// TC O(n)
+// SC O(n)
