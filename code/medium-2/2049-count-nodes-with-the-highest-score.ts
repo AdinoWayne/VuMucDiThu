@@ -28,3 +28,8 @@ function countHighestScoreNodes(parents: number[]): number {
 };
 // TC O(n2)
 // SC O(n)
+// - The score of node 0 is: 3 * 1 = 3
+// - The score of node 1 is: 4 = 4
+// - The score of node 2 is: 1 * 1 * 2 = 2
+// - The score of node 3 is: 4 = 4
+// - The score of node 4 is: 4 = 4
