@@ -26,3 +26,5 @@ function countHighestScoreNodes(parents: number[]): number {
   dfs(0);
   return maxprodcount;
 };
+// TC O(n2)
+// SC O(n)
