@@ -27,3 +27,5 @@ var tryMaximum = function(max, n, quantities) {
     }
     return n;
 }
+// TC O(n log(max))
+// SC O(1)
