@@ -10,3 +10,5 @@ function countVowels(word: string): number {
     }
     return total;
 };
+// TC O(n^2)
+// SC O(1)
