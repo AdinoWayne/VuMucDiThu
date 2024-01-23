@@ -1,31 +1,30 @@
 function minimizedMaximum(n: number, quantities: number[]): number {
-    var max = Math.max(...quantities);
-    var min = 1;
-    var sol = Math.ceil((max + min)/2);
-    var foundSolution = tryMaximum(sol, n,quantities);
-    while(min<max && foundSolution!==0) {   
-        if(foundSolution<0) {
-            min=sol+1;
-        } else if(foundSolution>0)  {
-           max=sol-1;
+    let high = Math.max(...quantities);
+    let low = 0;
+    while (low < high) {
+        const mid = (low + high) >> 1;
+        if (is_valid(mid, n, quantities)) {
+            high = mid;
+        } else {
+            low = mid + 1;
         }
-        sol = Math.ceil((max + min) /2);  
-        foundSolution = tryMaximum(sol, n,quantities);
     }
- 
-    while(foundSolution==0) {
-        sol--;
-        foundSolution = tryMaximum(sol, n,quantities);
-    }
-    if (foundSolution<0) sol++;
-    return sol;
+    return low;
 };
 
-var tryMaximum = function(max, n, quantities) {
-    for (let i=0; i<quantities.length; i++) {
-       n=n-Math.ceil(quantities[i]/max);
+var is_valid = function(mid, n, quantities) {
+    let isValid = true;
+    let store = 1;
+    for (let quantity of quantities) {
+        while (quantity > 0) {
+            if (store > n) {
+                return false;
+            }
+            quantity -= mid;
+            store++;
+        }
     }
-    return n;
+    return true;
 }
 // TC O(n log(max))
 // SC O(1)
