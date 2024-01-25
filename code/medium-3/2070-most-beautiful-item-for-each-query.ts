@@ -21,3 +21,5 @@ function maximumBeauty(items: number[][], queries: number[]): number[] {
     }
     return answer;
 };
+// TC O(n log n + q log n)
+// SC O(n)
