@@ -12,60 +12,49 @@
 
 function reverseEvenLengthGroups(head: ListNode | null): ListNode | null {
     let groupSize = 2;
-
     let start = head;
-
     let prev = head;
     let curr = head.next;
-
     let count = 0;
-    
     while (curr != null) {
         if (count === groupSize) {
-            if (groupSize % 2 === 0) { // we only reverse when it is even
+            if (groupSize % 2 === 0) { 
                 const end = curr;
-                const tail = start.next; // the starting node of the reverse linked list will be the tail after the reverse takes place
-                reverseList(start, end, count); // we need to reverse everything in the middle of start and end 
-                start = tail; // we set the new start to the end of the reversed linked list
+                const tail = start.next;
+                reverseList(start, end, count); 
+                start = tail; 
             }
-            else { // when groupSize is even we don't need to reverse, but need to set the new start to the prev node
+            else {
                 start = prev;
             }
-            count = 0; // whenever we reached the group size we need to reset our count and up our groupSize
+            count = 0;
             ++groupSize;
         }
-        else { // just a normal traversal when we haven't hit our groupSize
+        else {
             prev = curr;        
             curr = curr.next;
             ++count;
         }
     }
-   
-    if (count % 2 === 0) { // in the case where we ended early on even count
+    if (count % 2 === 0) {
          reverseList(start, null, count);
     }
-    
     return head;
-    
-    
     function reverseList(start, end, count) {
-        if (start.next == null) return start; // for case when we have a single node
-        
+        if (start.next == null) return start;
         let prev = start;
-        
         let curr = start.next;
         let tail = start.next;
-        
         for (let i = 0; i < count; ++i) {
             const next = curr.next;
             curr.next = prev;
             prev = curr;
             curr = next;
         }
-        
         start.next = prev;
         tail.next = end;
-        
-        return ;
+        return;
     }
 };
+// TC O(n2)
+// SC O(1)
