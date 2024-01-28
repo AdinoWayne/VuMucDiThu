@@ -19,5 +19,6 @@ function wateringPlants(plants: number[], capacity: number): number {
         }
     }
     return steps
-
 };
+// TC O(n)
+// SC O(1)
