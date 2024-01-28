@@ -15,7 +15,7 @@ function wateringPlants(plants: number[], capacity: number): number {
         }else{
             steps += (j*2)-1   
              newCapacity = capacity - plants[j]
-             steps[j]=0
+             plants[j]=0
         }
     }
     return steps
