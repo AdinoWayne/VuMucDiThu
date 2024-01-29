@@ -13,3 +13,5 @@ function getAverages(nums: number[], k: number): number[] {
     }
     return result;
 };
+// TC O(n)
+// SC O(n)
