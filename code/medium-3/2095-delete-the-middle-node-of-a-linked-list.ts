@@ -29,3 +29,5 @@ function deleteMiddle(head: ListNode | null): ListNode | null {
     
     return head;
 };
+// TC O(n)
+// SC O(1)
