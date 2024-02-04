@@ -38,3 +38,5 @@ function maximumDetonation(bombs: number[][]): number {
     }
     return maxSize
 };
+// TC O(N^2)
+// SC O(N^3)
