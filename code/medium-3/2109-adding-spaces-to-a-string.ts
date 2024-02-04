@@ -11,3 +11,5 @@ function addSpaces(s: string, spaces: number[]): string {
     res += last;
     return res;
 };
+// TC O(n + m)
+// SC O(n)
