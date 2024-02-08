@@ -20,7 +20,6 @@ function canBeValid(s: string, locked: string): boolean {
         }
     }
     flip = 0; open = 0; close = 0;
-    
     for(let i = s.length-1; i>=0; i--) {
         if(!+locked[i]) {
             ++flip;
@@ -37,3 +36,5 @@ function canBeValid(s: string, locked: string): boolean {
     }
     return true;
 };
+// TC O(n^2) 
+// SC O(1)
