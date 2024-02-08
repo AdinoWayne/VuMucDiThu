@@ -11,3 +11,5 @@ function getDescentPeriods(prices: number[]): number {
     }
     return res + prices.length
 };
+// TC O(n) 
+// SC O(1)
