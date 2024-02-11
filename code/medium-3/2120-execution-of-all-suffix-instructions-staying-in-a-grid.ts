@@ -17,3 +17,5 @@ function executeInstructions(n: number, startPos: number[], s: string): number[]
     }
     return answers;
 };
+// TC O(n^2)
+// SC O(n)
