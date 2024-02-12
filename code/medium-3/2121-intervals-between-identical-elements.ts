@@ -29,3 +29,5 @@ function getDistances(arr: number[]): number[] {
 
     return result;
 };
+// Time Complexity: O(n)
+// Space Complexity: O(n)
