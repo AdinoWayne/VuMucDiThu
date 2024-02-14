@@ -39,3 +39,5 @@ function pairSum(head: ListNode | null): number {
 
         return maximumSum;
 };
+// TC O(n)
+// SC O(1)
