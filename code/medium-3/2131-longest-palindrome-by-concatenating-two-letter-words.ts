@@ -21,3 +21,6 @@ function longestPalindrome(words: string[]): number {
 
 // We define a reverse function to reverse our string.
 const reverse = str => str.split('').reverse().join('');
+
+// TC O(n^2)
+// SC O(n)
