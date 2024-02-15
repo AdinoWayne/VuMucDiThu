@@ -20,3 +20,5 @@ function numberOfArrays(differences: number[], lower: number, upper: number): nu
 
     return count
 };
+// TC O(n)
+// SC O(n)
