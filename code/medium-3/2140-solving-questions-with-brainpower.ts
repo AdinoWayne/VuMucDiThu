@@ -10,4 +10,4 @@ function mostPoints(questions: number[][]): number {
     return max;
 };
 // TC O(n)
-// SC o(n)
+// SC O(n)
