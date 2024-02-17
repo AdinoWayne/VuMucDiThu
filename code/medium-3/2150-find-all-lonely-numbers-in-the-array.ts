@@ -17,3 +17,5 @@ function findLonely(nums: number[]): number[] {
     }
     return result;
 };
+// TC O(n) 
+// SC O(n)
