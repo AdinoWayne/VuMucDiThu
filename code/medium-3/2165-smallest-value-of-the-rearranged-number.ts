@@ -33,3 +33,5 @@ function smallestNumber(num: number): number {
         return Number(sortedString.join(''));
     }
 };
+// Time Complexity: O(n log n) in most cases, O(n * n log n) in the worst case for very small n.
+// Space Complexity: O(n)
