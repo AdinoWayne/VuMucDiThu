@@ -29,3 +29,5 @@ function mergeNodes(head: ListNode | null): ListNode | null {
     }
     return ans.next;
 };
+// TC O(n)
+// SC O(1)
