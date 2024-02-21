@@ -23,3 +23,5 @@ function isPossible(arr, mid, totalTrips) {
     }
     return trips >= totalTrips;
 }
+// TC O(n * log(high - low))
+// SC O(1)
