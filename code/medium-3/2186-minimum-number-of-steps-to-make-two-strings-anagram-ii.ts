@@ -8,3 +8,5 @@ function minSteps(s: string, t: string): number {
     }
     return ans;
 };
+// TC O(2n)
+// SC O(1)
