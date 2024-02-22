@@ -28,3 +28,5 @@ function createBinaryTree(descriptions: number[][]): TreeNode | null {
     if (rootHash[key] == true) return hash[key];
   }
 };
+// TC O(n ^ 2)
+// SC O(2n)
