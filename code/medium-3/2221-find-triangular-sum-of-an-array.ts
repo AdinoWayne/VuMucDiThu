@@ -8,3 +8,5 @@ function triangularSum(nums: number[]): number {
     }
     return nums[0];
 };
+// TC O(n^2)
+// SC O(1)
