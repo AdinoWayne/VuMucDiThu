@@ -9,3 +9,5 @@ function minDeletion(nums: number[]): number {
     }
     return nums.length % 2 !== 0 ? count + 1 : count;
 };
+// TC O(n)
+// SC O(1)
