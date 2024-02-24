@@ -4,9 +4,10 @@ function minDeletion(nums: number[]): number {
     for (let i = 0; i < n - 1; i++) {
         let j = i - deletes;
         if (
-            j % 2 === 0 && //
+            j % 2 === 0 &&
             nums[i] === nums[i + 1]
         ) {
+            // condition
             deletes++;
         }
     }
