@@ -18,3 +18,5 @@ function maximumProduct(nums: number[], k: number): number {
 // Product Calculation: O(n)
 
 // SC O(1)
+
+// hint: We can increment minimum number in all k operations and take their product in end.
