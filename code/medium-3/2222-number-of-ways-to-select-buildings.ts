@@ -4,7 +4,6 @@ function numberOfWays(s: string): number {
     ones = s.length - zeroes,
     curZeroes = 0,
     curOnes = 0;
-
     for (let i = 0; i < s.length; i++) {
         s[i] === '0'
         ? (result += curOnes * (ones - curOnes))
@@ -14,3 +13,5 @@ function numberOfWays(s: string): number {
     }
     return result;
 };
+// Time Complexity: O(n)
+// Space Complexity: O(1)
