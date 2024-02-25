@@ -7,3 +7,5 @@ function waysToBuyPensPencils(total: number, cost1: number, cost2: number): numb
     }  
     return res
 };
+// TC O(n)
+// SC O(1)
