@@ -15,3 +15,5 @@ function numberOfWays(s: string): number {
 };
 // Time Complexity: O(n)
 // Space Complexity: O(1)
+// hint: The idea is for every character ('0' or '1') at index i,
+// the possible solutions that can be formed from it are: numberOpposite * (sumOpposite - numberOpposite)
