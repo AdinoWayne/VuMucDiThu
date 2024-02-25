@@ -12,3 +12,9 @@ function maximumProduct(nums: number[], k: number): number {
     }
     return nums.reduce((a,b)=>a*b % (1e9+7))
 };
+// TC:
+// Sorting: O(n log n)
+// Incrementing Minimum Elements: O(nk)
+// Product Calculation: O(n)
+
+// SC O(1)
