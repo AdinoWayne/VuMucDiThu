@@ -15,3 +15,5 @@ function findWinners(matches: number[][]): number[][] {
     }
     return ans.map((arr) => arr.sort((a, b) => a - b));
 };
+// Time Complexity: O(n * log n)
+// Space Complexity: O(n)
