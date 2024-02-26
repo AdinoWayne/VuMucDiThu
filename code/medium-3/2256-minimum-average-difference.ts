@@ -16,3 +16,5 @@ function minimumAverageDifference(nums: number[]): number {
     }
     return ans;
 };
+// Time Complexity: O(n)
+// Space Complexity: O(1)
