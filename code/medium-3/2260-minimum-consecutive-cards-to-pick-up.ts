@@ -9,3 +9,5 @@ function minimumCardPickup(cards: number[]): number {
     }
     return ans===Infinity ?-1 :ans+1;  
 };
+// TC O(n)
+// SC O(n)
