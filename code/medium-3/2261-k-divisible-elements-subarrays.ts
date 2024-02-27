@@ -15,3 +15,5 @@ function countDistinct(nums: number[], k: number, p: number): number {
     }
     return se.size;
 };
+// TC O(n^3 * log n)
+// SC O(n^2 * k), where n is the length of nums, k is the maximum subarray size, and p is the divisor
