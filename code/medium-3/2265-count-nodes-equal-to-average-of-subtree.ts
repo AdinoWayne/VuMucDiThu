@@ -24,8 +24,8 @@ function averageOfSubtree(root: TreeNode | null): number {
         if (Math.floor(sum / count) === node.val) ans++;
         return [sum, count];
     }
-
     dfs(root);
-
     return ans;
 };
+// TC O(n)
+// SC O(n)
