@@ -12,3 +12,5 @@ function waysToSplitArray(nums: number[]): number {
     }
     return result;
 };
+// Time Complexity: O(n)
+// Space Complexity: O(1)
