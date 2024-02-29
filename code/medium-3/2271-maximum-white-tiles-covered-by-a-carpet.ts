@@ -1,11 +1,9 @@
 function maximumWhiteTiles(tiles: number[][], carpetLen: number): number {
     tiles.sort((a, b) => a[0] - b[0])
-
     let right = 1;
     let cover = tiles[0][1] - tiles[0][0] + 1;
     let maxCovered = cover;
     if (maxCovered >= carpetLen) return carpetLen
-
     for (const tile of tiles) {
         let start = tile[0]
         let end = start + carpetLen - 1
@@ -23,6 +21,7 @@ function maximumWhiteTiles(tiles: number[][], carpetLen: number): number {
 
         cover -= (tile[1] - tile[0]) + 1
     }
-
     return maxCovered
 };
+// TC O(n^2)
+// SC O(1)
