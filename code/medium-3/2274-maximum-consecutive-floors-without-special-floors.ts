@@ -8,3 +8,5 @@ function maxConsecutive(bottom: number, top: number, special: number[]): number 
     max=Math.max(max,special[special.length-1]-bottom,top-special[0])
     return max
 };
+// Time Complexity: O(n log n)
+// Space Complexity: O(n)
