@@ -12,3 +12,5 @@ function largestWordCount(messages: string[], senders: string[]): string {
     }
     return result;
 };
+// TC O(n * k)
+// SC O(1)
