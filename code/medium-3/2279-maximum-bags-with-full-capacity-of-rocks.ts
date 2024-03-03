@@ -20,3 +20,5 @@ function maximumBags(capacity: number[], rocks: number[], additionalRocks: numbe
         differences.shift() // remove the first difference
     } return count
 };
+// TC O(nlogn)
+// SC O(n)
