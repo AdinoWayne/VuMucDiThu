@@ -13,3 +13,5 @@ function partitionArray(nums: number[], k: number): number {
     } if (list.length) count++
     return count
 };
+// TC O(nlogn)
+// SC O(n)
