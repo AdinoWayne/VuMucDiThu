@@ -23,3 +23,5 @@ function successfulPairs(spells: number[], potions: number[], success: number): 
     }
     return pairs;
 };
+// TC O(n * log n)
+// SC O(n)
