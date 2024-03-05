@@ -18,3 +18,5 @@ function arrayChange(nums: number[], operations: number[][]): number[] {
     }
     return nums
 };
+// TC O(n)
+// SC O(n)
