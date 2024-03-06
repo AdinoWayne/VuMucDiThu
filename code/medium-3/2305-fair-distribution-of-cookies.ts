@@ -17,3 +17,5 @@ function distributeCookies(cookies: number[], k: number): number {
     backtrack(0);
     return ans;
 };
+// TC O(k^n)
+// SC O(k)
