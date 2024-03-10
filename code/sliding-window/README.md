@@ -9,3 +9,5 @@ The size of the subarray or substring ‘K’ will be given or asked in some of 
 These problem can easily be solved in O(n2) time complexity using nested loops, using sliding window we can solve these in O(n) Time Complexity.
 Required Time Complexity: O(n) or O(nlog(n))
 Constraints: n <= 106 , If n is the size of the Array / String.
+
+REFS: https://www.geeksforgeeks.org/sliding-window-problems-identify-solve-and-interview-questions/
