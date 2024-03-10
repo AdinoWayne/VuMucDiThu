@@ -61,3 +61,5 @@ function spiralMatrix(m: number, n: number, head: ListNode | null): number[][] {
         }
     return matrix;
 };
+// TC O(m * n)
+// SC O(m * n)
