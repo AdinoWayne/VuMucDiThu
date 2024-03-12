@@ -72,3 +72,5 @@ const result = maxSlidingWindow(arr, k);
 for (const num of result) {
     console.log(num + " ");
 }
+// Time Complexity: O(NlogN), Where N is the size of the array.
+// Auxiliary Space: O(N), where N is the size of the array, this method requires O(N) space in the worst case when the input array is an increasing array
