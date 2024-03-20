@@ -28,3 +28,5 @@ function closestMeetingNode(edges: number[], node1: number, node2: number): numb
 
     return res;
 };
+// Time Complexity: O(n)
+// Space Complexity: O(n)
