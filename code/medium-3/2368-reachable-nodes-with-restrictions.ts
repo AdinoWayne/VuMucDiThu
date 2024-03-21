@@ -34,3 +34,5 @@ function reachableNodes(n: number, edges: number[][], restricted: number[]): num
 
     return Object.keys(visited).length;
 };
+// TC O(n)
+// SC O(n)
