@@ -29,3 +29,5 @@ function findSmallest(arr) {
     }
     return small;
 }
+// TC O(n)
+// SC O(1)
