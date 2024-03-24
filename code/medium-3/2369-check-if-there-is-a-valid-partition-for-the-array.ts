@@ -20,6 +20,7 @@ function validPartition(nums: number[]): boolean {
 
         [dp[0], dp[1], dp[2]] = [dp[1], dp[2], current_dp];
     }
-
     return dp[2];
 };
+// Time Complexity: O(n)
+// Space Complexity: O(1)
