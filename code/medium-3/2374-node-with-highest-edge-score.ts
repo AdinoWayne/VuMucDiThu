@@ -19,15 +19,5 @@ function edgeScore(edges: number[]): number {
     }
     return Math.min(...outputConfig[maxSum]);
 };
-
-function findSmallest(arr) {
-    let small = Infinity;
-    for (const iterator of arr) {
-        if (iterator < small) {
-            small = iterator;
-        }
-    }
-    return small;
-}
 // TC O(n)
 // SC O(1)
