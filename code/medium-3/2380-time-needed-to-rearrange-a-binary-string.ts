@@ -20,3 +20,5 @@ function secondsToRemoveOccurrences(s: string): number {
     
     return count(s)
 };
+// Time Complexity O(2^n)
+// Space Complexity O(2^n)
