@@ -44,3 +44,5 @@ function amountOfTime(root: TreeNode | null, start: number): number {
     let [answer,_] = dfs(root)
     return answer
 };
+// TC O(n)
+// SC O(n)
