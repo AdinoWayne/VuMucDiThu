@@ -13,36 +13,23 @@
  */
 
 function amountOfTime(root: TreeNode | null, start: number): number {
-    function dfs(node){
-        if (node == null){
-            return [-1, -Number.MAX_VALUE]
+    let amount = 0; 
+    const getTimeOfSubtree = (node) =>{
+        if(!node) return 0;
+        const left = getTimeOfSubtree(node.left);
+        const right = getTimeOfSubtree(node.right);
+        if(node.val == start){
+            amount = Math.max(left, right);
+            return -1;
+        }else if(left >=0 && right >=0){
+            return Math.max(left, right) +1
+        }else{
+            amount = Math.max(amount, Math.abs(left -right));
+            return Math.min(left, right) -1;
         }
-
-        let [left,left_dist] = dfs(node.left)
-        let [right,right_dist] = dfs(node.right)
-        
-        let infect_time = Math.max(
-                left,
-                right,
-                left + right_dist + 2,
-                right + left_dist + 2,
-                )
-        
-
-        if (left_dist < 0 && right_dist < 0){
-            infect_time = Math.max(left,right)+1
-        }
-        
-        let distance = Math.max(left_dist,right_dist)+1
-        if (node.val == start){
-            distance = 0
-        }
-        
-        return [infect_time, distance]
     }
-
-    let [answer,_] = dfs(root)
-    return answer
+    getTimeOfSubtree(root);
+    return amount;
 };
 // TC O(n)
 // SC O(n)
