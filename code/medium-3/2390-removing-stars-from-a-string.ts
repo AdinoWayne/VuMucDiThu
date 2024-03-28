@@ -6,3 +6,5 @@ function removeStars(s: string): string {
     }
     return st.join("")
 };
+// Time Complexity: O(n)
+// Space Complexity: O(n)
