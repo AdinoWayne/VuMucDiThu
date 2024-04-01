@@ -7,3 +7,5 @@ function isStrictlyPalindromic(n: number): boolean {
     }
     return true;
 };
+// TC O(n2)
+// SC O(n)
