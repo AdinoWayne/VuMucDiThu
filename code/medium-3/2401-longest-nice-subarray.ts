@@ -10,3 +10,5 @@ function longestNiceSubarray(nums: number[]): number {
     }
     return maxWindow;
 };
+// TC O(n2)
+// SC O(1)
