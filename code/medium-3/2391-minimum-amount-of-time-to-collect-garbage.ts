@@ -14,3 +14,5 @@ function garbageCollection(garbage: string[], travel: number[]): number {
 
     return garbage.join('').length + travelTime
 };
+// time complexity: O(n * m)
+// space complexity: O(n)
