@@ -8,3 +8,5 @@ function partitionString(s: string, count=1, map = new Map()): number {
     }
     return count;
 };
+// Time Complexity: O(n)
+// Space Complexity: O(n)
