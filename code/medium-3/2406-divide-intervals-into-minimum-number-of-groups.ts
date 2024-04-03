@@ -12,3 +12,5 @@ function minGroups(intervals: number[][]): number {
      }
      return room;
 };
+// Time Complexity: O(n log n)
+// Space Complexity: O(n)
