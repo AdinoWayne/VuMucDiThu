@@ -11,3 +11,5 @@ function matchPlayersAndTrainers(players: number[], trainers: number[]): number 
     
     return i;
 };
+// TC O(n * log n)
+// SC O(n)
