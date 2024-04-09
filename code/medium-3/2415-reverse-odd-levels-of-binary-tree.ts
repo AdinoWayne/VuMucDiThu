@@ -42,3 +42,5 @@ function reverseOddLevels(root: TreeNode | null): TreeNode | null {
     
     return root;
 };
+// The time complexity is dominated by the nested loops and ranges from O(n * log n) to O(n * 2^n) depending on the tree's balance.
+// The space complexity is also influenced by the tree's balance, ranging from O(log n) to O(n).
