@@ -22,3 +22,5 @@ function goodIndices(nums: number[], k: number): number[] {
     }
     return result;
 };
+// The function's time complexity is dominated by the two O(N) loops, making it linear in the input size.
+// The space complexity is O(N) due to the additional arrays used for intermediate computations.
