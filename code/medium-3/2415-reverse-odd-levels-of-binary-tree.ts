@@ -44,3 +44,6 @@ function reverseOddLevels(root: TreeNode | null): TreeNode | null {
 };
 // The time complexity is dominated by the nested loops and ranges from O(n * log n) to O(n * 2^n) depending on the tree's balance.
 // The space complexity is also influenced by the tree's balance, ranging from O(log n) to O(n).
+
+// queue: This is a JavaScript array that will be used to perform a Breadth-First Search (BFS) traversal of the tree. It's initialized with the root node ([root]).
+// level: This variable keeps track of the current level (depth) being processed in the BFS traversal. It's initialized to 0 (root level).
