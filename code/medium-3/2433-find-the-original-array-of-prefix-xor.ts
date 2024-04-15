@@ -6,3 +6,5 @@ function findArray(pref: number[]): number[] {
     }
     return pref;
 };
+// The function performs n-1 constant-time operations in the loop, resulting in a total time complexity of O(n).
+// It doesn't create any new data structures, leading to a space complexity of O(1).
