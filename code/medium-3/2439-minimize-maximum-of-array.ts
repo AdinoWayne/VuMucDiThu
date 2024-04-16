@@ -7,3 +7,5 @@ function minimizeArrayValue(nums: number[]): number {
     }
     return res;
 };
+// TC O(n)
+// SC O(1)
