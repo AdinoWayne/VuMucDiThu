@@ -14,3 +14,5 @@ function getGCD(a, b) {
   if (b === 0) return a;
   return getGCD(b, a % b);
 }
+// Time Complexity: O(n^2)
+// Space Complexity: O(1)
