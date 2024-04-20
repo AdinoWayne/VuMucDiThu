@@ -17,3 +17,5 @@ function maximumSubarraySum(n: number[], k: number): number {
     }
     return max;
 };
+// Time complexity: Best case O(n), average case likely close to O(n), worst case O(n^2) (potential for hash table collisions in freq)
+// Space complexity: O(k)
