@@ -13,3 +13,5 @@ function totalCost(costs: number[], k: number, candidates: number): number {
 
     return ans;
 };
+// Time Complexity: O(k * candidates)
+// Space Complexity: O(candidates)
