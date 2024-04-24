@@ -20,3 +20,5 @@ const gcd = (a, b) => {
 };
 
 const lcm = (a, b) => (a / gcd(a, b)) * b;
+// Time Complexity: O(n^2)
+// Space Complexity: O(1)
