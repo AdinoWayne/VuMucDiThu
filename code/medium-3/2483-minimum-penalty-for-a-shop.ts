@@ -9,3 +9,5 @@ function bestClosingTime(customers: string): number {
     }
     return horur + 1;
 };
+// Time Complexity: O(n)
+// Space Complexity: O(1)
