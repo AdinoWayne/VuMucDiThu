@@ -16,3 +16,5 @@ function appendCharacters(s: string, t: string): number {
 
     return tSize - tPointer;
 };
+// TC O(s.length * t.length)
+// SC O(1)
