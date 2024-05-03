@@ -19,3 +19,5 @@ function removeNodes(head: ListNode | null): ListNode | null {
     
     return head
 };
+// TC O(n)
+// SC O(n)
