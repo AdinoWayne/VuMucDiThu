@@ -33,3 +33,5 @@ function isOk(target, price, k) {
 
   return count >= k;
 }
+// Time Complexity: O(N * log N)
+// Space Complexity: O(log N)
