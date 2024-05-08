@@ -33,3 +33,5 @@ function generatePrimes(n) {
   }
   return new Set(primes);
 }
+// Time Complexity: O(n * log(log(n)))
+// Space Complexity: O(n * sqrt(max(nums)) * log(max(nums)))
