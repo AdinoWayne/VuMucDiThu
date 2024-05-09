@@ -13,3 +13,5 @@ function rangeAddQueries(n: number, queries: number[][]): number[][] {
     })
     return MATRIX
 };
+// Time Complexity: O(n^2 * m)
+// Space Complexity: O(n^2)
