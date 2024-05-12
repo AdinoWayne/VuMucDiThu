@@ -11,3 +11,5 @@ function countGood(nums: number[], k: number): number {
     }
     return ans;
 };
+// Time Complexity: O(n^2 / k)
+// Space Complexity: O(n)
