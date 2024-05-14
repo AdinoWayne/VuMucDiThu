@@ -15,3 +15,5 @@ function maxScore(nums1: number[], nums2: number[], k: number): number {
     }
     return result;
 };
+// Time Complexity: O(n log n) (dominant term due to sorting)
+// Space Complexity: O(n) (due to pairs and pq)
