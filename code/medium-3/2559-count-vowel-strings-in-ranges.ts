@@ -1,5 +1,5 @@
 function vowelStrings(words: string[], queries: number[][]): number[] {
-let pref = new Array(words.length+1).fill(0);
+    let pref = new Array(words.length+1).fill(0);
     let i=0;
     for(let x of words){
         pref[i+1]=pref[i]+(isVowel(x[0]) && isVowel(x[x.length-1]));
@@ -21,3 +21,5 @@ function isVowel(x)
     else
         return false;
 }
+// Time complexity: O(n)
+// Space complexity: O(n + q)
