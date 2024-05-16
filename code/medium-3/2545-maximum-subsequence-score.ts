@@ -17,3 +17,35 @@ function maxScore(nums1: number[], nums2: number[], k: number): number {
 };
 // Time Complexity: O(n log n) (dominant term due to sorting)
 // Space Complexity: O(n) (due to pairs and pq)
+// class PriorityQueue {
+//     constructor() {
+//       this.items = [];
+//     }
+//     isEmpty() {
+//       return this.items.length === 0;
+//     }
+  
+//     size () {
+//         return this.items.length
+//     }
+//     enqueue(item, priority) {
+//       const newItem = { item, priority };
+//       this.items.push(newItem);
+//       this.items.sort((a, b) => a.priority - b.priority);
+//     }
+//     dequeue() {
+//       if (this.isEmpty()) {
+//         throw new Error("PriorityQueue is empty");
+//       }
+//       return this.items.shift().item;
+//     }
+//     front() {
+//       if (this.isEmpty()) {
+//         throw new Error("PriorityQueue is empty");
+//       }
+//       return this.items[0].item;
+//     }
+//     printPQueue() {
+//       console.log(this.items);
+//     }
+// }
