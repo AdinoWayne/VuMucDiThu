@@ -25,3 +25,5 @@ let min = nums[0], max = nums[0];
     return false;
   }
 };
+// Time complexity: O(n * log n)
+// Space Complexity: O(1)
