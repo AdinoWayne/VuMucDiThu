@@ -10,3 +10,5 @@ function divisibilityArray(word: string, m: number): number[] {
     
     return ans;
 };
+// TC O(n)
+// SC O(n)
