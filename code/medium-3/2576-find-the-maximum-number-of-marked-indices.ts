@@ -11,3 +11,5 @@ function maxNumOfMarkedIndices(nums: number[]): number {
   }
   return st * 2; 
 };
+// Time Complexity: O(n log n)
+// Space Complexity: O(1) (considering in-place sorting)
