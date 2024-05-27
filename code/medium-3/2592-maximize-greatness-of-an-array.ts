@@ -9,3 +9,5 @@ function maximizeGreatness(nums: number[]): number {
     }
     return i;
 };
+// Time Complexity: O(n log n) (dominated by sorting)
+// Space Complexity: O(n) (due to potential temporary array creation during sorting)
