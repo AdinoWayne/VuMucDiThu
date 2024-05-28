@@ -24,3 +24,5 @@ function isOk(ranks, mid, cars) {
 
   return repairedCars >= cars;
 }
+// Time Complexity: O(N * log M)
+// Space Complexity: O(1)
