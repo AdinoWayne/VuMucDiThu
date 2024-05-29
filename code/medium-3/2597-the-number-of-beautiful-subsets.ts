@@ -18,3 +18,5 @@ function beautifulSubsets(nums: number[], k: number): number {
   let s = bt(nums)
   return s
 };
+// Time Complexity: O(2^n)
+// Space Complexity: O(n)
