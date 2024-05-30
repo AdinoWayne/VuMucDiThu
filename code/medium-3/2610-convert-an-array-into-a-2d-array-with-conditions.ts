@@ -10,3 +10,5 @@ function findMatrix(nums: number[]): number[][] {
     }
     return res
 };
+// Time Complexity: O(n)
+// Space complexity: O(n)
