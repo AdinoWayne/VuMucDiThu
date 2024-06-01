@@ -10,3 +10,5 @@ function miceAndCheese(reward1: number[], reward2: number[], k: number): number 
     }
     return score;
 };
+// Time complexity: O(n log n)
+// Space complexity: O(n)
