@@ -13,3 +13,5 @@ var i = 0;
     }
     return result;
 };
+// time complexity is O(n)
+// space complexity is O(1)
