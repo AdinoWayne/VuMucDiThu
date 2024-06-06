@@ -15,3 +15,5 @@ function findThePrefixCommonArray(A: number[], B: number[]): number[] {
 
     return res
 };
+// Time Complexity: O(n)
+// Space Complexity: O(n)
