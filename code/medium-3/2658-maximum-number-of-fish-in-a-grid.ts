@@ -46,3 +46,5 @@ function findMaxFish(grid: number[][]): number {
     
     return max_fishes; 
 };
+// the time complexity of the DFS function is O(ROW * COL).
+// the space complexity of the DFS function is O(ROW).
