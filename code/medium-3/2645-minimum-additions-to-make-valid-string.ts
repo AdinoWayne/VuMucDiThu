@@ -1,5 +1,5 @@
 function addMinimum(word: string): number {
-var i = 0;
+    var i = 0;
     var result = 0;
     var abc = 'abc';
     while (i < word.length) {
