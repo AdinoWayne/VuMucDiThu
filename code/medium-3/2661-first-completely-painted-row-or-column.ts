@@ -26,3 +26,5 @@ function firstCompleteIndex(arr: number[], mat: number[][]): number {
 
     return smallest;
 };
+// Space Complexity: O(m * n)
+// Time Complexity: O(arr.length)
