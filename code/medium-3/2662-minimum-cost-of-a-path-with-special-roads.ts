@@ -25,3 +25,5 @@ function minimumCost(start: number[], target: number[], specialRoads: number[][]
 
     return cost
 };
+// Time Complexity: T(n, m) = O(n^(m+1))
+// Space Complexity: S(n, k) = O(k^2)
