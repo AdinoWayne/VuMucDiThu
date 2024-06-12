@@ -42,3 +42,5 @@ let nums = new Array(n).fill(0);
 
   return answer;
 };
+// Time Complexity: O(q) + O(n) in the worst case, closer to O(q) in most cases
+// Space Complexity: O(n + 2q)
