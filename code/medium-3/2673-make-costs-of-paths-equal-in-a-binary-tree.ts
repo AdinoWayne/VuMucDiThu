@@ -10,3 +10,5 @@ function minIncrements(n: number, cost: number[]): number {
         return cost[i - 1] + Math.max(leftSum, rightSum);
     }  
 };
+// time complexity of O(n)
+// space complexity of O(n)
