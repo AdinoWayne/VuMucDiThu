@@ -29,3 +29,5 @@ const m = grid.length
 
   return max
 };
+// Time Complexity: O(m * n)
+// Space Complexity: O(m * n)
