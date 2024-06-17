@@ -34,4 +34,6 @@ const list = new Array(n).fill(null).map(() => []);
   }
 
   return componentCounts;
-};
+// };
+// Time complexity: O(n^2) in the worst case, O(n * d) on average (depending on graph density)
+// Space complexity: O(n) in the worst case
