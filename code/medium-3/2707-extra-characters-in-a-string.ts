@@ -9,3 +9,5 @@ function minExtraChar(s: string, dictionary: string[]): number {
     }
     return s.length - f(0)
 };
+// time complexity (O(n^k)), where n is the length of the input string s and k is the maximum length of a word in the dictionary dictionary.
+// The space complexity of the function is linear (O(n)) due to the max array used for memoization.
