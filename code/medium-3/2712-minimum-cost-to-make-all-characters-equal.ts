@@ -10,3 +10,5 @@ function minimumCost(s: string): number {
     }
     return sum
 };
+// Time Complexity: O(n)
+// Space Complexity: O(1)
