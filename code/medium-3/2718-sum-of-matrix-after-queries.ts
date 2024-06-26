@@ -12,3 +12,5 @@ function matrixSumQueries(n: number, queries: number[][]): number {
     
     return ans;
 };
+// Time Complexity: O(n * q)
+// Space Complexity: O(n)
