@@ -56,3 +56,5 @@ function continuousSubarrays(nums: number[]): number {
     count += (tempLength * (tempLength + 1)) / 2;
     return count;
 };
+// The continuousSubarrays function has a worst-case time complexity of O(n^2) due to the nested loop structure.
+// The space complexity is O(1) as it uses a constant amount of additional space.
