@@ -35,3 +35,5 @@ function minimumIndex(a: number[]): number {
 
     return an
 };
+Time Complexity: O(n)
+Space Complexity: O(n)
