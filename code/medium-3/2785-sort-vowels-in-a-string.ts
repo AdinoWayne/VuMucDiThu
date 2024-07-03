@@ -20,3 +20,5 @@ function sortVowels(s: string): string {
     }
     return newStr
 };
+// Time Complexity: O(n)
+// Space Complexity: O(n)
