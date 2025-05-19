@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color Balance - R/G/B Boost</title>
+</head>
+<body>
+  <h2>Chọn ảnh</h2>
+  <input type="file" id="upload" accept="image/*">
+
+  <h2>Thiết lập tăng màu (Color Balance Midtones)</h2>
+  <label>Red: <input type="number" id="redBoost" value="100"></label>
+  <label>Green: <input type="number" id="greenBoost" value="0"></label>
+  <label>Blue: <input type="number" id="blueBoost" value="0"></label>
+  <button id="apply">Áp dụng</button>
+
+  <h2>Ảnh gốc</h2>
+  <canvas id="originalCanvas"></canvas>
+
+  <h2>Ảnh sau điều chỉnh</h2>
+  <canvas id="resultCanvas"></canvas>
+
+  <script>
+    const upload = document.getElementById('upload');
+    const applyBtn = document.getElementById('apply');
+
+    const originalCanvas = document.getElementById('originalCanvas');
+    const resultCanvas = document.getElementById('resultCanvas');
+    const ctxOriginal = originalCanvas.getContext('2d');
+    const ctxResult = resultCanvas.getContext('2d');
+
+    let originalImage = null;
+
+    upload.addEventListener('change', function () {
+      const file = this.files[0];
+      if (!file) return;
+
+      const img = new Image();
+      img.onload = function () {
+        originalCanvas.width = resultCanvas.width = img.width;
+        originalCanvas.height = resultCanvas.height = img.height;
+
+        ctxOriginal.drawImage(img, 0, 0);
+        originalImage = ctxOriginal.getImageData(0, 0, img.width, img.height);
+      };
+
+      img.src = URL.createObjectURL(file);
+    });
+
+    applyBtn.addEventListener('click', function () {
+      if (!originalImage) return;
+
+      const redBoost = parseInt(document.getElementById('redBoost').value) || 0;
+      const greenBoost = parseInt(document.getElementById('greenBoost').value) || 0;
+      const blueBoost = parseInt(document.getElementById('blueBoost').value) || 0;
+
+      const imgData = new ImageData(
+        new Uint8ClampedArray(originalImage.data),
+        originalImage.width,
+        originalImage.height
+      );
+
+      const data = imgData.data;
+
+      for (let i = 0; i < data.length; i += 4) {
+        const r = data[i];
+        const g = data[i + 1];
+        const b = data[i + 2];
+
+        const lum = 0.3 * r + 0.59 * g + 0.11 * b;
+
+        // Tạo hệ số tác động theo độ sáng (Midtones mạnh nhất)
+        const factor = (() => {
+          if (lum >= 64 && lum <= 192) return 1;
+          if (lum < 64) return lum / 64;
+          return (255 - lum) / 63;
+        })();
+
+        const rb = Math.round(redBoost * factor);
+        const gb = Math.round(greenBoost * factor);
+        const bb = Math.round(blueBoost * factor);
+
+        // Tăng RGB riêng biệt
+        data[i]     = clamp(r + rb);
+        data[i + 1] = clamp(g + gb);
+        data[i + 2] = clamp(b + bb);
+      }
+
+      ctxResult.putImageData(imgData, 0, 0);
+    });
+
+    function clamp(v) {
+      return Math.max(0, Math.min(255, v));
+    }
+  </script>
+</body>
+</html>
