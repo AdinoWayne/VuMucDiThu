@@ -50,7 +50,8 @@
     applyBtn.addEventListener('click', function () {
       if (!originalImage) return;
 
-      const redBoost = parseInt(document.getElementById('redBoost').value) || 0;
+      // Lấy giá trị từ input, mặc định đỏ +100
+      const redBoost = parseInt(document.getElementById('redBoost').value) || 100;
       const greenBoost = parseInt(document.getElementById('greenBoost').value) || 0;
       const blueBoost = parseInt(document.getElementById('blueBoost').value) || 0;
 
@@ -67,21 +68,28 @@
         const g = data[i + 1];
         const b = data[i + 2];
 
+        // Tính độ sáng (luminance)
         const lum = 0.3 * r + 0.59 * g + 0.11 * b;
 
         // Tạo hệ số tác động theo độ sáng (Midtones mạnh nhất)
         const factor = (() => {
-          if (lum >= 64 && lum <= 192) return 1;
-          if (lum < 64) return lum / 64;
-          return (255 - lum) / 63;
+          if (lum >= 64 && lum <= 192) return 1; // Midtones
+          if (lum < 64) return lum / 64; // Shadows
+          return (255 - lum) / 63; // Highlights
         })();
 
-        const rb = Math.round(redBoost * factor);
-        const gb = Math.round(greenBoost * factor);
-        const bb = Math.round(blueBoost * factor);
+        // Giá trị điều chỉnh cho đỏ +100 (dựa trên cặp 585856 → 773a38)
+        const redAdjust = redBoost === 100 ? 31 : (redBoost / 100) * 31; // Tỷ lệ với +31
+        const greenAdjust = redBoost === 100 ? -30 : (redBoost / 100) * -30; // Tỷ lệ với -30
+        const blueAdjust = redBoost === 100 ? -30 : (redBoost / 100) * -30; // Tỷ lệ với -30
+
+        // Áp dụng hệ số factor
+        const rb = Math.round(redAdjust * factor);
+        const gb = Math.round(greenAdjust * factor);
+        const bb = Math.round(blueAdjust * factor);
 
         // Tăng RGB riêng biệt
-        data[i]     = clamp(r + rb);
+        data[i] = clamp(r + rb);
         data[i + 1] = clamp(g + gb);
         data[i + 2] = clamp(b + bb);
       }
